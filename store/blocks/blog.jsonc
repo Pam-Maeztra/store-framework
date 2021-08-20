@@ -1,0 +1,20 @@
+{
+  "store.blog-home": {
+    "blocks": [
+      "rich-text#text-1",
+      "blog-latest-posts-preview.wordpress-latest-posts-preview",
+      "blog-all-posts.wordpress-all-posts"
+    ]
+  },
+  "blog-latest-posts-preview.wordpress-latest-posts-preview": {
+    "props": {
+      "title": "Latest Posts",
+      "numberOfPosts": 3,
+      "useTextOverlays": true,
+      "showDates": true,
+      "showAuthors": true,
+      "showExcerpts": true,
+      "absoluteLinks": true
+    }
+  }
+}
