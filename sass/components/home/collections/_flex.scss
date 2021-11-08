@@ -1,0 +1,26 @@
+.flexRow {
+  &Content {
+    &--mz-box-collection {
+      // display: none;
+    }
+  }
+}
+
+.flexCol {
+  &--mz-links-box-collection {
+    :global(.vtex-rich-text-0-x-container--mz-collection-1) {
+      background: red;
+
+      &:hover {
+        background: green;
+
+        .flexRow--mz-collection-1,
+        .flexRowContent--mz-collection-1,
+        :global(.vtex-flex-layout-0-x-flexRow--mz-collection-1),
+        :global(.vtex-flex-layout-0-x-flexRowContent--mz-collection-1) {
+          background: pink;
+        }
+      }
+    }
+  }
+}

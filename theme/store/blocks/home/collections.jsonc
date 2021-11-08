@@ -1,0 +1,117 @@
+{
+  "flex-layout.row#collections": {
+    "title": "Teste - Coleções/Categorias com hover",
+    "props": {},
+    "children": [
+      "flex-layout.col#collections-1",
+      "flex-layout.col#collections-2",
+      "flex-layout.col#collections-3"
+    ]
+  },
+  "flex-layout.col#collections-1": {
+    "title": "Coluna 1 - Fotos",
+    "props": {},
+    "children": [
+      "flex-layout.row#collections-item1-1",
+      "flex-layout.row#collections-item2-1"
+    ]
+  },
+  // 1
+  "flex-layout.row#collections-item1-1": {
+    "props": {
+      "blockClass": ["mz-box-collection", "mz-collection-1"]
+    },
+    "children": ["image#item1-1"]
+  },
+  "image#item1-1": {
+    "props": {
+      "src": "https://via.placeholder.com/200?text=Categoria1"
+    }
+  },
+  // 2
+  "flex-layout.row#collections-item2-1": {
+    "props": {
+      "blockClass": ["mz-box-collection", "mz-collection-2"]
+    },
+    "children": ["image#item2-1"]
+  },
+  "image#item2-1": {
+    "props": {
+      "src": "https://via.placeholder.com/200?text=Categoria2"
+    }
+  },
+
+  "flex-layout.col#collections-2": {
+    "title": "Coluna 2 - Links",
+    "props": {
+      "blockClass": "mz-links-box-collection"
+    },
+    "children": [
+      "rich-text#collections-link-1",
+      "rich-text#collections-link-2"
+    ]
+  },
+  "rich-text#collections-link-1": {
+    "title": "Link 1",
+    "props": {
+      "text": "[Categoria/Coleção 1](#)",
+      "blockClass": ["mz-link-collection", "mz-collection-1"]
+    }
+  },
+  "rich-text#collections-link-2": {
+    "title": "Link 2",
+    "props": {
+      "text": "[Categoria/Coleção 2](#)",
+      "blockClass": ["mz-link-collection", "mz-collection-2"]
+    }
+  },
+
+  "flex-layout.col#collections-3": {
+    "title": "Coluna 3 - Fotos",
+    "props": {},
+    "children": [
+      "flex-layout.row#collections-item1-2",
+      "flex-layout.row#collections-item2-2"
+    ]
+  },
+  // 1
+  "flex-layout.row#collections-item1-2": {
+    "props": {
+      "blockClass": ["mz-box-collection", "mz-collection-1"]
+    },
+    "children": [
+      "image#item1-2",
+      "image#item1-2-2"
+    ]
+  },
+  "image#item1-2": {
+    "props": {
+      "src": "https://via.placeholder.com/200?text=Categoria1"
+    }
+  },
+  "image#item1-2-2": {
+    "props": {
+      "src": "https://via.placeholder.com/200?text=Categoria1"
+    }
+  },
+  // 2
+  "flex-layout.row#collections-item2-2": {
+    "props": {
+      "blockClass": ["mz-box-collection", "mz-collection-2"]
+    },
+    "children": [
+      "image#item2-2",
+      "image#item2-2-2"
+    ]
+  },
+  "image#item2-2": {
+    "props": {
+      "src": "https://via.placeholder.com/200?text=Categoria2"
+    }
+  },
+  "image#item2-2-2": {
+    "props": {
+      "src": "https://via.placeholder.com/200?text=Categoria2"
+    }
+  }
+}

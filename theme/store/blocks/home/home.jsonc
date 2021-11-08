@@ -14,6 +14,7 @@
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
       "flex-layout.row#categories-banner-main",
+      // "flex-layout.row#collections",
       "flex-layout.row#shelf-home",
       "info-card#home",
       "flex-layout.row#sales-banner-main",
