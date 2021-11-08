@@ -1,0 +1,100 @@
+{
+  "vtex.menu@2.x:menu#dep1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-flex__menu--title"
+    },
+    "children": [
+      "menu-item#item-dep1-item0",
+      "menu-item#item-dep1-col1",
+      "menu-item#item-dep1-col2",
+      "menu-item#item-dep1-col3",
+      "menu-item#item-dep1-col4"
+    ]
+  },
+
+  "menu-item#item-dep1-item0": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    }
+  },
+
+  "menu-item#item-dep1-col1": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/categoria",
+        "noFollow": false,
+        "tagTitle": "Categoria",
+        "text": "Categoria"
+      }
+    }
+  },
+
+  "menu-item#item-dep1-col2": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/categoria",
+        "noFollow": false,
+        "tagTitle": "Categoria",
+        "text": "Categoria"
+      }
+    }
+  },
+
+  "menu-item#item-dep1-col3": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/categoria",
+        "noFollow": false,
+        "tagTitle": "Categoria",
+        "text": "Categoria"
+      }
+    }
+  },
+
+  "menu-item#item-dep1-col4": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/categoria",
+        "noFollow": false,
+        "tagTitle": "Categoria",
+        "text": "Categoria"
+      }
+    }
+  }
+}

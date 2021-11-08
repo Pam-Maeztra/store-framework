@@ -1,0 +1,22 @@
+.share {
+  &Container {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+
+    @include mobile {
+      margin-top: 19px;
+    }
+  }
+
+  &Label {
+    margin: 0 8px 0 0;
+    font-size: 12px;
+    font-weight: $bold;
+    color: $color-gray-900;
+
+    &::after {
+      content: ':';
+    }
+  }
+}

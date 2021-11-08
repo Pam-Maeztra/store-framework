@@ -1,0 +1,49 @@
+{
+  "list-context.image-list#mz-brands": {
+    "children": ["slider-layout#mz-main-brand-images"],
+    "props": {
+      "height": 90,
+      "images": [
+        {
+          "image": "https://via.placeholder.com/180x90/FFFFFF/808080"
+        },
+        {
+          "image": "https://via.placeholder.com/180x90/FFFFFF/808080"
+        },
+        {
+          "image": "https://via.placeholder.com/180x90/FFFFFF/808080"
+        },
+        {
+          "image": "https://via.placeholder.com/180x90/FFFFFF/808080"
+        },
+        {
+          "image": "https://via.placeholder.com/180x90/FFFFFF/808080"
+        },
+        {
+          "image": "https://via.placeholder.com/180x90/FFFFFF/808080"
+        },
+        {
+          "image": "https://via.placeholder.com/180x90/FFFFFF/808080"
+        },
+        {
+          "image": "https://via.placeholder.com/180x90/FFFFFF/808080"
+        }
+      ]
+    },
+    "title": "Carrossel de Marcas"
+  },
+
+  "slider-layout#mz-main-brand-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "mz-home__brands"
+    }
+  }
+}

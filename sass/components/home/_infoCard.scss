@@ -1,0 +1,75 @@
+.infoCard {
+  &Container {
+    &--category {
+      flex-direction: column-reverse;
+      max-height: 284px;
+
+      @include desktop {
+        &:hover {
+          :global(.vtex-store-components-3-x-infoCardImage--category) {
+            width: 208px;
+            height: 208px;
+          }
+        }
+      }
+
+      @include mobile {
+        display: flex;
+      }
+    }
+  }
+
+  &Image {
+    &Container {
+      &--category,
+      &--mosaic {
+        width: 100%;
+      }
+    }
+
+    &--category {
+      width: 203px;
+      height: 203px;
+      border-radius: 50%;
+    }
+
+    &--mosaic {
+      border-radius: 10px;
+    }
+  }
+
+  &TextContainer {
+    &--category {
+      width: 100%;
+      padding: 2px 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    &--mosaic {
+      display: none;
+    }
+  }
+
+  &CallAction {
+    &Container {
+      &--category {
+        margin: 0;
+        text-decoration: none;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    &Text {
+      &--category {
+        margin: 0;
+        color: $text-color-2;
+        font-size: 14px;
+        font-weight: $bold;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  &--mz-footer-newsletter {
+    &__text {
+      justify-content: center;
+    }
+  }
+}
+
+.paragraph {
+  &--mz-footer-newsletter {
+    &__text {
+      color: $color-white;
+      font-size: 18px;
+      font-weight: $bold;
+      margin: 0 0 25px;
+      text-align: center;
+    }
+  }
+}

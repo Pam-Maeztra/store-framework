@@ -1,0 +1,8 @@
+{
+  "flex-layout.row#buy-button": {
+    "props": {
+      "blockClass": "mz-product__buyButton"
+    },
+    "children": ["add-to-cart-button"]
+  }
+}

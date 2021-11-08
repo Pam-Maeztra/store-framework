@@ -1,0 +1,164 @@
+{
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-footer-menu"
+    },
+    "children": [
+      "menu-item#institucional-mobile",
+      "menu-item#suporte-mobile",
+      "menu-item#conta-mobile",
+      "menu-item#atendimento-mobile",
+      "menu-item#social-mobile",
+      "menu-item#payments-mobile",
+      "menu-item#security-mobile"
+    ]
+  },
+
+  "menu-item#institucional-mobile": {
+    "props": {
+      "id": "menu-item-institucional",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#institucional"]
+  },
+  "vtex.menu@2.x:submenu.accordion#institucional": {
+    "children": ["vtex.menu@2.x:menu#footer-institucional"]
+  },
+
+  "menu-item#suporte-mobile": {
+    "props": {
+      "id": "menu-item-suporte",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Ajuda",
+        "text": "Ajuda"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#suporte"]
+  },
+  "vtex.menu@2.x:submenu.accordion#suporte": {
+    "children": ["vtex.menu@2.x:menu#footer-ajuda-suporte"]
+  },
+
+  "menu-item#conta-mobile": {
+    "props": {
+      "id": "menu-item-conta",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Área do cliente",
+        "text": "Área do cliente"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#conta"]
+  },
+  "vtex.menu@2.x:submenu.accordion#conta": {
+    "children": ["vtex.menu@2.x:menu#footer-minha-conta"]
+  },
+
+  "menu-item#atendimento-mobile": {
+    "props": {
+      "id": "menu-item-atendimento",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#atendimento"]
+  },
+  "vtex.menu@2.x:submenu.accordion#atendimento": {
+    "children": ["flex-layout.row#footer-1-atendimento"]
+  },
+
+  "menu-item#social-mobile": {
+    "props": {
+      "id": "menu-item-social",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Redes Sociais",
+        "text": "Redes Sociais"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#social"]
+  },
+  "vtex.menu@2.x:submenu.accordion#social": {
+    "children": ["social-networks"]
+  },
+
+  "menu-item#payments-mobile": {
+    "props": {
+      "id": "menu-item-payments",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Formas de Pagamento",
+        "text": "Formas de Pagamento"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#payments"]
+  },
+  "vtex.menu@2.x:submenu.accordion#payments": {
+    "children": ["vtex.menu@2.x:menu#payment-methods"]
+  },
+
+  "menu-item#security-mobile": {
+    "props": {
+      "id": "menu-item-security",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Selos de Segurança",
+        "text": "Selos de Segurança"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#security"]
+  },
+  "vtex.menu@2.x:submenu.accordion#security": {
+    "children": ["vtex.menu@2.x:menu#security"]
+  }
+}

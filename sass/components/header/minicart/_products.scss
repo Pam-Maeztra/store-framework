@@ -1,0 +1,56 @@
+.productName {
+  &--mz-cart {
+    font-size: 12px;
+    line-height: 16px;
+    color: black;
+    font-weight: $regular;
+  }
+}
+
+.currencyContainer {
+  &--mz-cart {
+    font-size: 10px;
+    color: black;
+    font-weight: $regular;
+  }
+}
+
+.price {
+  &--mz-cart {
+    font-size: 12px;
+    color: $color-1;
+    font-weight: $bold;
+  }
+}
+
+.quantityDropdownContainer,
+.quantityDropdownMobileContainer {
+  &--mz-cart {
+    :global(.vtex-styleguide-9-x-container) {
+      border: 1px solid $color-gray-905;
+      border-radius: 500px;
+      margin-right: 20px;
+
+      :global(.vtex-dropdown__caption) {
+        font-weight: $medium;
+        font-size: 12px;
+        color: $color-gray-901;
+      }
+    }
+  }
+}
+
+.removeButton {
+  width: 24px;
+  height: 24px;
+  background-image: url('assets/svg/hpa-delete.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+
+  .deleteIcon {
+    &--mz-cart {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.heading {
+  &--mz-wishlist {
+    &__title {
+      font-size: 32px;
+      font-weight: $regular;
+      color: $text-color-1;
+
+      @include mobile {
+        font-size: 26px;
+        font-weight: $medium;
+        padding: 0 1rem;
+      }
+    }
+  }
+}

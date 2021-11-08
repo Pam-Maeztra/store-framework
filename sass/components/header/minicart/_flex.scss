@@ -1,0 +1,18 @@
+.flex {
+  &Row {
+    &--mz-cart {
+      border-bottom: 1px solid $color-gray-903;
+    }
+
+    &--minicart-footer {
+      box-shadow: none;
+      border-top: 1px solid $color-gray-903;
+    }
+
+    &Content {
+      &--mz-cart {
+        padding: 1rem;
+      }
+    }
+  }
+}

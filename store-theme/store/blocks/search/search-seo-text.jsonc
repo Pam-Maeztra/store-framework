@@ -1,0 +1,35 @@
+{
+  // FOOTER
+  // DEPARTAMENTO
+  "rich-text#departament": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "### Sobre a categoria \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida neque convallis a cras semper auctor neque. Egestas integer eget aliquet nibh praesent. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Habitasse platea dictumst quisque sagittis purus. Convallis convallis tellus id interdum velit laoreet id donec. Sit amet consectetur adipiscing elit ut aliquam purus. Cursus risus at ultrices mi. Et malesuada fames ac turpis egestas integer. Faucibus vitae aliquet nec ullamcorper sit.",
+      "blockClass": "mz-search__seo"
+    },
+    "title": "Texto SEO - Final da página"
+  },
+
+  // CATEGORIA
+  "rich-text#category": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "### Sobre a categoria \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida neque convallis a cras semper auctor neque. Egestas integer eget aliquet nibh praesent. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Habitasse platea dictumst quisque sagittis purus. Convallis convallis tellus id interdum velit laoreet id donec. Sit amet consectetur adipiscing elit ut aliquam purus. Cursus risus at ultrices mi. Et malesuada fames ac turpis egestas integer. Faucibus vitae aliquet nec ullamcorper sit.",
+      "blockClass": "mz-search__seo"
+    },
+    "title": "Texto SEO - Final da página"
+  },
+
+  // SUBCATEGORIA
+  "rich-text#subcategory": {
+    "props": {
+      "textAlignment": "left",
+      "textPosition": "left",
+      "text": "### Sobre a categoria \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida neque convallis a cras semper auctor neque. Egestas integer eget aliquet nibh praesent. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Habitasse platea dictumst quisque sagittis purus. Convallis convallis tellus id interdum velit laoreet id donec. Sit amet consectetur adipiscing elit ut aliquam purus. Cursus risus at ultrices mi. Et malesuada fames ac turpis egestas integer. Faucibus vitae aliquet nec ullamcorper sit.",
+      "blockClass": "mz-search__seo"
+    },
+    "title": "Texto SEO - Final da página"
+  }
+}

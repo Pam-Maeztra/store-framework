@@ -1,0 +1,20 @@
+{
+  "disclosure-layout#specification": {
+    "children": [
+      "disclosure-trigger#product-main-specification",
+      "disclosure-content#product-main-specification"
+    ]
+  },
+  "disclosure-trigger#product-main-specification": {
+    "children": ["rich-text#product-main-specification-title"]
+  },
+  "rich-text#product-main-specification-title": {
+    "props": {
+      "blockClass": "mz-product__description--title",
+      "text": "#### Especificações"
+    }
+  },
+  "disclosure-content#product-main-specification": {
+    "children": ["product-specification-group#table"]
+  }
+}

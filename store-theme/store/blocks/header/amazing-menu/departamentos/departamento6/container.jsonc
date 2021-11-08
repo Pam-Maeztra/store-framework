@@ -1,0 +1,50 @@
+{
+  "menu-item#dep6": {
+    "props": {
+      "blockClass": ["amazing-menu-department"],
+      "id": "menu-item-dep6",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "Cadeira de alimentação",
+        "type": "internal",
+        "href": "/cadeira-de-alimentacao",
+        "noFollow": false
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dep6"]
+  },
+  "vtex.menu@2.x:submenu#dep6": {
+    "props": {
+      "blockClass": ["amazing-menu-department-submenu"],
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-dep6"]
+  },
+  "flex-layout.row#menu-dep6": {
+    "props": {
+      "blockClass": ["amazing-menu-department-block"],
+      "colSizing": "auto",
+      "fullWidth": true,
+      "width": "100%",
+      "experimentalHideEmptyCols": true
+    },
+    "children": [
+      // Categoria 6 Coluna 1
+      "experimental__visibility-layout#menu-dep6-col1",
+      "experimental__visibility-layout#banner-dep6-col1",
+
+      // Categoria 6 Coluna 2
+      "experimental__visibility-layout#menu-dep6-col2",
+      "experimental__visibility-layout#banner-dep6-col2",
+
+      // Categoria 6 Coluna 3
+      "experimental__visibility-layout#menu-dep6-col3",
+      "experimental__visibility-layout#banner-dep6-col3",
+
+      // Categoria 6 Coluna 4
+      "experimental__visibility-layout#menu-dep6-col4",
+      "experimental__visibility-layout#banner-dep6-col4"
+    ]
+  }
+}

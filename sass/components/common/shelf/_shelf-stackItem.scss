@@ -1,0 +1,20 @@
+.stack {
+  &Container {
+    &--mz-shelf {
+      position: absolute;
+      z-index: 10;
+      width: 95%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      left: 0;
+      top: 5px;
+    }
+  }
+
+  &Item {
+    &--mz-shelf {
+      position: relative;
+    }
+  }
+}

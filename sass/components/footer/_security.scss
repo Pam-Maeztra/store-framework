@@ -1,0 +1,31 @@
+.styledLinkContainer {
+  &--mz-footer-logos {
+    &--security {
+      &--menu {
+        &__ebit,
+        &__pci {
+          padding: 0;
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.styledLinkContent {
+  &--mz-footer-logos {
+    &--security {
+      &--menu {
+        &__ebit {
+          @include securityLogo('assets/images/logo-ebit.png');
+          font-size: 0;
+        }
+
+        &__pci {
+          @include securityLogo('assets/images/logo-pci.png');
+          font-size: 0;
+        }
+      }
+    }
+  }
+}

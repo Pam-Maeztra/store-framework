@@ -1,0 +1,53 @@
+.headingLevel3 {
+  &--mz-main-lancamento {
+    &__text {
+      &--title {
+        margin: 0;
+        font-size: 32px;
+        font-weight: $bold;
+        color: $color-2;
+
+        @include mobile {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+.paragraph {
+  &--mz-main-lancamento {
+    &__text {
+      &--text {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: $regular;
+        color: $text-color-1;
+        margin: 21px 0 33px;
+
+        @include mobile {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+
+      &--button {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.link {
+  &--mz-main-lancamento {
+    &__text {
+      text-decoration: none;
+
+      &--button {
+        @include mainButton(16px, 213px, 42px) display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.flex {
+  &Row {
+    &--mz-footer-menu,
+    &--mz-footer-logos,
+    &--mz-footer-content {
+      background-color: $color-1;
+      padding: 20px 0;
+
+      :global(.vtex-store-components-3-x-container) {
+        height: 100%;
+      }
+    }
+
+    &--mz-footer-logos {
+      @include desktop {
+        border-top: 1px solid $color-3;
+      }
+
+      @include mobile {
+        padding-top: 0;
+      }
+    }
+
+    &--mz-footer-credits {
+      padding: 7px 0;
+      background-color: $color-3;
+
+      @include mobile {
+        padding-bottom: 80px;
+      }
+    }
+
+    &--mz-footer-menu {
+      &__atendimento {
+        &--block {
+          &:last-child {
+            margin-top: 20px;
+
+            @include mobile {
+              margin-top: 0;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    &Content {
+      &--mz-footer-menu,
+      &--mz-footer-logos,
+      &--mz-footer-credits {
+        @extend %container;
+        height: 100%;
+      }
+
+      &--mz-footer-menu {
+        &__atendimento {
+          &--block {
+            flex-direction: column;
+
+            :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+              width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &Col {
+    &--mz-footer-developed {
+      flex-direction: row;
+      justify-content: center;
+
+      @include mobile {
+        justify-content: flex-start;
+      }
+    }
+
+    &Child {
+      &--mz-footer-developed {
+        margin-right: 30px;
+      }
+    }
+  }
+}

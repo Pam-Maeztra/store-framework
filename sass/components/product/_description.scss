@@ -1,0 +1,22 @@
+.productDescriptionTitle {
+  &--mz-product {
+    &__description {
+      &--text {
+        display: none;
+      }
+    }
+  }
+}
+
+.productDescriptionText {
+  &--mz-product {
+    &__description {
+      &--text {
+        font-size: 14px;
+        font-weight: $regular;
+        line-height: 24px;
+        color: $text-color-1;
+      }
+    }
+  }
+}

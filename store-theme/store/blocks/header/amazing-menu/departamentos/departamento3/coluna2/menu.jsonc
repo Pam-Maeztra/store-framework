@@ -1,0 +1,168 @@
+{
+  "experimental__visibility-layout#menu-dep3-col2": {
+    "title": "Menu (on/off)",
+    "props": {
+      "visible": true
+    },
+    "children": ["flex-layout.col#menu-dep3-col2"]
+  },
+  "flex-layout.col#menu-dep3-col2": {
+    "props": {
+      "blockClass": [
+        "amazing-menu-menu",
+        "amazing-menu-column",
+        "amazing-menu-column-second"
+      ]
+    },
+    "children": [
+      "rich-text#menu-dep3-col2",
+      "vtex.menu@2.x:menu#menu-dep3-col2"
+    ]
+  },
+  "rich-text#menu-dep3-col2": {
+    "title": "Título",
+    "props": {
+      "blockClass": ["amazing-menu-title"],
+      "text": "Categoria"
+    }
+  },
+  "vtex.menu@2.x:menu#menu-dep3-col2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "amazing-menu-menu",
+        "amazing-menu-column",
+        "amazing-menu-column-second"
+      ],
+      "title": {
+        "itemProps": {
+          "text": ""
+        },
+        "type": "custom"
+      },
+      "items": [
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sub Categoria",
+            "text": "Sub Categoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sub Categoria",
+            "text": "Sub Categoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sub Categoria",
+            "text": "Sub Categoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sub Categoria",
+            "text": "Sub Categoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sub Categoria",
+            "text": "Sub Categoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sub Categoria",
+            "text": "Sub Categoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sub Categoria",
+            "text": "Sub Categoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sub Categoria",
+            "text": "Sub Categoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sub Categoria",
+            "text": "Sub Categoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sub Categoria",
+            "text": "Sub Categoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sub Categoria",
+            "text": "Sub Categoria"
+          }
+        }
+      ]
+    }
+  }
+}

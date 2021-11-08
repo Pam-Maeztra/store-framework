@@ -1,0 +1,42 @@
+{
+  // HOME - SHELF 2 - MAIS VENDIDOS
+  "list-context.product-list#shelf-1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#mz-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    },
+    "title": "Produtos Vitrine 1"
+  },
+
+  // HOME - SHELF 2 - ACABOU DE CHEGAR
+  "list-context.product-list#shelf-2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#mz-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "",
+      "category": "",
+      "hideUnavailableItems": false,
+      "maxItems": 10
+    },
+    "title": "Produtos Vitrine 1"
+  },
+
+  "slider-layout#mz-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "mz-home__mz-shelf"
+    }
+  }
+}

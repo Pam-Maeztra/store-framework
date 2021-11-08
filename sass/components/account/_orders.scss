@@ -1,0 +1,110 @@
+:global(.vtex-my-orders-app-3-x-orderCard) {
+  border-radius: 8px;
+  border-color: $color-gray-600;
+
+  :global(.vtex-my-orders-app-3-x-orderHeader) {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    :global(.vtex-my-orders-app-3-x-orderHeaderLabel),
+    :global(.vtex-my-orders-app-3-x-orderId) {
+      font-size: 16px;
+      font-weight: $medium;
+      color: $text-color-1;
+      text-transform: none;
+
+      @include mobile {
+        text-align: left;
+      }
+    }
+
+    :global(.vtex-my-orders-app-3-x-orderHeaderValue) {
+      font-size: 16px;
+      font-weight: $regular;
+      color: $text-color-1;
+
+      @include mobile {
+        text-align: left;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  :global(.vtex-my-orders-app-3-x-orderBody) {
+    :global(.vtex-my-orders-app-3-x-orderProduct) {
+      :global(.vtex-my-orders-app-3-x-orderProductName) {
+        font-size: 16px;
+        font-weight: $medium;
+        color: black;
+
+        &:hover {
+          text-decoration: underline;
+          color: black;
+        }
+      }
+
+      :global(.vtex-my-orders-app-3-x-orderProductShipping) {
+        font-size: 16px;
+        font-weight: $regular;
+        color: $text-color-1;
+        margin-bottom: 5px;
+      }
+
+      :global(.vtex-my-orders-app-3-x-orderProductQuantityValue) {
+        font-size: 16px;
+        font-weight: $regular;
+        color: $color-1;
+      }
+    }
+
+    :global(.vtex-my-orders-app-3-x-reorderBtn) {
+      display: none;
+    }
+
+    :global(.vtex-my-orders-app-3-x-cancelBtn) {
+      margin: 0 auto;
+      color: $color-3;
+      font-size: 16px;
+      font-weight: $regular;
+      display: flex;
+      justify-content: center;
+
+      :global(.vtex-my-orders-app-3-x-font) {
+        font-family: $main-font;
+      }
+
+      svg {
+        fill: $color-3;
+      }
+    }
+
+    :global(.vtex-my-orders-app-3-x-detailsBtn) {
+      @include secundaryButton(16px, 214px, 42px, $color-1, $color-1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem auto 0;
+    }
+  }
+}
+
+// Detalhes do pedido
+:global(.vtex-account__order-details) {
+  svg {
+    fill: $color-1;
+  }
+}
+
+:global(.vtex-my-orders-app-3-x-productName) {
+  font-size: 16px;
+  font-weight: $medium;
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: black;
+  }
+}

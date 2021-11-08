@@ -1,0 +1,37 @@
+.styledLinkContainer {
+  &--mz-footer-logos {
+    &--payment-methods {
+      &--menu {
+        &__mastercard,
+        &__diners,
+        &__boleto {
+          padding: 0;
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.styledLinkContent {
+  &--mz-footer-logos {
+    &--payment-methods {
+      &--menu {
+        &__mastercard {
+          @include paymentLogo('assets/svg/bnd-mastercard.svg');
+          font-size: 0;
+        }
+
+        &__diners {
+          @include paymentLogo('assets/svg/bnd-diners.svg');
+          font-size: 0;
+        }
+
+        &__boleto {
+          @include paymentLogo('assets/svg/bnd-boleto.svg');
+          font-size: 0;
+        }
+      }
+    }
+  }
+}

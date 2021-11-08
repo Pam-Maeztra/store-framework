@@ -1,0 +1,76 @@
+.shippingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+
+  :global(.vtex-address-form__postalCode) {
+    width: 75%;
+    padding: 0;
+    position: relative;
+
+    :global(.vtex-input) {
+      :global(.vtex-input__label) {
+        font-size: 0;
+        font-weight: $bold;
+        color: $text-color-2;
+        margin-bottom: 11px;
+
+        &::before {
+          content: 'Calcule o valor e o prazo de entrega';
+          font-size: 12px;
+        }
+      }
+
+      :global(.vtex-input-prefix__group) {
+        border: none;
+
+        :global(.vtex-address-form-4-x-input) {
+          background: transparent;
+          border: 1px solid $color-1;
+          border-radius: 50px;
+          font-size: 12px;
+          font-weight: $regular;
+          color: $text-color-1;
+        }
+
+        :global(.vtex-address-form-4-x-input) {
+          background-image: url('assets/svg/mpa-frete.svg');
+          background-position: center left 20px;
+          background-repeat: no-repeat;
+          padding-left: 55px;
+        }
+      }
+    }
+  }
+
+  :global(.vtex-button) {
+    width: 80px;
+    height: 35px;
+    border: 1px solid $color-1;
+    border-radius: 50px;
+    background: transparent !important;
+    margin-top: 0;
+
+    &:hover {
+      background: $color-3;
+      color: white;
+    }
+
+    :global(.vtex-button__label) {
+      font-size: 0;
+      font-weight: $bold;
+      color: $color-1;
+      text-transform: none;
+
+      &::before {
+        content: 'Calcular';
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.shippingTable {
+  margin-bottom: 15px;
+}

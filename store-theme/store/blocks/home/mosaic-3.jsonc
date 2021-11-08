@@ -1,0 +1,43 @@
+{
+  "flex-layout.row#mz-mosaic-3": {
+    "props": {
+      "blockClass": ["mz-main-mosaic__final-banners"]
+    },
+    "children": [
+      "info-card#home-mosaic-3-banner-1",
+      "info-card#home-mosaic-3-banner-2"
+    ],
+    "title": "Mosaico Destaques"
+  },
+
+  "info-card#home-mosaic-3-banner-1": {
+    "props": {
+      "id": "mz-mosaic__banner",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://mundoinfantil.vteximg.com.br/arquivos/home-banner-final-1.jpg",
+      "callToActionText": "Mundo Infantil",
+      "callToActionUrl": "/#",
+      "callToActionMode": "link",
+      "imageActionUrl": "/#",
+      "blockClass": "mosaic",
+      "textAlignment": "center"
+    },
+    "title": "Banner 1"
+  },
+  "info-card#home-mosaic-3-banner-2": {
+    "props": {
+      "id": "mz-mosaic__banner",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://mundoinfantil.vteximg.com.br/arquivos/home-banner-final-2.jpg",
+      "callToActionText": "Mundo Infantil",
+      "callToActionUrl": "/#",
+      "callToActionMode": "link",
+      "imageActionUrl": "/#",
+      "blockClass": "mosaic",
+      "textAlignment": "center"
+    },
+    "title": "Banner 2"
+  }
+}

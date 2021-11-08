@@ -1,0 +1,68 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-4-desktop",
+      "flex-layout.row#footer-5-desktop"
+    ]
+  },
+
+  "flex-layout.row#footer-1-desktop": {
+    "children": ["rich-text#newsletter-title", "newsletter-form"],
+    "props": {
+      "blockClass": "mz-footer-newsletter"
+    }
+  },
+
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "flex-layout.col#1-footer-seo",
+      "flex-layout.col#2-footer-seo"
+    ],
+    "props": {
+      "blockClass": "mz-footer-seo"
+    }
+  },
+
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-institucional",
+      "vtex.menu@2.x:menu#footer-ajuda-suporte",
+      "vtex.menu@2.x:menu#footer-minha-conta",
+      "vtex.menu@2.x:menu#footer-atedimento"
+    ],
+    "props": {
+      "blockClass": "mz-footer-menu"
+    }
+  },
+
+  "flex-layout.row#footer-4-desktop": {
+    "children": [
+      "flex-layout.col#1-footer-payment",
+      "flex-layout.col#2-footer-selos",
+      "flex-layout.col#3-footer-developed"
+    ],
+    "props": {
+      "blockClass": "mz-footer-logos"
+    }
+  },
+
+  "flex-layout.row#footer-5-desktop": {
+    "children": ["rich-text#footer-credits"],
+    "props": {
+      "blockClass": "mz-footer-credits"
+    }
+  },
+  "rich-text#footer-credits": {
+    "props": {
+      "blockClass": "mz-footer-credits__text",
+      "text": "LOREMIPSUM LTDA - ME - CNPJ: 20.315.9000/0001-68 © Todos os direitos reservados. 2018 -LOREMIPSUM LTDA - ME - CNPJ: 20.315.9000/0001-68 © Todos os direitos reservados. 2018"
+    },
+    "title": "Créditos Rodapé"
+  }
+}

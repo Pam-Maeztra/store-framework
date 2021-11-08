@@ -1,0 +1,25 @@
+{
+  "flex-layout.row#mz-main-shelf-2": {
+    "props": {
+      "blockClass": "mz-main-shelf"
+    },
+    "children": [
+      "rich-text#mz-shelf-2-title",
+      "flex-layout.row#mz-shelf-2-products"
+    ],
+    "title": "Vitrine de produtos 2"
+  },
+
+  "rich-text#mz-shelf-2-title": {
+    "props": {
+      "text": "## Acabou de Chegar",
+      "blockClass": "mz-main-shelf__text"
+    },
+    "title": "Título - Vitrine de produtos 2"
+  },
+
+  "flex-layout.row#mz-shelf-2-products": {
+    "children": ["list-context.product-list#shelf-2"],
+    "title": "Vitrine 2"
+  }
+}

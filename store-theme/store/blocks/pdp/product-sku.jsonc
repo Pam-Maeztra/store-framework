@@ -1,0 +1,11 @@
+{
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 0,
+      "showValueNameForImageVariation": true,
+      "imageWidth": "53px",
+      "imageHeight": "53px",
+      "blockClass": "mz-product__sku"
+    }
+  }
+}

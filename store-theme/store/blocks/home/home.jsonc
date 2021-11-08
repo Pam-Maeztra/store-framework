@@ -1,0 +1,20 @@
+{
+  "store.home": {
+    "blocks": [
+      "__fold__.experimentalLazyAssets",
+      "list-context.image-list#mz-main-banner",
+      "flex-layout.row#mz-deals",
+      "flex-layout.row#mz-main-categories",
+      "flex-layout.row#mz-main-shelf-1",
+      "flex-layout.row#mz-lancamento",
+      "flex-layout.row#mz-mosaic-1",
+      "flex-layout.row#mz-main-shelf-2",
+      "flex-layout.row#mz-mosaic-2",
+      "flex-layout.row#mz-mosaic-3",
+      "list-context.image-list#mz-brands"
+    ],
+    "children": [
+      "modal-trigger#mz-newsletter"
+    ]
+  }
+}

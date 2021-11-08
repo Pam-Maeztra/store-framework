@@ -1,0 +1,121 @@
+.styledLink {
+  &Container {
+    &--amazing-menu-menu {
+      padding: 0;
+      margin: 0;
+    }
+
+    &--amazing-menu-department {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+  }
+
+  &Content {
+    &--amazing-menu-menu {
+      font-weight: normal;
+      font-size: 12px;
+      color: $text-color-1;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $color-1;
+      }
+    }
+
+    &--amazing-menu-department {
+      align-items: center;
+      font-weight: $bold;
+      font-size: 14px;
+      line-height: 14px;
+      color: $color-white;
+      transition: color 0.2s;
+      white-space: normal;
+      height: 100%;
+      justify-content: space-around;
+      padding: 0 20px;
+    }
+
+    &--amazing-menu-alldepts {
+      color: $color-white;
+    }
+  }
+
+  &Icon {
+    &--amazing-menu-department {
+      color: $color-white;
+      transition: color 0.2s;
+      width: 32px;
+      height: 20px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.submenu {
+  &--amazing-menu-department-submenu {
+    flex-direction: column;
+  }
+
+  &Wrapper {
+    &--amazing-menu-department-submenu {
+      @extend %container;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      background: $color-white;
+      border: none;
+      box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.menu {
+  &Container {
+    &--amazing-menu-wrapper {
+      justify-content: space-between;
+      min-width: $xl;
+      height: 42px;
+      padding: 5px 0 0;
+      box-sizing: border-box;
+    }
+  }
+
+  &Item {
+    &--amazing-menu-menu {
+      padding-bottom: 10px;
+    }
+
+    &--amazing-menu-department {
+      transition: background 0.2s;
+      background: transparent;
+      width: auto;
+      white-space: normal;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        .styledLinkContent {
+          &--amazing-menu-department {
+            color: $color-white;
+            border-radius: 50px;
+            background: $color-2;
+          }
+
+          &--amazing-menu-alldepts {
+            color: $color-white;
+          }
+        }
+
+        .styledLinkIcon--amazing-menu-alldepts {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

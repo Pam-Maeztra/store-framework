@@ -1,0 +1,26 @@
+{
+  "disclosure-layout#description": {
+    "children": [
+      "disclosure-trigger#product-main-description",
+      "disclosure-content#product-main-description"
+    ]
+  },
+  "disclosure-trigger#product-main-description": {
+    "children": ["rich-text#product-main-description-title"]
+  },
+  "rich-text#product-main-description-title": {
+    "props": {
+      "blockClass": "mz-product__description--title",
+      "text": "#### Descrição"
+    }
+  },
+  "disclosure-content#product-main-description": {
+    "children": ["product-description"]
+  },
+  "product-description": {
+    "props": {
+      "blockClass": "mz-product__description--text",
+      "collapseContent": false
+    }
+  }
+}

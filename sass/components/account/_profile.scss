@@ -1,0 +1,21 @@
+:global(.vtex-my-account-1-x-boxContainer) {
+  border: 1px solid $color-gray-903;
+  border-radius: 8px;
+}
+
+:global(.vtex-my-account-1-x-boxContainerBody) {
+  @include mobile {
+    padding: 2rem 1rem;
+  }
+
+  .newsletterContainerTitle {
+    font-weight: $bold;
+    color: $text-color-2;
+  }
+
+  .newsletterContainerMessage,
+  :global(.vtex-checkbox__label) {
+    font-weight: $regular;
+    color: $text-color-1;
+  }
+}

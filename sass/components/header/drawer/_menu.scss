@@ -1,0 +1,134 @@
+.styled {
+  &Link {
+    &Container {
+      &--mz-main {
+        &__menu {
+          &--title {
+            padding: 1rem;
+            margin: 0;
+            border-bottom: 1px solid $color-gray-600;
+          }
+
+          &--item {
+            padding: 8px 0;
+            margin: 0 1rem;
+          }
+        }
+      }
+
+      &--mz-drawer {
+        &__secundary-links {
+          &--item {
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+        }
+      }
+    }
+
+    &--mz-main {
+      &__menu {
+        &--title {
+          &--highlight {
+            :global(.vtex-menu-2-x-styledLinkContent) {
+              color: $color-2;
+            }
+          }
+        }
+
+        &--item {
+          &--highlight {
+            :global(.vtex-menu-2-x-styledLinkContent) {
+              color: $color-1;
+            }
+          }
+        }
+      }
+    }
+
+    &--mz-drawer {
+      &__secundary-links {
+        &--item {
+          font-size: 12px;
+          font-weight: $bold;
+          color: $text-color-2;
+        }
+      }
+    }
+
+    &Content {
+      &--mz-main {
+        &__menu {
+          &--title {
+            font-size: 14px;
+            font-weight: $bold;
+            color: $color-1;
+          }
+
+          &--item {
+            font-size: 16px;
+            font-weight: $semi-bold;
+            color: $text-color-1;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='7' height='11' viewBox='0 0 7 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cmask id='path-1-inside-1' fill='white'%3e%3cpath d='M1.0791 10.9932L6.23535 5.83691L6.55762 5.5L6.23535 5.16309L1.0791 0.00683594L0.405273 0.680664L5.22461 5.5L0.405273 10.3193L1.0791 10.9932Z'/%3e%3c/mask%3e%3cpath d='M1.0791 10.9932L6.23535 5.83691L6.55762 5.5L6.23535 5.16309L1.0791 0.00683594L0.405273 0.680664L5.22461 5.5L0.405273 10.3193L1.0791 10.9932Z' fill='%23555555'/%3e%3cpath d='M1.0791 10.9932L0.371995 11.7003L1.0791 12.4074L1.78621 11.7003L1.0791 10.9932ZM6.23535 5.83691L6.94246 6.54402L6.95031 6.53617L6.95799 6.52814L6.23535 5.83691ZM6.55762 5.5L7.28026 6.19122L7.94143 5.5L7.28026 4.80878L6.55762 5.5ZM6.23535 5.16309L6.95799 4.47186L6.95031 4.46383L6.94246 4.45598L6.23535 5.16309ZM1.0791 0.00683594L1.78621 -0.700271L1.0791 -1.40738L0.371995 -0.700271L1.0791 0.00683594ZM0.405273 0.680664L-0.301833 -0.0264425L-1.00894 0.680664L-0.301833 1.38777L0.405273 0.680664ZM5.22461 5.5L5.93172 6.20711L6.63882 5.5L5.93172 4.79289L5.22461 5.5ZM0.405273 10.3193L-0.301833 9.61223L-1.00894 10.3193L-0.301833 11.0264L0.405273 10.3193ZM1.78621 11.7003L6.94246 6.54402L5.52824 5.12981L0.371995 10.2861L1.78621 11.7003ZM6.95799 6.52814L7.28026 6.19122L5.83498 4.80878L5.51271 5.14569L6.95799 6.52814ZM7.28026 4.80878L6.95799 4.47186L5.51271 5.85431L5.83498 6.19122L7.28026 4.80878ZM6.94246 4.45598L1.78621 -0.700271L0.371995 0.713943L5.52824 5.87019L6.94246 4.45598ZM0.371995 -0.700271L-0.301833 -0.0264425L1.11238 1.38777L1.78621 0.713943L0.371995 -0.700271ZM-0.301833 1.38777L4.5175 6.20711L5.93172 4.79289L1.11238 -0.0264425L-0.301833 1.38777ZM4.5175 4.79289L-0.301833 9.61223L1.11238 11.0264L5.93172 6.20711L4.5175 4.79289ZM-0.301833 11.0264L0.371995 11.7003L1.78621 10.2861L1.11238 9.61223L-0.301833 11.0264Z' fill='%23F36E21' mask='url(%23path-1-inside-1)'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: center right;
+          }
+        }
+      }
+
+      &--mz-drawer {
+        &__secundary-links {
+          &--item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+          }
+        }
+      }
+    }
+
+    &Icon {
+      &--mz-drawer {
+        &__secundary-links {
+          &--item {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.accordion {
+  &Icon {
+    &--mz-main {
+      &__menu {
+        &--title {
+          font-size: 24px;
+          line-height: 15px;
+          color: $color-1;
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  &Item {
+    &--mz-main {
+      &__menu {
+        &--title {
+          :global(.vtex-menu-2-x-submenuAccordion) {
+            background: $color-gray-905;
+            padding: 18px;
+
+            :global(.vtex-flex-layout-0-x-flexRow) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

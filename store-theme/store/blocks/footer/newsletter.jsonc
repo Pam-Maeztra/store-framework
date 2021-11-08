@@ -1,0 +1,22 @@
+{
+  "rich-text#newsletter-title": {
+    "props": {
+      "blockClass": "mz-footer-newsletter__text",
+      "text": "Fique por dentro de nossas novidades e promoções em primeira mão"
+    },
+    "title": "Título da newsletter"
+  },
+  "newsletter-form": {
+    "children": ["newsletter-input-email", "newsletter-submit"]
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Digite seu e-mail"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "Enviar"
+    }
+  }
+}

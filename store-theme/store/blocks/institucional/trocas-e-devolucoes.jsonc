@@ -1,0 +1,48 @@
+{
+  "store.custom#institucional": {
+    "blocks": ["flex-layout.row#institucional"]
+  },
+  "flex-layout.row#institucional": {
+    "props": {
+      "blockClass": "mz-institucional"
+    },
+    "children": [
+      "rich-text#title-institucional",
+      "rich-text#content-institucional-1",
+      "rich-text#content-institucional-2",
+      "rich-text#content-institucional-3"
+    ]
+  },
+
+  "rich-text#title-institucional": {
+    "props": {
+      "blockClass": "mz-institucional__title",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "# Trocas e Devoluções"
+    },
+    "title": "Título institucional"
+  },
+
+  "rich-text#content-institucional-1": {
+    "props": {
+      "blockClass": "mz-institucional__content",
+      "text": "## Cancelamento \n Comprou um produto, não gostou, o período de troca é em até sete dias corridos, o produto devera ser entregue da mesma maneira que você recebeu. \n\n Para troca entre em contato com o nosso sac. \n\n Pedidos fora desse prazo de sete dias não serão trocados. \n\n “O direito de arrependimento está expressamente previsto no Código de Defesa do Consumidor em seu artigo 49, e foi reforçado pelo Decreto 7.962/2013, conhecido como Lei do E-commerce, no qual o legislador foi além e trouxe, inclusive, inovações nesse sentido. O referido artigo do CDC, Lei nº 8.078 de 11 de setembro de 1990, determina: Art. 49. O consumidor pode desistir do contrato, no prazo de 7 dias a contar de sua assinatura ou do ato de recebimento do produto ou serviço, sempre que a contratação de fornecimento de produtos e serviços ocorrer fora do estabelecimento comercial, especialmente por telefone ou a domicílio”."
+    },
+    "title": "Conteúdo institucional - Bloco 1"
+  },
+  "rich-text#content-institucional-2": {
+    "props": {
+      "blockClass": "mz-institucional__content",
+      "text": "## Troca de itens por defeito \n Informamos que, todos os produtos passam por uma aprovação da ANVISA para comercialização e vistoria antes do envio, e o cliente é segurado no direito de troca do produto no caso de DEFEITO DE FABRICAÇÃO. \n\n Para solicitar a troca de um produto entre em contato com nossa Central de Atendimento SAC, informando o número do pedido, a data da compra, fotos com defeito do produto e a referência do item que será devolvido, realizando este procedimento imediatamente após o recebimento de seu pedido. \n\n Após a análise e constatação de que o produto foi entregue com defeito, a Miss Rôse arcará com as despesas de recolhimento/postagem do produto para análise e reenvio de um novo produto em perfeito estado para o cliente (caso esteja disponível em estoque). O cliente também pode optar em receber: \n\n · Vale compras no valor do item \n\n · Troca por outro item do mesmo valor \n\n · Ressarcimento do dinheiro \n\n · Produto ultrapassa o valor da compra, será comparado a diferença de valores entre os produtos, o cliente poderá optar pelo pagamento da diferença. \n\n *EM CASO DE QUEBRA POR CONTA DO CLIENTE, APÓS ENVIO AO SETOR DE TESTE E IDENTIFICADO, A MISS RÔSE NÃO SE RESPONSABILIZARÁ! *"
+    },
+    "title": "Conteúdo institucional - Bloco 2"
+  },
+  "rich-text#content-institucional-3": {
+    "props": {
+      "blockClass": "mz-institucional__content",
+      "text": "## Pedidos incompletos \n Senhores clientes, é imprescindível conferir a mercadoria na presença entregador, verificando se os produtos estão em perfeito estado e se as quantidades dos produtos escolhidos estão corretas. \n\n Em caso de falta de peças ou inconformidade no pedido é necessário tomar as seguintes providências: \n\n · Anotar no verso da nota fiscal: os itens faltantes, nome e RG do motorista e a placa do veículo. \n\n · Assinar e informar o CPF do recebedor da mercadoria, no verso da nota fiscal. \n\n · Entrar em contato com um de nossos canais de atendimento, para informar o ocorrido. \n\n Trabalhamos com diversos métodos e tecnologias para que não haja erros na conferência e envios dos pedidos, mas infelizmente eles podem ocorrer. Caso você receba seu pedido incorreto (faltando algum item ou produtos trocados), você tem 7 dias úteis para entrar em contato conosco. Entre em contato com nossa Central de Atendimento e no assunto insira a opção Pedido Incompleto. Informe o número do pedido e descreva a ocorrência, nossa central irá retornar por e-mail ou telefone para resolver sua solicitação. \n\n A sua reclamação somente será aceita se houver a conferência da mercadoria seja feita no ato da entrega, conforme rege o Art.754 do Código Civil."
+    },
+    "title": "Conteúdo institucional - Bloco 3"
+  }
+}

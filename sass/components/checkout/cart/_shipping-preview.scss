@@ -1,0 +1,102 @@
+.cart-template {
+  .summary-template-holder {
+    .cart-more-options {
+      margin: 0;
+
+      #shipping-preview-container {
+        @include mobile {
+          max-width: 100%;
+          padding: 0 1rem;
+          margin: 24px 0;
+        }
+
+        .srp-main-title {
+          font-size: 18px;
+          font-weight: $bold;
+          color: $color-1;
+        }
+
+        .srp-description {
+          font-size: 14px;
+          line-height: 22px;
+          font-weight: $regular;
+          color: $text-color-2;
+        }
+
+        #shipping-calculate-link {
+          @include secundaryButton(0, 161px, 34px, $color-1, $color-3);
+          line-height: 16px;
+
+          &:before {
+            font-size: 14px;
+            content: 'Calcule o frete';
+          }
+        }
+
+        .srp-postal-code__form {
+          width: 100%;
+
+          .vtex-shipping-preview-0-x-postalCodeForgotten {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .ship-postalCode {
+              width: 75%;
+
+              #ship-postalCode {
+                background: transparent;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid $text-color-1;
+                box-shadow: none;
+                border-radius: 0;
+                font-size: 14px;
+                font-weight: $regular;
+                color: $text-color-1;
+                font-family: $main-font;
+
+                &:placeholder {
+                  color: $text-color-1;
+                }
+              }
+
+              a {
+                color: $text-color-1;
+              }
+            }
+
+            #cart-shipping-calculate {
+              background: transparent;
+              border-color: $color-1;
+              border-radius: 30px;
+              color: $color-1;
+              font-family: $main-font;
+              font-size: 14px;
+              font-weight: $bold;
+              text-transform: none;
+              text-shadow: none;
+
+              &:hover {
+                background: $color-1;
+                color: white;
+              }
+            }
+          }
+        }
+
+        .srp-result {
+          .srp-address-title {
+            color: $text-color-1;
+          }
+
+          .srp-icon-radio-selected {
+            path {
+              fill: $color-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

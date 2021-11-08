@@ -1,0 +1,51 @@
+.trigger {
+  background: $color-gray-904;
+  border: none;
+  cursor: pointer;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &--hidden {
+    margin-bottom: 8px;
+
+    &::after {
+      content: '+';
+      font-size: 20px;
+    }
+  }
+
+  &--visible {
+    &::after {
+      content: '-';
+      font-size: 20px;
+    }
+  }
+
+  @include desktop {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mobile {
+    padding: 20px 17px;
+  }
+}
+
+.content {
+  background: $color-gray-904;
+  padding: 0 50px 20px;
+  margin-bottom: 8px;
+
+  @include desktop {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mobile {
+    padding: 0 17px 20px;
+  }
+}

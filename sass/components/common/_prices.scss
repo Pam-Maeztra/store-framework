@@ -1,0 +1,103 @@
+.listPrice {
+  &--mz-product {
+    &__prices {
+      font-size: 12px;
+      font-weight: $regular;
+      color: $text-color-1;
+      margin-right: 8px;
+      margin-top: 5px;
+
+      &::before {
+        content: 'de: ';
+      }
+
+      @include mobile {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.sellingPrice {
+  &--mz-product {
+    &__prices {
+      font-size: 18px;
+      font-weight: $bold;
+      color: $color-1;
+
+      &::before {
+        content: 'por: ';
+      }
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.installments {
+  &--mz-product {
+    &__prices {
+      margin: 0 25px;
+      font-size: 14px;
+      font-weight: $regular;
+      color: $text-color-1;
+      text-align: left;
+
+      @include mobile {
+        font-size: 12px;
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+}
+
+.installmentsNumber,
+.installmentValue {
+  &--mz-product {
+    &__prices {
+      color: $text-color-2;
+      font-weight: $bold;
+    }
+  }
+}
+
+.savings {
+  &--mz-product {
+    &__percentage {
+      background: $color-2;
+      font-size: 12px;
+      font-weight: $bold;
+      color: white;
+      display: flex;
+      align-items: center;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      justify-content: center;
+      position: absolute;
+      right: 25px;
+      top: 10px;
+
+      @include mobile {
+        width: 30px;
+        height: 21px;
+        font-size: 10px;
+        border-radius: 50px;
+        right: 5px;
+        top: 5px;
+      }
+    }
+  }
+
+  &Percentage {
+    &--mz-product {
+      &__percentage {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

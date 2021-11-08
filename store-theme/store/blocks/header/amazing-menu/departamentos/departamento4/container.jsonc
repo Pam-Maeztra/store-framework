@@ -1,0 +1,50 @@
+{
+  "menu-item#dep4": {
+    "props": {
+      "blockClass": ["amazing-menu-department"],
+      "id": "menu-item-dep4",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "Acessórios",
+        "type": "internal",
+        "href": "/acessorios",
+        "noFollow": false
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dep4"]
+  },
+  "vtex.menu@2.x:submenu#dep4": {
+    "props": {
+      "blockClass": ["amazing-menu-department-submenu"],
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-dep4"]
+  },
+  "flex-layout.row#menu-dep4": {
+    "props": {
+      "blockClass": ["amazing-menu-department-block"],
+      "colSizing": "auto",
+      "fullWidth": true,
+      "width": "100%",
+      "experimentalHideEmptyCols": true
+    },
+    "children": [
+      // Categoria 4 Coluna 1
+      "experimental__visibility-layout#menu-dep4-col1",
+      "experimental__visibility-layout#banner-dep4-col1",
+
+      // Categoria 4 Coluna 2
+      "experimental__visibility-layout#menu-dep4-col2",
+      "experimental__visibility-layout#banner-dep4-col2",
+
+      // Categoria 4 Coluna 3
+      "experimental__visibility-layout#menu-dep4-col3",
+      "experimental__visibility-layout#banner-dep4-col3",
+
+      // Categoria 4 Coluna 4
+      "experimental__visibility-layout#menu-dep4-col4",
+      "experimental__visibility-layout#banner-dep4-col4"
+    ]
+  }
+}

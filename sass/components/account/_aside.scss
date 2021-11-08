@@ -1,0 +1,45 @@
+:global(.vtex-my-account-1-x-menu) {
+  padding: 0;
+
+  @include mobile {
+    padding: 2rem;
+  }
+
+  :global(.vtex-my-account-1-x-userInfo) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    :global(.vtex-my-account-1-x-userImage) {
+      width: 129px;
+      height: 129px;
+      margin-bottom: 20px;
+    }
+
+    :global(.vtex-my-account-1-x-userGreeting),
+    :global(.vtex-my-account-1-x-userName) {
+      font-size: 18px;
+      font-weight: $bold;
+      color: $color-1;
+    }
+  }
+
+  :global(.vtex-my-account-1-x-menuLinks) {
+    :global(.vtex-account_menu-link) {
+      color: $text-color-1;
+      font-size: 16px;
+      font-weight: $regular;
+
+      &:global(.c-on-base) {
+        font-weight: $bold;
+        color: $color-1;
+        border-left: 3px solid $color-1;
+      }
+    }
+  }
+
+  :global(.vtex-my-account-1-x-menuLink) {
+    color: $text-color-1;
+    font-size: 16px;
+    font-weight: $regular;
+  }
+}

@@ -1,0 +1,9 @@
+@import 'variables/_all';
+
+// COMMON
+@import 'extends/container';
+@import 'extends/arrows';
+@import 'mixins/responsive';
+
+// HOME
+@import 'components/common/slider';

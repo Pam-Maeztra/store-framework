@@ -1,0 +1,59 @@
+{
+  "flex-layout.row#mz-lancamento": {
+    "props": {
+      "blockClass": "mz-main-lancamento"
+    },
+    "children": [
+      "flex-layout.col#mz-lancamento-image",
+      "flex-layout.col#mz-lancamento-text"
+    ],
+    "title": "Seção Lançamento/Destaque"
+  },
+
+  "flex-layout.col#mz-lancamento-image": {
+    "props": {
+      "blockClass": "mz-main-lancamento__image"
+    },
+    "children": ["image#mz-lancamento-img"],
+    "title": "Imagem Seção Lançamento/Destaque"
+  },
+  "image#mz-lancamento-img": {
+    "props": {
+      "src": "https://mundoinfantil.vteximg.com.br/arquivos/home-banner-lancamento.jpg",
+      "maxHeight": "420px"
+    }
+  },
+
+  "flex-layout.col#mz-lancamento-text": {
+    "props": {
+      "blockClass": "mz-main-lancamento__text"
+    },
+    "children": [
+      "rich-text#lancamento-title",
+      "rich-text#lancamento-text",
+      "rich-text#lancamento-button"
+    ],
+    "title": "Textos Seção Lançamento/Destaque"
+  },
+  "rich-text#lancamento-title": {
+    "props": {
+      "blockClass": "mz-main-lancamento__text--title",
+      "text": "### Mundo Infantil"
+    },
+    "title": "Título Lançamento/Destaque"
+  },
+  "rich-text#lancamento-text": {
+    "props": {
+      "blockClass": "mz-main-lancamento__text--text",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "title": "Texto Lançamento/Destaque"
+  },
+  "rich-text#lancamento-button": {
+    "props": {
+      "blockClass": "mz-main-lancamento__text--button",
+      "text": "[Saiba mais](#)"
+    },
+    "title": "Botão Lançamento/Destaque"
+  }
+}

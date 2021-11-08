@@ -1,0 +1,65 @@
+@import '../../extends/container';
+
+:global(.vtex-account) {
+  @extend %container;
+
+  // Textos dos campos
+  .dataEntryLabel {
+    font-weight: $bold;
+    color: $text-color-2;
+  }
+
+  .dataEntryChildren {
+    font-weight: $regular;
+    color: $text-color-1;
+  }
+
+  // Botões
+  :global(.vtex-button) {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    color: $color-6;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: $bold;
+    font-family: $main-font;
+    text-decoration: underline;
+
+    &:hover {
+      background: none;
+      text-decoration: none;
+      color: $color-6;
+    }
+
+    @include mobile {
+      :global(.vtex-button__label) {
+        padding: 0;
+      }
+    }
+
+    :global(.t-action--small) {
+      text-transform: none;
+      font-size: 16px;
+    }
+  }
+}
+
+:global(.vtex-account__page) {
+  width: 100%;
+
+  @include mobile {
+    padding: 2rem 1rem;
+  }
+}
+
+:global(.vtex-account__page-body) {
+  padding: 0;
+}
+
+// Main header
+:global(.vtex-login-2-x-profile) {
+  color: $text-color-1;
+  text-decoration: none;
+  text-transform: none;
+}

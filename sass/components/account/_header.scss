@@ -1,0 +1,14 @@
+:global(.vtex-pageHeader__container) {
+  padding: 0;
+  margin-bottom: 60px;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+
+  :global(.vtex-pageHeader__title) {
+    font-size: 21px;
+    font-weight: $bold;
+    color: $text-color-2;
+  }
+}

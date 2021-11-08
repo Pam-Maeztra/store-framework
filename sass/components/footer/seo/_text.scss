@@ -1,0 +1,28 @@
+.heading {
+  &--mz-footer-seo {
+    margin: 0;
+    font-size: 14px;
+    color: $color-white;
+
+    @include mobile {
+      padding: 0 1rem;
+    }
+  }
+}
+
+.paragraph {
+  &--mz-footer-seo {
+    color: $color-white;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: $regular;
+    max-width: 80%;
+    margin: 0;
+
+    @include mobile {
+      max-width: 100%;
+      margin: 10px 0;
+      padding: 0 1rem;
+    }
+  }
+}

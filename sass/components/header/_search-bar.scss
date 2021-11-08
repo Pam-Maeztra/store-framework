@@ -1,0 +1,80 @@
+.searchBarContainer {
+  width: 626px;
+
+  @include desktop {
+    margin: 0 120px;
+  }
+
+  @include mobile {
+    padding-top: 0;
+  }
+
+  &--mz-search-bar {
+    align-items: center;
+  }
+
+  .autoCompleteOuterContainer {
+    :global(.vtex-input-prefix__group) {
+      background: $color-white;
+      border: 1px solid $color-2;
+      border-radius: 50px;
+      position: relative;
+    }
+
+    :global(.vtex-input__prefix),
+    :global(.vtex-input__suffix) {
+      background: transparent;
+      border-radius: 0;
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+      background: transparent;
+      font-size: 14px;
+      font-weight: $regular;
+      color: $text-color-1;
+
+      &::placeholder {
+        color: $text-color-1;
+      }
+    }
+  }
+
+  .resultsList {
+    &--mz-search-bar {
+      box-shadow: 0px 2px 13px rgba(240, 137, 171, 0.5);
+      background: white;
+
+      .resultsItem,
+      .searchTerm,
+      .resultsItemName {
+        color: $text-color-1;
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .resultsItemImage {
+        width: 86px;
+        height: 86px;
+      }
+    }
+  }
+}
+
+.suffixWrapper {
+  &--mz-search-bar {
+    display: none;
+  }
+}
+
+.searchBarIcon {
+  width: 24px;
+  height: 24px;
+  background-image: url('assets/svg/hpa-search.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+
+  .searchIcon {
+    display: none;
+  }
+}

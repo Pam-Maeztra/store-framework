@@ -1,0 +1,50 @@
+{
+  "menu-item#todos-os-departamentos": {
+    "props": {
+      "blockClass": ["amazing-menu-department"],
+      "id": "menu-item-all",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "Todas Categorias",
+        "type": "internal",
+        "href": "#",
+        "noFollow": false
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#all"]
+  },
+  "vtex.menu@2.x:submenu#all": {
+    "props": {
+      "blockClass": ["amazing-menu-department-submenu"],
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-all"]
+  },
+  "flex-layout.row#menu-all": {
+    "props": {
+      "blockClass": ["amazing-menu-department-block"],
+      "colSizing": "auto",
+      "fullWidth": true,
+      "width": "100%",
+      "experimentalHideEmptyCols": true
+    },
+    "children": [
+      // Categoria 1 Coluna 1
+      "experimental__visibility-layout#menu-all-col1",
+      "experimental__visibility-layout#banner-all-col1",
+
+      // Categoria 1 Coluna 2
+      "experimental__visibility-layout#menu-all-col2",
+      "experimental__visibility-layout#banner-all-col2",
+
+      // Categoria 1 Coluna 3
+      "experimental__visibility-layout#menu-all-col3",
+      "experimental__visibility-layout#banner-all-col3",
+
+      // Categoria 1 Coluna 4
+      "experimental__visibility-layout#menu-all-col4",
+      "experimental__visibility-layout#banner-all-col4"
+    ]
+  }
+}

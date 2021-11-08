@@ -1,0 +1,91 @@
+.slider {
+  &Layout {
+    &Container {
+      .sliderArrows {
+        @extend %arrow;
+      }
+
+      &--mz-home__mz-shelf {
+        @extend %container;
+        padding: 0 40px !important;
+
+        @media (max-width: $l) {
+          padding: 0 20px !important;
+        }
+      }
+
+      &--mz-home__slider,
+      &--mz-home__mz-shelf {
+        .sliderRightArrow {
+          right: 10px;
+        }
+
+        .sliderLeftArrow {
+          left: 10px;
+        }
+
+        .pagination {
+          &Dot {
+            background-color: $color-gray-908;
+
+            &--isActive {
+              background-color: $color-1;
+            }
+          }
+
+          &Dots {
+            &Container {
+              bottom: 22px;
+
+              @include mobile {
+                bottom: 11px;
+              }
+            }
+          }
+        }
+      }
+
+      &--mz-home__mz-shelf {
+        @include mobile {
+          .sliderRightArrow {
+            right: -5px;
+          }
+
+          .sliderLeftArrow {
+            left: -5px;
+          }
+        }
+
+        .pagination {
+          &Dots {
+            &Container {
+              bottom: -40px !important;
+            }
+          }
+        }
+      }
+
+      &--mz-home__brands {
+        @extend %container;
+        margin-bottom: 80px;
+
+        @include mobile {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+.slide {
+  &Children {
+    &Container {
+      &--mz-home {
+        &__mz-shelf {
+          padding: 15px 0;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}

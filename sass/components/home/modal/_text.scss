@@ -1,0 +1,37 @@
+.wrapper {
+  &--mz-modal-news {
+    &__title,
+    &__subtitle {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.paragraph {
+  &--mz-modal-news {
+    &__title {
+      margin: 12px 0;
+      font-size: 12px;
+      font-weight: $regular;
+      color: $text-color-3;
+      background-image: url('assets/svg/mpa-mail-news.svg');
+      background-repeat: no-repeat;
+      background-position: top center;
+      padding-top: 40px;
+    }
+
+    &__subtitle {
+      font-size: 21px;
+      line-height: 27px;
+      text-transform: uppercase;
+      color: $color-1;
+      margin: 0 0 23px;
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}

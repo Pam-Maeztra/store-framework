@@ -1,0 +1,119 @@
+.orderPlaced {
+  &MainWrapper {
+    @extend %container;
+    margin-top: 34px;
+
+    @include mobile {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+
+  &Wrapper {
+    padding: 0;
+  }
+
+  &Header {
+    @extend %container;
+
+    @include mobile {
+      padding: 0 1rem;
+    }
+
+    .confirmationTitle {
+      margin: 0;
+      text-align: left;
+      font-size: 18px;
+      font-weight: $bold;
+      color: $color-1;
+    }
+
+    .confirmationMessage {
+      margin: 21px 0 0 0;
+      text-align: left;
+      font-size: 16px;
+      font-weight: $regular;
+      line-height: 20px;
+      color: $text-color-1;
+    }
+  }
+}
+
+// Número do pedido
+.orderNumber {
+  font-size: 21px;
+  font-weight: $bold;
+  color: $color-1;
+}
+
+.orderDatetime {
+  font-size: 16px;
+  font-weight: $regular;
+  color: $text-color-4;
+}
+
+// Resumo da compra
+:global(.vtex-order-placed-2-x-section) {
+  border: none;
+
+  // Endereço
+  :global(.vtex-order-placed-2-x-package) {
+    margin: 12px 0 0 0;
+
+    :global(.vtex-order-placed-2-x-packageHeaderColumn) {
+      width: 100%;
+
+      :global(.vtex-order-placed-2-x-packageAddressWrapper) {
+        margin: 0;
+
+        :global(.vtex-order-placed-2-x-addressContainer) {
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: $regular;
+          color: $text-color-1;
+          font-family: $main-font;
+        }
+      }
+    }
+  }
+
+  // Pagamento
+  :global(.vtex-order-placed-2-x-orderPaymentWrapper) {
+    :global(.vtex-order-placed-2-x-orderPaymentItem) {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      :global(.vtex-order-placed-2-x-paymentGroup),
+      :global(.vtex-order-placed-2-x-paymentValue) {
+        margin: 12px 0 20px;
+        font-size: 16px;
+        font-weight: $regular;
+        color: $text-color-1;
+        font-family: $main-font;
+      }
+    }
+  }
+}
+
+// Valores
+:global(.vtex-order-placed-2-x-totalListWrapper) {
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  :global(.vtex-order-placed-2-x-totalList) {
+    margin: 12px 0 0 0;
+    width: 100%;
+
+    :global(.vtex-order-placed-2-x-totalListItem) {
+      :global(.vtex-order-placed-2-x-totalListItemLabel),
+      :global(.vtex-order-placed-2-x-totalListItemValue) {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: $regular;
+        color: $text-color-1;
+        font-family: $main-font;
+      }
+    }
+  }
+}

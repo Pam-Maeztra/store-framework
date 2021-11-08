@@ -1,0 +1,32 @@
+{
+  "list-context.image-list#mz-main-banner": {
+    "children": ["slider-layout#mz-main-banner-images"],
+    "props": {
+      "height": 408,
+      "images": [
+        {
+          "image": "https://mundoinfantil.vteximg.com.br/arquivos/fullbanner-teste-desk.jpg",
+          "mobileImage": "https://mundoinfantil.vteximg.com.br/arquivos/fullbanner-teste-mob.jpg"
+        },
+        {
+          "image": "https://mundoinfantil.vteximg.com.br/arquivos/fullbanner-teste-desk.jpg",
+          "mobileImage": "https://mundoinfantil.vteximg.com.br/arquivos/fullbanner-teste-mob.jpg"
+        }
+      ]
+    },
+    "title": "Banner principal"
+  },
+  "slider-layout#mz-main-banner-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "mz-home__slider"
+    }
+  }
+}

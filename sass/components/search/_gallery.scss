@@ -1,0 +1,41 @@
+.gallery {
+  padding: 0;
+  margin: 3px 0;
+
+  &Title {
+    &--layout {
+      margin: 0;
+      font-size: 42px;
+      font-weight: $medium;
+      color: $color-gray-900;
+
+      @include mobile {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+}
+
+.buttonShowMore {
+  :global(.vtex-button) {
+    border: none;
+    background: transparent;
+    text-transform: none;
+  }
+
+  :global(.vtex-button__label) {
+    font-size: 0;
+    font-weight: $semi-bold;
+    color: $color-1;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::before {
+      font-size: 14px;
+      content: 'Ver mais';
+    }
+  }
+}

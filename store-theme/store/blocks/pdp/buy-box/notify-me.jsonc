@@ -1,0 +1,20 @@
+{
+  "condition-layout.product#product-availability": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable",
+          "toBe": true
+        }
+      ],
+      "Then": "flex-layout.row#buy-box",
+      "Else": "availability-subscriber#product"
+    }
+  },
+
+  "availability-subscriber#product": {
+    "props": {
+      "blockClass": "mz-product__unavailable"
+    }
+  }
+}

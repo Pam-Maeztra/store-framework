@@ -1,0 +1,221 @@
+.menuContainer {
+  &--mz-footer-menu {
+    &__link {
+      :global(.vtex-menu-2-x-styledLinkContainer) {
+        margin: 0;
+
+        :global(.vtex-menu-2-x-styledLinkContent) {
+          font-size: 12px;
+          line-height: 22px;
+          font-weight: $regular;
+          color: $color-white;
+
+          @include mobile {
+            padding-left: 0.3rem;
+            padding-right: 0.3rem;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .menuItem {
+        &--mz-footer-menu {
+          &__link {
+            &--title {
+              :global(.vtex-menu-2-x-styledLinkContent) {
+                font-size: 14px;
+                font-weight: $bold;
+                cursor: default;
+                margin-bottom: 2px;
+
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+
+              @include mobile {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__atendimento {
+      :global(.vtex-menu-2-x-styledLinkContainer) {
+        margin: 0;
+      }
+
+      .menuItem {
+        :global(.vtex-menu-2-x-styledLinkContent) {
+          font-size: 16px;
+          line-height: 10px;
+          font-weight: $semi-bold;
+          color: $color-white;
+          padding: 5px 0 8px 25px;
+        }
+
+        &--mz-footer-menu {
+          &__link {
+            &--title {
+              :global(.vtex-menu-2-x-styledLinkContent) {
+                font-size: 14px;
+                font-weight: $bold;
+                cursor: default;
+                margin-bottom: 2px;
+                padding-left: 0;
+
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+
+              @include mobile {
+                display: none;
+              }
+            }
+
+            &--whatsapp {
+              :global(.vtex-menu-2-x-styledLinkContent) {
+                background-image: url('assets/svg/mpa-whatsapp.svg');
+                background-repeat: no-repeat;
+                background-size: 5%;
+                background-position: center left;
+              }
+            }
+
+            &--horario {
+              :global(.vtex-menu-2-x-styledLinkContent) {
+                font-size: 10px;
+                font-weight: $regular;
+                color: $color-gray-906;
+                padding: 0 15px 0 25px;
+                position: relative;
+                top: -9px;
+              }
+            }
+
+            &--email {
+              :global(.vtex-menu-2-x-styledLinkContent) {
+                background-image: url('assets/svg/mpa-mail.svg');
+                background-repeat: no-repeat;
+                background-size: 6%;
+                background-position: center left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Menu mobile
+@include mobile {
+  .styledLinkContainer {
+    &--mz-footer-menu {
+      &__link {
+        &--title {
+          margin: 0;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        &--whatsapp,
+        &--horario,
+        &--email {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .styledLinkContent {
+    &--mz-footer-menu {
+      &__link {
+        &--title {
+          font-size: 14px;
+          font-weight: $bold;
+          color: $color-white;
+          padding: 7px 0;
+
+          .accordionIcon {
+            background-size: contain;
+            background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.5 1.20117L6 5.70117L10.5 1.20117' stroke='%23F3F3F3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e")
+              no-repeat center center;
+            font-size: 0;
+            width: 15px;
+            height: 15px;
+
+            &--isOpen {
+              transform: rotate(180deg);
+            }
+          }
+        }
+
+        &--whatsapp,
+        &--email {
+          font-size: 16px;
+          line-height: 10px;
+          font-weight: $semi-bold;
+          color: $color-white;
+          padding: 5px 0 8px 25px;
+        }
+      }
+    }
+  }
+
+  .menuItem {
+    &--mz-footer-menu {
+      &__link {
+        &--title {
+          .submenuAccordion {
+            .menuItem {
+              &--mz-footer-menu {
+                &__link {
+                  &--title {
+                    display: none;
+                  }
+
+                  &--whatsapp {
+                    :global(.vtex-menu-2-x-styledLinkContent) {
+                      background-image: url('assets/svg/mpa-whatsapp.svg');
+                      background-repeat: no-repeat;
+                      background-size: 4%;
+                      background-position: center left;
+                    }
+                  }
+
+                  &--horario {
+                    :global(.vtex-menu-2-x-styledLinkContent) {
+                      font-size: 10px;
+                      font-weight: $regular;
+                      padding: 0 15px 0 25px;
+                      text-decoration: underline;
+                      position: relative;
+                      top: -9px;
+                      color: $color-gray-906;
+                    }
+                  }
+
+                  &--email {
+                    :global(.vtex-menu-2-x-styledLinkContent) {
+                      background-image: url('assets/svg/mpa-mail.svg');
+                      background-repeat: no-repeat;
+                      background-size: 5%;
+                      background-position: center left;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

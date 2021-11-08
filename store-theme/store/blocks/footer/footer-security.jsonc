@@ -1,0 +1,54 @@
+{
+  "flex-layout.col#2-footer-selos": {
+    "children": ["rich-text#title-selos-footer", "vtex.menu@2.x:menu#security"],
+    "props": {
+      "blockClass": "mz-footer-logos--security"
+    }
+  },
+  "rich-text#title-selos-footer": {
+    "props": {
+      "blockClass": "mz-footer-logos__title",
+      "text": "Selos de Segurança"
+    },
+    "title": "Título Selos de segurança"
+  },
+  "vtex.menu@2.x:menu#security": {
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "mz-footer-logos--security--menu"
+    },
+    "children": ["menu-item#item-ebit", "menu-item#item-pci"]
+  },
+  "menu-item#item-ebit": {
+    "props": {
+      "id": "menu-item-ebit",
+      "blockClass": "mz-footer-logos--security--menu__ebit",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Ebit",
+        "text": "Ebit"
+      }
+    }
+  },
+  "menu-item#item-pci": {
+    "props": {
+      "id": "menu-item-pci",
+      "blockClass": "mz-footer-logos--security--menu__pci",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "PCI",
+        "text": "PCI"
+      }
+    }
+  }
+}

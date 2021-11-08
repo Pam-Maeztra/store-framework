@@ -1,0 +1,46 @@
+@import 'variables/_all';
+
+// COMMON
+@import 'extends/container';
+@import 'mixins/responsive';
+@import 'mixins/buttons';
+@import 'components/common/flex';
+
+// HEADER
+@import 'components/header/topbar/flex';
+@import 'components/header/flex';
+@import 'components/header/login/flex';
+@import 'components/header/minicart/flex';
+
+// AMAZING MENU
+@import 'components/amazing-menu/flex';
+
+// MENU MOBILE
+@import 'components/header/drawer/flex';
+
+// FOOTER
+@import 'components/footer/flex';
+@import 'components/footer/newsletter/flex';
+@import 'components/footer/seo/flex';
+
+// HOME
+@import 'components/home/flex';
+@import 'components/home/modal/flex';
+
+// PRODUTO
+@import 'components/product/flex';
+
+// SEARCH
+@import 'components/search/flex';
+
+// SHELF
+@import 'components/common/shelf/flex';
+
+// INSTITUCIONAL
+@import 'components/institutional/flex';
+
+// SISTEMA
+@import 'components/not-found/flex';
+
+// ORDERPLACED
+@import 'components/orderplaced/flex';

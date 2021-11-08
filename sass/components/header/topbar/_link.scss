@@ -1,0 +1,17 @@
+.styledLink {
+  &--mz-topbar {
+    &__menu {
+      &--item {
+        color: $color-1;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: $semi-bold;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

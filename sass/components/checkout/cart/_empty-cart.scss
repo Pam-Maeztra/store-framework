@@ -1,0 +1,18 @@
+.empty-cart-content {
+  @include mobile {
+    padding: 0 1rem;
+
+    .empty-cart-title {
+      font-size: 26px;
+    }
+  }
+}
+
+#cart-choose-products {
+  @include mainButton(16px, 250px, 40px);
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: none;
+}

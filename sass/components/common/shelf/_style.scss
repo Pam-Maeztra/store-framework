@@ -1,0 +1,60 @@
+.container {
+  &--mz-shelf {
+    border-radius: 1px;
+    background: white;
+    min-height: 444px;
+    max-height: 444px;
+    transition: 0.4s;
+    margin: 0 8px;
+    position: relative;
+
+    @include mobile {
+      margin: 0 3px;
+      min-height: 353px;
+      max-height: 353px;
+    }
+
+    @include desktop {
+      &:hover {
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .productNameContainer {
+      text-align: left;
+    }
+
+    .nameContainer {
+      height: 63px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0 25px;
+      margin: 12px 0 8px;
+
+      @include mobile {
+        min-height: 48px;
+        max-height: 48px;
+        padding: 0 10px;
+        margin: 8px 0;
+      }
+
+      :global(.vtex-product-summary-2-x-brandName) {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: $bold;
+        color: $text-color-2;
+
+        @include mobile {
+          font-size: 12px;
+          line-height: 15px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}

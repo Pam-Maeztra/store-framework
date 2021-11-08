@@ -1,0 +1,83 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main",
+      "flex-layout.row#product-main-shelf-1",
+      "flex-layout.row#product-main-shelf-2",
+      "flex-layout.row#product-main-description",
+      "product-reviews",
+      "flex-layout.row#product-main-shelf-3"
+    ]
+  },
+
+  // BREADCRUMB
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "blockClass": "mz-breadcrumb"
+    },
+    "children": ["breadcrumb"]
+  },
+
+  // CONTAINER
+  "flex-layout.row#product-main": {
+    "props": {
+      "blockClass": "mz-product"
+    },
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+  },
+
+  // DETALHES DO PRODUTO
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "flex-layout.row#ref-product-anchor",
+      "sku-selector",
+      "product-separator",
+      "flex-layout.row#selling-price",
+      "flex-layout.row#product-installments-pdp",
+      "condition-layout.product#product-availability",
+      "responsive-layout.tablet#info-compra",
+      "responsive-layout.phone#info-compra",
+      "shipping-simulator",
+      "share#default"
+    ]
+  },
+
+  "flex-layout.row#ref-product-anchor": {
+    "children": ["flex-layout.col#ref-product", "flex-layout.col#anchor-description"]
+  },
+  "flex-layout.col#ref-product": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": {
+        "mobile": "50%",
+        "desktop": "50%"
+      }
+    },
+    "children": ["product-identifier.product"]
+  },
+
+  "flex-layout.col#anchor-description": {
+    "props": {
+      "horizontalAlign": "right",
+      "verticalAlign": "middle",
+      "width": {
+        "mobile": "50%",
+        "desktop": "50%"
+      }
+    },
+    "children": ["link#btn-product-description"]
+  },
+  "link#btn-product-description": {
+    "props": {
+      "scrollTo": "disclosure-layout#description",
+      "label": "Descrição do produto",
+      "blockClass": "mz-product__anchor-description"
+    }
+  }
+}

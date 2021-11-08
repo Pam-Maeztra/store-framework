@@ -1,0 +1,8 @@
+{
+  "filter-navigator.v3": {
+    "props": {
+      "maxItemsDepartment": 3,
+      "maxItemsCategory": 3
+    }
+  }
+}

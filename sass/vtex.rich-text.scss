@@ -1,0 +1,48 @@
+@import 'variables/_all';
+
+// COMMON
+@import 'mixins/responsive';
+@import 'mixins/buttons';
+@import 'extends/container';
+
+// HEADER
+@import 'components/header/topbar/text';
+
+// AMAZING MENU
+@import 'components/amazing-menu/text';
+
+// MENU MOBILE
+@import 'components/header/drawer/text';
+
+// FOOTER
+@import 'components/footer/newsletter/text';
+@import 'components/footer/seo/text';
+@import 'components/footer/text';
+
+// HOME
+@import 'components/home/deals';
+@import 'components/home/text';
+@import 'components/home/text-lancamento';
+@import 'components/home/modal/text';
+
+// PRODUCT
+@import 'components/product/titles';
+@import 'components/product/diferenciais';
+
+// SEARCH
+@import 'components/search/text';
+
+// SHELF
+@import 'components/common/shelf/text';
+
+// INSTITUCIONAL
+@import 'components/institutional/text';
+
+// SISTEMA
+@import 'components/not-found/text';
+
+// ORDERPLACED
+@import 'components/orderplaced/text';
+
+// WISHLIST
+@import 'components/account/text';

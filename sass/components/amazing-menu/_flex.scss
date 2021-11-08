@@ -1,0 +1,69 @@
+.flex {
+  &Row {
+    &--category-menu {
+      background: $color-1;
+    }
+
+    &--amazing-menu-department-block {
+      width: 100%;
+      padding: 25px 50px;
+
+      .col {
+        width: 100% !important;
+      }
+    }
+
+    &Content {
+      &--amazing-menu-alldeps-block {
+        .col {
+          &:first-child {
+            width: 100% !important;
+          }
+
+          &:last-child {
+            max-width: 228px;
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+
+  &Col {
+    &--amazing-menu-column {
+      &-first,
+      &-second,
+      &-third {
+        border-right: 1px solid $color-gray-600;
+
+        @include mobile {
+          border: none;
+        }
+      }
+
+      &-second,
+      &-third,
+      &-fourth {
+        padding-left: 3rem;
+      }
+    }
+
+    &--amazing-menu-banner {
+      padding: 0;
+    }
+
+    &Child {
+      &--amazing-menu-menu {
+        height: auto !important;
+      }
+
+      &--amazing-menu-banner {
+        text-align: center !important;
+      }
+
+      &--amazing-menu-column {
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  // LOGO
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "mz-logo"
+    },
+    "children": ["logo#desktop"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Mundo Infantil",
+      "href": "/",
+      "url": "https://mundoinfantil.vteximg.com.br/arquivos/logo-mundo-infantil.svg",
+      "width": "80px",
+      "blockClass": "mz-logo__image"
+    }
+  },
+
+  // BUSCA
+  "search-bar#search-bar": {
+    "props": {
+      "blockClass": "mz-search-bar",
+      "hasIconLeft": "false",
+      "placeholder": "Busque aqui o que você procura",
+      "iconProps": {
+        "id": "hpa-search",
+        "size": 24,
+        "viewBox": "0 0 24 24",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+
+  // LOGIN
+  "login#main-header": {
+    "props": {
+      "blockClass": "mz-login",
+      "showIconProfile": true,
+      "iconLabel": "Entrar",
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "Senha",
+      "iconProps": {
+        "id": "hpa-profile",
+        "size": 24,
+        "viewBox": "0 0 24 24",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+
+  // WISH LIST
+  "menu#wishlist": {
+    "children": ["menu-item#wishlist"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-product__wishlist"
+    },
+    "title": "Wishlist"
+  },
+  "menu-item#wishlist": {
+    "props": {
+      "id": "menu-item-icone",
+      "blockClass": "mz-product__wishlist--item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "href": "/account/#/wishlist",
+        "noFollow": false,
+        "tagTitle": "Favoritos",
+        "text": ""
+      },
+      "iconProps": {
+        "id": "hpa-heart",
+        "size": 30,
+        "viewBox": "0 0 30 25",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  }
+}

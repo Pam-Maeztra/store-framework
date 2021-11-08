@@ -1,0 +1,22 @@
+%arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: transparent !important;
+  color: $color-1;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+
+  .caretIcon {
+    color: $color-1;
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}

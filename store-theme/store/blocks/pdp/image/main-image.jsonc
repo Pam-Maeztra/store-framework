@@ -1,0 +1,31 @@
+{
+  "flex-layout.col#stack": {
+    "children": [
+      "stack-layout#mz-product",
+      "responsive-layout.desktop#info-compra"
+    ],
+    "props": {
+      "width": "65%",
+      "rowGap": 0
+    }
+  },
+  "stack-layout#mz-product": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": ["flex-layout.row#product-image", "flex-layout.row#product-highlights"]
+  },
+  "flex-layout.row#product-image": {
+    "children": ["product-images#mz-product"]
+  },
+  "product-images#mz-product": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:16"
+      },
+      "displayThumbnailsArrows": true,
+      "thumbnailMaxHeight": "143px"
+    }
+  }
+}

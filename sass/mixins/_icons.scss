@@ -1,0 +1,24 @@
+@mixin social($bg) {
+  background-image: url($bg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+}
+
+@mixin paymentLogo($bg) {
+  background-image: url($bg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 55px;
+  height: 30px;
+}
+
+@mixin securityLogo($bg) {
+  background-image: url($bg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 55px;
+  height: 55px;
+}

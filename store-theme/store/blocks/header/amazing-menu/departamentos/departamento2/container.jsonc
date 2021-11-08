@@ -1,0 +1,50 @@
+{
+  "menu-item#dep2": {
+    "props": {
+      "blockClass": ["amazing-menu-department"],
+      "id": "menu-item-dep2",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "Utensílios",
+        "type": "internal",
+        "href": "/utensilios",
+        "noFollow": false
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dep2"]
+  },
+  "vtex.menu@2.x:submenu#dep2": {
+    "props": {
+      "blockClass": ["amazing-menu-department-submenu"],
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-dep2"]
+  },
+  "flex-layout.row#menu-dep2": {
+    "props": {
+      "blockClass": ["amazing-menu-department-block"],
+      "colSizing": "auto",
+      "fullWidth": true,
+      "width": "100%",
+      "experimentalHideEmptyCols": true
+    },
+    "children": [
+      // Categoria 2 Coluna 1
+      "experimental__visibility-layout#menu-dep2-col1",
+      "experimental__visibility-layout#banner-dep2-col1",
+
+      // Categoria 2 Coluna 2
+      "experimental__visibility-layout#menu-dep2-col2",
+      "experimental__visibility-layout#banner-dep2-col2",
+
+      // Categoria 2 Coluna 3
+      "experimental__visibility-layout#menu-dep2-col3",
+      "experimental__visibility-layout#banner-dep2-col3",
+
+      // Categoria 2 Coluna 4
+      "experimental__visibility-layout#menu-dep2-col4",
+      "experimental__visibility-layout#banner-dep2-col4"
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "flex-layout.col#1-footer-payment": {
+    "children": [
+      "rich-text#title-payments-footer",
+      "vtex.menu@2.x:menu#payment-methods"
+    ],
+    "props": {
+      "blockClass": "mz-footer-logos--payment-methods"
+    }
+  },
+  "rich-text#title-payments-footer": {
+    "props": {
+      "blockClass": "mz-footer-logos__title",
+      "text": "Formas de Pagamento"
+    },
+    "title": "Título Formas de pagamento"
+  },
+  "vtex.menu@2.x:menu#payment-methods": {
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": "mz-footer-logos--payment-methods--menu"
+    },
+    "children": [
+      "menu-item#item-mastercard",
+      "menu-item#item-diners",
+      "menu-item#item-boleto"
+    ]
+  },
+  "menu-item#item-mastercard": {
+    "props": {
+      "id": "menu-item-mastercard",
+      "blockClass": "mz-footer-logos--payment-methods--menu__mastercard",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "MasterCard",
+        "text": "MasterCard"
+      }
+    }
+  },
+  "menu-item#item-diners": {
+    "props": {
+      "id": "menu-item-diners",
+      "blockClass": "mz-footer-logos--payment-methods--menu__diners",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Diners",
+        "text": "Diners"
+      }
+    }
+  },
+  "menu-item#item-boleto": {
+    "props": {
+      "id": "menu-item-boleto",
+      "blockClass": "mz-footer-logos--payment-methods--menu__boleto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Boleto",
+        "text": "Boleto"
+      }
+    }
+  }
+}

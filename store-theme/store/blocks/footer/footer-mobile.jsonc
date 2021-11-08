@@ -1,0 +1,49 @@
+{
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile",
+      "flex-layout.row#3-footer-mobile",
+      "flex-layout.row#4-footer-mobile",
+      "flex-layout.row#5-footer-mobile"
+    ]
+  },
+
+  "flex-layout.row#1-footer-mobile": {
+    "children": ["rich-text#newsletter-title", "newsletter-form"],
+    "props": {
+      "blockClass": "mz-footer-newsletter"
+    }
+  },
+
+  "flex-layout.row#2-footer-mobile": {
+    "children": [
+      "flex-layout.col#1-footer-seo",
+      "flex-layout.col#2-footer-seo"
+    ],
+    "props": {
+      "blockClass": "mz-footer-seo"
+    }
+  },
+
+  "flex-layout.row#3-footer-mobile": {
+    "children": ["vtex.menu@2.x:menu#footer-mobile"],
+    "props": {
+      "blockClass": "mz-footer-content"
+    }
+  },
+
+  "flex-layout.row#4-footer-mobile": {
+    "children": ["flex-layout.col#3-footer-developed"],
+    "props": {
+      "blockClass": "mz-footer-logos"
+    }
+  },
+
+  "flex-layout.row#5-footer-mobile": {
+    "children": ["rich-text#footer-credits"],
+    "props": {
+      "blockClass": "mz-footer-credits"
+    }
+  }
+}

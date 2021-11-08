@@ -1,0 +1,28 @@
+.paragraph {
+  &--mz-topbar {
+    &__text {
+      color: $text-color-2;
+      margin: 0;
+      line-height: 0;
+      font-size: 12px;
+      font-weight: $regular;
+
+      @include mobile {
+        line-height: 20px;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.strong {
+  &--mz-topbar {
+    &__text {
+      color: $color-1;
+
+      @include mobile {
+        color: $color-white;
+      }
+    }
+  }
+}

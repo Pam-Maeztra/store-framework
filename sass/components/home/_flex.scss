@@ -1,0 +1,214 @@
+.flex {
+  &Row {
+    &--mz-main-categories {
+      padding: 0 0 50px;
+
+      @include mobile {
+        padding: 0 0 10px;
+      }
+    }
+
+    &--mz-main-shelf {
+      background: white;
+      padding-bottom: 100px;
+
+      @include mobile {
+        padding-bottom: 65px;
+      }
+    }
+
+    &--mz-main-shelf-bg {
+      background: $color-gray-909;
+      padding-bottom: 100px;
+    }
+
+    &--mz-main-lancamento {
+      margin: 80px 0;
+
+      @include mobile {
+        margin: 40px 0 6px;
+      }
+    }
+
+    &Content {
+      &--mz-main-categories,
+      &--mz-main-shelf,
+      &--mz-main-shelf-bg {
+        @extend %container;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+          width: 100% !important;
+        }
+
+        @include mobile {
+          &__banners {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding-bottom: 10px;
+
+            :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+              display: inline-flex;
+              max-width: 203px;
+              margin-left: 13px;
+            }
+          }
+        }
+      }
+
+      &--mz-main-deals {
+        padding: 30px 0;
+        border-bottom: 1px solid $color-gray-700;
+
+        @include mobile {
+          overflow-x: scroll;
+          overflow-y: hidden;
+          white-space: nowrap;
+          padding-bottom: 10px;
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+
+          :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+            display: inline-flex;
+            width: auto !important;
+            margin: 0 16px 0;
+          }
+        }
+
+        &__image {
+          background: $color-gray-910;
+          width: 39px;
+          height: 39px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 9px;
+
+          @include mobile {
+            :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      &--mz-main-categories {
+        @include mobile {
+          padding: 0;
+        }
+      }
+
+      &--mz-main-lancamento {
+        @extend %container;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile {
+          padding: 0 1rem;
+        }
+
+        :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+          height: 100%;
+          margin: 0 13px;
+
+          @include mobile {
+            margin: 0;
+          }
+        }
+      }
+
+      &--mz-main-mosaic {
+        &__banners,
+        &__scroll-banners {
+          @extend %container;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+
+          @include mobile {
+            padding: 0 1rem;
+
+            :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+              margin: 6px 0;
+            }
+          }
+        }
+
+        &__scroll-banners {
+          @include mobile {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding-bottom: 10px;
+
+            :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+              display: inline-flex;
+              max-width: 311px;
+              margin-right: 12px;
+            }
+          }
+        }
+
+        &__final-banners {
+          margin: 80px auto;
+          @extend %container;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+
+          @include mobile {
+            margin: 35px 0;
+            padding: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &Col {
+    &--mz-main-deals {
+      &__block {
+        flex-direction: row;
+        justify-content: center;
+
+        @include mobile {
+          justify-content: flex-start;
+          align-items: center;
+        }
+      }
+    }
+
+    &--mz-main-lancamento {
+      &__text {
+        height: 410px;
+        background: $color-gray-909;
+        border-radius: 10px;
+        padding: 45px;
+
+        @include mobile {
+          height: auto;
+          padding: 25px 30px;
+          margin-top: 12px;
+        }
+      }
+    }
+
+    &Child {
+      &--mz-main-lancamento {
+        &__image {
+          :global(.vtex-store-components-3-x-imageElement) {
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}

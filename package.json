@@ -1,0 +1,52 @@
+{
+  "name": "mundoinfantil",
+  "version": "0.0.0",
+  "readme": "no readme file",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/maeztra/mundoinfantil.store-theme.git"
+  },
+  "homepage": "https://bitbucket.org/maeztra/mundoinfantil.store-theme#readme",
+  "scripts": {
+    "vl": "cd store-theme && vtex link -v",
+    "vrp": "cd store-theme && vtex release patch stable",
+    "vrm": "cd store-theme && vtex release minor stable",
+    "vprom": "cd store-theme && vtex workspace create prod -p && vtex use prod && vtex install && vtex promote",
+    "vwr": "vtex workspace reset",
+    "start": "gulp css && concurrently --kill-others --handle-input \"cd store-theme && vtex link\" \"gulp watch\" -n \"vtex,gulp\" -c \"magenta,cyan\"",
+    "checkout": "gulp css && concurrently --kill-others --handle-input \"cd checkout-ui-settings && vtex link\" \"gulp watch\" -n \"vtex,gulp\" -c \"magenta,cyan\"",
+    "gulp:create:css": "gulp css",
+    "postinstall": "yarn gulp:create:css",
+    "prepare": "npx husky install"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "fibers": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^7.0.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch-sass": "^1.4.1",
+    "is-wsl": "^2.2.0",
+    "node-sass": "^4.14.0",
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "concurrently": "^6.2.1",
+    "eslint": "^7.28.0",
+    "eslint-plugin-react": "^7.24.0",
+    "git-commit-msg-linter": "^3.2.8",
+    "husky": "^7.0.2",
+    "prettier": "2.3.1"
+  }
+}

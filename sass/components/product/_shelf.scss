@@ -1,0 +1,40 @@
+.relatedProducts {
+  .title {
+    font-size: 42px;
+    font-weight: $bold;
+    color: $color-2;
+    margin: 38px 0;
+    padding: 0;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+
+    @include mobile {
+      font-size: 26px;
+      margin: 26px 0;
+    }
+  }
+}
+
+.slider {
+  &Container {
+    :global(.vtex-product-summary-2-x-container--mz-shelf) {
+      margin: 10px 8px;
+    }
+
+    :global(.vtex-shelf-1-x-arrowLeft),
+    :global(.vtex-shelf-1-x-arrowRight) {
+      @extend %arrow;
+    }
+
+    :global(.vtex-slider-0-x-dotsContainer) {
+      :global(.vtex-shelf-1-x-dot) {
+        background-color: $color-gray-908;
+      }
+
+      :global(.vtex-shelf-1-x-dot--isActive) {
+        background-color: $color-1;
+      }
+    }
+  }
+}

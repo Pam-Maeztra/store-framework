@@ -1,0 +1,7 @@
+{
+  "product-quantity": {
+    "props": {
+      "showLabel": false
+    }
+  }
+}

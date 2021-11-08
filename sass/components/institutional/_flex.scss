@@ -1,0 +1,19 @@
+.flex {
+  &Row {
+    &Content {
+      &--mz-institucional {
+        @extend %container;
+        flex-direction: column;
+        padding: 0 0 60px;
+
+        @include mobile {
+          padding: 0 1rem 3rem;
+        }
+
+        :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

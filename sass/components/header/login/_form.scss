@@ -1,0 +1,93 @@
+.emailVerification,
+.codeConfirmation {
+  .formTitle {
+    font-size: 16px;
+    font-weight: $medium;
+    color: $text-color-1;
+
+    .formSubtitle {
+      font-size: 14px;
+      font-weight: $regular;
+      color: $text-color-1;
+    }
+  }
+
+  .inputContainerEmail,
+  .inputContainerPassword,
+  .inputContainerAccessCode {
+    :global(.vtex-input-prefix__group) {
+      border: none;
+      border-bottom: 1px solid $color-gray-900;
+      border-radius: 0;
+
+      :global(.vtex-styleguide-9-x-input) {
+        font-size: 14px;
+        font-weight: $regular;
+        font-family: $main-font;
+        color: $text-color-1;
+        padding: 0 8px;
+
+        &:placeholder {
+          color: $text-color-1;
+        }
+      }
+    }
+  }
+
+  .formLinkContainer {
+    .forgotPasswordLink {
+      color: $text-color-1;
+      font-weight: $medium;
+      font-size: 12px;
+      text-decoration: underline;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .formFooter {
+    border: none;
+
+    .backButton {
+      :global(.vtex-button) {
+        :global(.vtex-button__label) {
+          padding: 0;
+          color: $color-1;
+
+          :global(.t-small) {
+            font-size: 16px;
+            font-weight: $medium;
+          }
+        }
+
+        &:hover {
+          background: none;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .sendButton {
+      :global(.vtex-button) {
+        @include mainButton(16px, 119px, 32px);
+      }
+    }
+  }
+
+  .formLinkContainer {
+    .dontHaveAccount {
+      color: $text-color-1;
+      font-weight: $regular;
+      font-size: 14px;
+      text-decoration: underline;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+  }
+}

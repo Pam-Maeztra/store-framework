@@ -1,0 +1,41 @@
+.flex {
+  &Row {
+    &--mz-search {
+      &__not-found {
+        padding: 40px 0;
+
+        @include mobile {
+          padding: 20px 0;
+        }
+      }
+    }
+
+    &Content {
+      &--mz-search {
+        &__result {
+          @extend %container;
+          margin-top: 34px;
+        }
+
+        &__orderby {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+  &Col {
+    &Child {
+      &--mz-search {
+        &__result {
+          height: auto !important;
+          margin-top: 6px;
+        }
+      }
+    }
+
+    &--productCountCol {
+      padding-left: 20px;
+    }
+  }
+}

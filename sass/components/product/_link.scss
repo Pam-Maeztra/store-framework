@@ -1,0 +1,13 @@
+.link {
+  &--mz-product {
+    &__anchor-description {
+      color: $color-1;
+      font-size: 12px;
+      font-weight: $semi-bold;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

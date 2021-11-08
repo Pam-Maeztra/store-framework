@@ -1,0 +1,209 @@
+.flex {
+  &Row {
+    &--mz-product {
+      background: white;
+      padding: 0;
+      margin-bottom: 24px;
+
+      @include mobile {
+        margin-bottom: 16px;
+      }
+
+      &__info {
+        margin-top: 5px;
+        margin-right: 60px;
+        background: white;
+        padding: 22px;
+
+        @include mobile {
+          margin-right: 0;
+          margin-top: 0;
+          margin-bottom: 33px;
+          padding: 0;
+        }
+      }
+
+      &__wishlist {
+        :global(.vtex-wish-list-1-x-outline) {
+          background-image: url('assets/svg/hpa-heart-pdp.svg') !important;
+          width: 100% !important;
+          background-position: center left !important;
+          background-size: contain !important;
+          padding-left: 30px;
+
+          &::after {
+            content: 'Adicionar aos Favoritos';
+            text-transform: none;
+            font-size: 12px;
+            font-weight: $semi-bold;
+            color: $color-1;
+            text-decoration: underline;
+          }
+        }
+
+        :global(.vtex-wish-list-1-x-fill) {
+          width: 100% !important;
+          background-position: center left !important;
+          background-size: contain !important;
+          padding-left: 30px;
+
+          &::after {
+            content: 'Remover dos Favoritos';
+            text-transform: none;
+            font-size: 12px;
+            font-weight: $semi-bold;
+            color: $color-1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &--productSpecification {
+      padding: 10px;
+
+      &:nth-child(even) {
+        background: $color-gray-903;
+      }
+
+      &GroupName {
+        display: none;
+      }
+    }
+
+    &Content {
+      &--mz-product {
+        @extend %container;
+        height: 100%;
+
+        &__highlights {
+          display: flex;
+          justify-content: flex-end;
+
+          :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
+            width: auto !important;
+          }
+
+          :global(.vtex-product-highlights-2-x-productHighlightText) {
+            border-radius: 50px 0 0 50px;
+          }
+        }
+
+        &__prices {
+          &-pdp {
+            :global(.vtex-product-price-1-x-installments--mz-product__prices) {
+              margin: 0;
+              font-size: 16px;
+            }
+          }
+        }
+
+        :global(.vtex-flex-layout-0-x-flexRowContent--mz-shelf__summary) {
+          padding: 0;
+          height: auto;
+
+          :global(.vtex-product-price-1-x-listPrice--mz-product__prices) {
+            font-size: 14px;
+            margin-bottom: 4px;
+          }
+
+          :global(.vtex-product-price-1-x-sellingPrice--mz-product__prices) {
+            font-size: 21px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+          }
+
+          :global(.vtex-product-price-1-x-savings--mz-product__percentage) {
+            right: 48%;
+            top: 15px;
+
+            @include mobile {
+              width: 35px;
+              height: 35px;
+              font-size: 12px;
+              border-radius: 50%;
+              right: 35%;
+            }
+          }
+        }
+
+        &__buybox {
+          margin: 15px 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          @include desktop {
+            padding-bottom: 20px;
+            border-bottom: 1px solid $color-gray-600;
+          }
+
+          @include mobile {
+            margin: 18px 0;
+          }
+        }
+
+        &__buyButton {
+          :global(.vtex-button) {
+            @include secundaryButton(21px, 100%, 58px, $color-1, $color-3);
+            text-transform: uppercase;
+
+            @include mobile {
+              height: 51px;
+            }
+          }
+        }
+
+        &__info {
+          @include mobile {
+            flex-direction: row;
+            display: flex;
+          }
+        }
+
+        &__description {
+          @extend %container;
+          height: 100%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+            flex-direction: column;
+          }
+        }
+      }
+
+      @include mobile {
+        &--productSpecification {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  &Col {
+    &--mz-product {
+      &__info {
+        padding: 0 30px;
+
+        @include mobile {
+          padding: 0 12px;
+        }
+      }
+    }
+
+    &Child {
+      &--productSpecificationName,
+      &--productSpecificationValue {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

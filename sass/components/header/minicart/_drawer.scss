@@ -1,0 +1,87 @@
+.drawerContent {
+  &--mz-cart {
+    height: 100%;
+
+    .closeIconButton {
+      position: absolute;
+    }
+
+    .children {
+      &Container {
+        &--mz-cart {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.minicart {
+  &SideBar {
+    &Content {
+      &Wrapper {
+        &--mz-cart {
+          min-height: 100%;
+
+          .minicartTitle {
+            border-bottom: 1px solid $color-gray-905;
+            color: $text-color-2;
+            font-size: 0;
+            font-weight: $bold;
+            text-align: center;
+            margin: 0;
+            padding: 16px 0;
+
+            &::before {
+              content: 'Minha Sacola';
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &ProductList {
+    &Container {
+      padding: 0;
+    }
+  }
+
+  &Summary {
+    &--mz-cart {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  &CheckoutButton {
+    &--mz-cart {
+      margin: 0;
+      padding: 0;
+
+      :global(.vtex-button) {
+        border-radius: 0;
+        background: $color-1;
+        border-color: $color-1;
+        height: 56px;
+
+        :global(.vtex-button__label) {
+          color: white;
+          font-size: 0;
+          font-weight: $medium;
+          text-transform: none;
+
+          &::before {
+            content: 'Finalizar compra';
+            font-size: 16px;
+          }
+        }
+
+        &:hover {
+          background: $color-3;
+          border-color: $color-3;
+        }
+      }
+    }
+  }
+}

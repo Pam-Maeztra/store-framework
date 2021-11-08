@@ -1,0 +1,29 @@
+@import 'variables/_all';
+
+// COMMON
+@import 'mixins/responsive';
+@import 'mixins/buttons';
+@import 'extends/container';
+@import 'mixins/icons';
+
+// CHECKOUT
+@import 'components/checkout/global';
+
+// HEADER
+@import 'components/checkout/header';
+
+// FOOTER
+@import 'components/checkout/footer';
+
+// CART
+@import 'components/checkout/cart/empty-cart';
+@import 'components/checkout/cart/products';
+@import 'components/checkout/cart/shipping-preview';
+@import 'components/checkout/cart/summary-totalizers';
+@import 'components/checkout/cart/freeshippingBar';
+
+// EMAIL
+@import 'components/checkout/email';
+
+// FINALIZAÇÃO DE COMPRA
+@import 'components/checkout/orderform';

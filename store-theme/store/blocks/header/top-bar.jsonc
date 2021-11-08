@@ -1,0 +1,50 @@
+{
+  // TEXTO FRETE GRÁTIS
+  "rich-text#mz-topbar-text-frete": {
+    "props": {
+      "text": "Frete grátis a partir de **R$ 99,00**",
+      "blockClass": "mz-topbar__text"
+    },
+    "title": "Texto de frete grátis"
+  },
+
+  // TEXTO CONTATO
+  "rich-text#mz-topbar-text-telefone": {
+    "props": {
+      "text": "Contato: **(99) 9.9999-9999**",
+      "blockClass": "mz-topbar__text"
+    },
+    "title": "Telefone"
+  },
+
+  // LINK ATENDIMENTO
+  "vtex.menu@2.x:menu#mz-topbar-contato": {
+    "children": ["menu-item#mz-topbar-atendimento"],
+    "props": {
+      "blockClass": "mz-topbar__menu"
+    },
+    "title": "Topbar"
+  },
+  "menu-item#mz-topbar-atendimento": {
+    "props": {
+      "id": "mz-topbar__menu--item",
+      "blockClass": "mz-topbar__menu--item",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      },
+      "iconProps": {
+        "id": "hpa-comments",
+        "size": 14,
+        "viewBox": "0 0 14 14"
+      },
+      "iconToTheRight": false
+    }
+  }
+}

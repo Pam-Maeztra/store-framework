@@ -1,0 +1,9 @@
+{
+  "rich-text#amazing-menu-offer": {
+    "title": "Link Promoções",
+    "props": {
+      "blockClass": "amazing-menu-offer",
+      "text": "[Ofertas](/ofertas)\n\n[**Até 70% Off**](/ofertas)"
+    }
+  }
+}

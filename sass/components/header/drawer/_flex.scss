@@ -1,0 +1,11 @@
+.flex {
+  &Row {
+    &--mz-drawer {
+      &__secundary-links {
+        background: $color-gray-904;
+        padding: 10px 1rem;
+        margin: 12px 0;
+      }
+    }
+  }
+}

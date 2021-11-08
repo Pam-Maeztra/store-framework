@@ -1,0 +1,42 @@
+.search {
+  &NotFound {
+    &Oops {
+      height: 100%;
+      text-transform: none;
+      font-size: 42px;
+      font-weight: $medium;
+      padding-top: 20px;
+
+      @include mobile {
+        padding: 0 0 40px;
+      }
+    }
+
+    &Info {
+      font-size: 18px;
+      font-weight: $bold;
+      color: $text-color-2;
+
+      @include mobile {
+        padding: 0 1rem;
+      }
+    }
+
+    &WhatDoIDo {
+      font-size: 16px;
+      font-weight: $regular;
+      color: $text-color-1;
+    }
+
+    &WhatToDoDotsContainer {
+      padding-left: 30px;
+    }
+
+    &WhatToDoDots {
+      font-size: 16px;
+      line-height: 24px;
+      color: $text-color-1;
+      font-weight: $regular;
+    }
+  }
+}

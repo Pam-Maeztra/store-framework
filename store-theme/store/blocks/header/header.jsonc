@@ -1,0 +1,197 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": ["flex-layout.row#1-desktop", "sticky-layout#2-desktop"]
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile", "sticky-layout#2-mobile"]
+  },
+
+  //TOP BAR
+  "flex-layout.row#1-desktop": {
+    "props": {
+      "blockClass": "mz-topbar",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#mz-topbar-text-frete",
+      "flex-layout.col#mz-topbar-text-telefone",
+      "flex-layout.col#mz-topbar-contato"
+    ]
+  },
+  "flex-layout.col#mz-topbar-text-frete": {
+    "children": ["rich-text#mz-topbar-text-frete"],
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "middle",
+      "width": "50%"
+    }
+  },
+  "flex-layout.col#mz-topbar-text-telefone": {
+    "children": ["rich-text#mz-topbar-text-telefone"],
+    "props": {
+      "horizontalAlign": "right",
+      "verticalAlign": "middle",
+      "width": "35%"
+    }
+  },
+  "flex-layout.col#mz-topbar-contato": {
+    "children": ["vtex.menu@2.x:menu#mz-topbar-contato"],
+    "props": {
+      "horizontalAlign": "right",
+      "verticalAlign": "middle",
+      "width": "15%"
+    }
+  },
+  //TOP BAR
+
+  // MAIN AREA
+  "sticky-layout#2-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#3-desktop", "flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "mz-main",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar#search-bar",
+      "login#main-header",
+      "menu#wishlist",
+      "minicart.v2#main-header"
+    ]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "category-menu",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["vtex.menu@2.x:menu#amazing-menu"]
+  },
+  // MAIN AREA
+
+  // MAIN AREA MOBILE
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile", "flex-layout.row#2-mobile"],
+    "props": {
+      "blockClass": "sticky-header"
+    }
+  },
+  "flex-layout.row#1-mobile": {
+    "props": {
+      "blockClass": "mz-topbar",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#mz-topbar-text-frete-mob"]
+  },
+  "flex-layout.col#mz-topbar-text-frete-mob": {
+    "children": ["rich-text#mz-topbar-text-frete"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#2-mobile": {
+    "children": ["logo#mobile"],
+    "props": {
+      "blockClass": "mz-main",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "sticky-layout#2-mobile": {
+    "children": ["flex-layout.row#3-mobile"],
+    "props": {
+      "blockClass": "sticky-footer"
+    }
+  },
+  "flex-layout.row#3-mobile": {
+    "children": [
+      "drawer#header-mobile",
+      "menu#wishlist-mobile",
+      "login#main-header-mobile",
+      "minicart.v2#main-header"
+    ],
+    "props": {
+      "blockClass": "mz-sticky-footer",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  // MAIN AREA MOBILE
+
+  "logo#mobile": {
+    "props": {
+      "title": "Mundo Infantil",
+      "href": "/",
+      "url": "https://mundoinfantil.vteximg.com.br/arquivos/logo-mundo-infantil.svg",
+      "width": "51",
+      "blockClass": "mz-logo__image"
+    }
+  },
+  "menu#wishlist-mobile": {
+    "children": ["menu-item#wishlist-mobile"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-item-wishlist"
+    },
+    "title": "Wishlist"
+  },
+  "menu-item#wishlist-mobile": {
+    "props": {
+      "id": "menu-item-icone",
+      "blockClass": "mz-item-wishlist--item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "href": "/account/#/wishlist",
+        "noFollow": false,
+        "tagTitle": "Favoritos",
+        "text": ""
+      },
+      "iconProps": {
+        "id": "hpa-heart",
+        "size": 40,
+        "viewBox": "0 -5 30 35",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "login#main-header-mobile": {
+    "props": {
+      "blockClass": "mz-login-stick-footer",
+      "showIconProfile": true,
+      "iconLabel": "Entrar",
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "Senha"
+    }
+  }
+}

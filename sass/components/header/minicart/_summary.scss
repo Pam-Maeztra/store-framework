@@ -1,0 +1,26 @@
+.summary {
+  &Item {
+    &Container {
+      &--mz-cart {
+        &:last-child {
+          .summaryItemLabel,
+          .summaryItemPrice {
+            font-size: 16px;
+            font-weight: $bold;
+          }
+        }
+
+        .summaryItemLabel,
+        .summaryItemPrice {
+          font-size: 12px;
+          font-weight: $regular;
+          color: $text-color-2;
+        }
+      }
+    }
+  }
+
+  &SmallDisclaimer {
+    display: none;
+  }
+}

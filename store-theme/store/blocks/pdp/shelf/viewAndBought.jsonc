@@ -1,0 +1,22 @@
+{
+  "flex-layout.row#product-main-shelf-2": {
+    "props": {
+      "blockClass": "mz-main-shelf"
+    },
+    "children": ["flex-layout.row#mz-product-shelf-2-products"]
+  },
+  "flex-layout.row#mz-product-shelf-2-products": {
+    "children": ["shelf.relatedProducts#viewAndBought"]
+  },
+  "shelf.relatedProducts#viewAndBought": {
+    "props": {
+      "recommendation": "viewAndBought",
+      "productList": {
+        "titleText": "Quem comprou, comprou também",
+        "minItemsPerPage": 2,
+        "itemsPerPage": 4
+      }
+    },
+    "blocks": ["product-summary.shelf"]
+  }
+}

@@ -1,0 +1,63 @@
+.stack {
+  &Container {
+    &--product {
+      background: white;
+
+      @include desktop {
+        margin-right: 60px;
+      }
+    }
+
+    :global(.vtex-store-components-3-x-productImagesThumb),
+    :global(.vtex-store-components-3-x-productImagesThumbActive) {
+      border-left: 4px solid transparent;
+      overflow: hidden;
+      opacity: .5;
+    }
+
+    :global(.vtex-store-components-3-x-productImagesThumbActive) {
+      border-color: $color-1;
+      opacity: 1;
+    }
+
+    :global(.vtex-store-components-3-x-swiperCaret) {
+      background: $icon-arrow-nav no-repeat;
+      background-position: center right;
+      height: 40px;
+
+      :global(.vtex-store-components-3-x-caretIcon) {
+        display: none;
+      }
+    }
+
+    :global(.vtex-store-components-3-x-swiperCaretPrev) {
+      transform: translate(0, -50%) rotate(180deg);
+    }
+
+    :global(.vtex-store-components-3-x-swiperBullet) {
+      background-color: $color-gray-908;
+      opacity: 1;
+
+      @include desktop {
+        display: none;
+      }
+    }
+
+    :global(.vtex-store-components-3-x-swiperBullet--active) {
+      background-color: $color-1;
+    }
+  }
+
+  &Item {
+    &--mz-product {
+      &__highlights {
+        right: 0;
+
+        @include desktop {
+          width: 50%;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}

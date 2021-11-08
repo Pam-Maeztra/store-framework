@@ -1,0 +1,42 @@
+.heading {
+  &--mz-institucional {
+    &__title {
+      margin: 39px 0;
+      font-size: 42px;
+      font-weight: $bold;
+      color: $color-1;
+
+      @include mobile {
+        margin: 26px 0 38px;
+        font-size: 26px;
+      }
+    }
+  }
+
+  &Level2 {
+    &--mz-institucional {
+      &__content {
+        margin: 16px 0;
+        font-size: 21px;
+        font-weight: $bold;
+        color: $color-1;
+      }
+    }
+  }
+}
+
+.paragraph {
+  &--mz-institucional {
+    &__content {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: $regular;
+      color: $text-color-2;
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+  }
+}

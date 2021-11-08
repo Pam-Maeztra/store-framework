@@ -1,0 +1,33 @@
+{
+  "flex-layout.col#1-footer-seo": {
+    "children": ["rich-text#footer-title-seo"],
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "middle",
+      "width": "18%"
+    }
+  },
+  "rich-text#footer-title-seo": {
+    "props": {
+      "blockClass": "mz-footer-seo",
+      "text": "## Sobre Mundo Infantil"
+    },
+    "title": "Título SEO Rodapé"
+  },
+
+  "flex-layout.col#2-footer-seo": {
+    "children": ["rich-text#footer-texto-seo"],
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "middle",
+      "width": "85%"
+    }
+  },
+  "rich-text#footer-texto-seo": {
+    "props": {
+      "blockClass": "mz-footer-seo",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "title": "Texto SEO Rodapé"
+  }
+}

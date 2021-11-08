@@ -1,0 +1,22 @@
+{
+  "flex-layout.row#buy-box": {
+    "props": {
+      "blockClass": "mz-product__buybox"
+    },
+    "children": ["flex-layout.col#quantity", "flex-layout.col#buybutton"]
+  },
+
+  "flex-layout.col#quantity": {
+    "props": {
+      "width": "35%"
+    },
+    "children": ["product-quantity"]
+  },
+
+  "flex-layout.col#buybutton": {
+    "props": {
+      "width": "65%"
+    },
+    "children": ["flex-layout.row#buy-button", "flex-layout.row#product-wishlist"]
+  }
+}

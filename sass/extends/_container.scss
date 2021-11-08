@@ -1,0 +1,12 @@
+%container {
+  @media (min-width: $l) {
+    width: 100%;
+    max-width: 1280px;
+    min-width: $l - 30;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $l) {
+    padding: 0 1rem;
+  }
+}

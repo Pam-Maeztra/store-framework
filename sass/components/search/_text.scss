@@ -1,0 +1,36 @@
+.container {
+  &--mz-search {
+    &__seo {
+      @extend %container;
+      margin-top: 60px;
+      margin-bottom: 60px;
+
+      .wrapper {
+        padding-left: 26%;
+      }
+
+      .headingLevel3 {
+        font-size: 21px;
+        font-weight: $bold;
+        margin: 0 0 16px;
+        color: $color-1;
+      }
+
+      .paragraph {
+        font-size: 12px;
+        line-height: 23px;
+        font-weight: $regular;
+        margin: 0 0 8px;
+        color: $text-color-1;
+      }
+
+      @include mobile {
+        margin: 40px 0;
+
+        .wrapper {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

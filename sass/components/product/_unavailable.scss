@@ -1,0 +1,73 @@
+.subscriberContainer {
+  :global(.vtex-store-components-3-x-title) {
+    font-size: 0;
+    font-weight: $bold;
+    color: $text-color-1;
+    margin: 0;
+    padding-top: 15px;
+
+    &::before {
+      content: 'Produto esgotado ):';
+      font-size: 21px;
+    }
+  }
+
+  :global(.vtex-store-components-3-x-subscribeLabel) {
+    font-size: 0;
+    line-height: 22px;
+    font-weight: $regular;
+    color: $text-color-1;
+    margin: 15px 0;
+
+    &::before {
+      content: 'Para ser avisado da disponibilidade deste Produto, basta preencher os campos abaixo.';
+      font-size: 14px;
+    }
+  }
+
+  :global(.vtex-store-components-3-x-form) {
+    margin: 0;
+
+    :global(.vtex-store-components-3-x-content) {
+      margin: 0;
+      flex-direction: column;
+
+      :global(.vtex-store-components-3-x-input) {
+        :global(.vtex-input-prefix__group) {
+          border: none;
+          margin-bottom: 20px;
+
+          :global(.vtex-styleguide-9-x-input) {
+            border-bottom: 1px solid $text-color-1;
+            background: transparent;
+            border-radius: 0;
+            padding: 10px;
+            color: $text-color-1;
+            font-size: 14px;
+            font-weight: $regular;
+
+            &::placeholder {
+              color: $text-color-1;
+            }
+          }
+        }
+      }
+
+      :global(.vtex-store-components-3-x-submit) {
+        :global(.vtex-button) {
+          @include secundaryButton(21px, 100%, 58px, $color-1, $color-3);
+          text-transform: uppercase;
+
+          :global(.vtex-button__label) {
+            font-size: 0;
+
+            &::before {
+              content: 'Avise-me';
+              font-size: 21px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

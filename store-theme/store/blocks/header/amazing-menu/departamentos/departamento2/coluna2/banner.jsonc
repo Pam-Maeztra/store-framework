@@ -1,0 +1,29 @@
+{
+  "experimental__visibility-layout#banner-dep2-col2": {
+    "title": "Banner (on/off)",
+    "props": {
+      "visible": false
+    },
+    "children": ["flex-layout.col#banner-dep2-col2"]
+  },
+  "flex-layout.col#banner-dep2-col2": {
+    "props": {
+      "blockClass": [
+        "amazing-menu-banner",
+        "amazing-menu-column",
+        "amazing-menu-column-second"
+      ]
+    },
+    "children": ["image-new#banner-dep2-col2"]
+  },
+  "image-new#banner-dep2-col2": {
+    "title": "Imagem - Banner",
+    "props": {
+      "blockClass": "amazing-menu-banner",
+      "src": "https://via.placeholder.com/260x334",
+      "link": {
+        "url": "#"
+      }
+    }
+  }
+}

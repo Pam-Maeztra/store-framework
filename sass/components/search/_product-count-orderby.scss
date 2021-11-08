@@ -1,0 +1,101 @@
+.totalProducts {
+  &--layout {
+    padding: 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: $bold;
+    color: $color-1;
+    text-transform: none;
+
+    @include mobile {
+      text-align: center;
+      border: none;
+    }
+
+    &::before {
+      content: 'Produtos encontrados: ';
+      font-size: 14px;
+      font-weight: $regular;
+      color: $text-color-1;
+    }
+  }
+
+  &Message {
+    display: none;
+  }
+}
+
+.orderByDropdown,
+.orderByButton {
+  @include desktop {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.orderByOptionsContainer {
+  z-index: 12;
+}
+
+.orderByButton,
+.filterPopupButton {
+  .filterPopupTitle {
+    text-transform: none;
+    font-size: 16px;
+    font-weight: $semi-bold;
+    color: $color-1;
+
+    .orderByText {
+      font-size: 14px;
+      font-weight: $regular;
+      color: $text-color-1;
+
+      &::after {
+        content: ': ';
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  .filterPopupArrowIcon {
+    color: $color-1;
+    padding-left: 10px;
+  }
+
+  @include mobile {
+    border: 1px solid $color-1;
+    border-radius: 500px;
+    padding: 10px 20px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    .filterPopupTitle {
+      font-size: 12px;
+      font-weight: $bold;
+      color: $text-color-1;
+      margin: 0;
+    }
+
+    .filterPopupArrowIcon {
+      padding: 0;
+    }
+  }
+}
+
+.filterPopupButton {
+  flex-direction: row-reverse;
+  width: 90%;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+
+  .filterPopupArrowIcon {
+    margin: 0 5px;
+    position: relative;
+    top: 5px;
+  }
+}

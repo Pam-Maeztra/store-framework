@@ -1,0 +1,28 @@
+{
+  "flex-layout.row#product-main-description": {
+    "props": {
+      "blockClass": "mz-product__description"
+    },
+    "children": [
+      "rich-text#product-main-description-section",
+      "disclosure-layout-group#product-main-description"
+    ]
+  },
+  "rich-text#product-main-description-section": {
+    "props": {
+      "blockClass": "mz-product__description",
+      "text": "#### Descrição do produto",
+      "width": "100%"
+    },
+    "title": "Título Descrição do produto"
+  },
+  "disclosure-layout-group#product-main-description": {
+    "children": [
+      "disclosure-layout#description",
+      "disclosure-layout#specification"
+    ],
+    "props": {
+      "width": "100%"
+    }
+  }
+}

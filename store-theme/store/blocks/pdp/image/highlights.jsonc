@@ -1,0 +1,8 @@
+{
+  "flex-layout.row#product-highlights": {
+    "props": {
+      "blockClass": "mz-product__highlights"
+    },
+    "children": ["vtex.product-highlights@2.x:product-highlights#collection"]
+  }
+}

@@ -1,0 +1,11 @@
+.specificationName,
+.specificationValue {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: $regular;
+  color: $text-color-1;
+}
+
+.specificationName {
+  font-weight: $bold;
+}

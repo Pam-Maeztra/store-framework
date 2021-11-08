@@ -1,0 +1,384 @@
+{
+  "vtex.menu@2.x:menu#footer-institucional": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-footer-menu__link"
+    },
+    "children": [
+      "menu-item#institucional",
+      "menu-item#empresa",
+      "menu-item#politica-privacidade",
+      "menu-item#trocas-devolucoes",
+      "menu-item#responsabilidade",
+      "menu-item#garantia",
+      "menu-item#entrega",
+      "menu-item#pagamento"
+    ]
+  },
+  "menu-item#institucional": {
+    "props": {
+      "id": "menu-item-institucional",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      }
+    }
+  },
+  "menu-item#empresa": {
+    "props": {
+      "id": "menu-item-empresa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Sobre a Mundo Infantil",
+        "text": "Sobre a Mundo Infantil"
+      }
+    }
+  },
+  "menu-item#politica-privacidade": {
+    "props": {
+      "id": "menu-item-politica-privacidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
+      }
+    }
+  },
+  "menu-item#trocas-devolucoes": {
+    "props": {
+      "id": "menu-item-trocas-devolucoes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/trocas-e-devolucoes",
+        "noFollow": true,
+        "tagTitle": "Trocas e Devoluções",
+        "text": "Trocas e Devoluções"
+      }
+    }
+  },
+  "menu-item#responsabilidade": {
+    "props": {
+      "id": "menu-item-responsabilidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Responsabilidade Social",
+        "text": "Responsabilidade Social"
+      }
+    }
+  },
+  "menu-item#garantia": {
+    "props": {
+      "id": "menu-item-garantia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Política de Garantia",
+        "text": "Política de Garantia"
+      }
+    }
+  },
+  "menu-item#entrega": {
+    "props": {
+      "id": "menu-item-entrega",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Política de Entrega",
+        "text": "Política de Entrega"
+      }
+    }
+  },
+  "menu-item#pagamento": {
+    "props": {
+      "id": "menu-item-pagamento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Formas de pagamento",
+        "text": "Formas de pagamento"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-ajuda-suporte": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-footer-menu__link"
+    },
+    "children": ["menu-item#ajuda", "menu-item#faq", "menu-item#como-comprar"]
+  },
+  "menu-item#ajuda": {
+    "props": {
+      "id": "menu-item-ajuda",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Ajuda",
+        "text": "Ajuda"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+  "menu-item#como-comprar": {
+    "props": {
+      "id": "menu-item-como-comprar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Como comprar",
+        "text": "Como comprar"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-minha-conta": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-footer-menu__link"
+    },
+    "children": [
+      "menu-item#cliente-title",
+      "menu-item#meus-pedidos",
+      "menu-item#cliente-atendimento",
+      "menu-item#compra-segura"
+    ]
+  },
+  "menu-item#cliente-title": {
+    "props": {
+      "id": "menu-item-cliente-title",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Área do cliente",
+        "text": "Área do cliente"
+      }
+    }
+  },
+  "menu-item#meus-pedidos": {
+    "props": {
+      "id": "menu-item-meus-pedidos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Meus Pedidos",
+        "text": "Meus Pedidos"
+      }
+    }
+  },
+  "menu-item#cliente-atendimento": {
+    "props": {
+      "id": "menu-item-cliente-atendimento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    }
+  },
+  "menu-item#compra-segura": {
+    "props": {
+      "id": "menu-item-compra-segura",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Compra Segura",
+        "text": "Compra Segura"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-atedimento": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-footer-menu__atendimento"
+    },
+    "children": [
+      "flex-layout.row#footer-1-atendimento",
+      "flex-layout.row#footer-2-atendimento"
+    ]
+  },
+  "flex-layout.row#footer-1-atendimento": {
+    "props": {
+      "blockClass": "mz-footer-menu__atendimento--block"
+    },
+    "children": [
+      "menu-item#atendimento",
+      "menu-item#whatsapp",
+      "menu-item#horario",
+      "menu-item#sac"
+    ]
+  },
+  "menu-item#atendimento": {
+    "props": {
+      "id": "menu-item-atendimento",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    }
+  },
+  "menu-item#whatsapp": {
+    "props": {
+      "id": "menu-item-whatsapp",
+      "blockClass": "mz-footer-menu__link--whatsapp",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Whatsapp",
+        "text": "(99) 9.9999-9999"
+      }
+    }
+  },
+  "menu-item#horario": {
+    "props": {
+      "id": "menu-item-horario",
+      "blockClass": "mz-footer-menu__link--horario",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "seg a sex das 9h às 10h",
+        "text": "seg a sex das 9h às 10h"
+      }
+    }
+  },
+  "menu-item#sac": {
+    "props": {
+      "id": "menu-item-sac",
+      "blockClass": "mz-footer-menu__link--email",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "mailto:contato@mz.com.br",
+        "noFollow": true,
+        "tagTitle": "Email",
+        "text": "contato@mz.com.br"
+      }
+    }
+  },
+
+  "flex-layout.row#footer-2-atendimento": {
+    "props": {
+      "blockClass": "mz-footer-menu__atendimento--block"
+    },
+    "children": ["menu-item#redes-sociais", "social-networks"]
+  },
+  "menu-item#redes-sociais": {
+    "props": {
+      "id": "menu-item-redes-sociais",
+      "blockClass": "mz-footer-menu__link--title",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Redes Sociais",
+        "text": "Redes Sociais"
+      }
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/mundo-infantil", "name": "Instagram" },
+        { "url": "https://facebook.com/mundo-infantil", "name": "Facebook" }
+      ]
+    }
+  }
+}

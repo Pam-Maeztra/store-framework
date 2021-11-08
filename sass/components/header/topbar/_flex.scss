@@ -1,0 +1,28 @@
+.flex {
+  &Row {
+    &--mz-topbar {
+      background-color: $color-white;
+      border-bottom: 1px solid $color-gray-903;
+      height: 25px;
+
+      @include mobile {
+        height: 20px;
+        background-color: $color-1;
+        border: none;
+      }
+    }
+
+    &Content {
+      &--mz-topbar,
+      &--mz-sticky-footer {
+        @extend %container;
+        height: 100%;
+      }
+
+      &--mz-sticky-footer {
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+  }
+}

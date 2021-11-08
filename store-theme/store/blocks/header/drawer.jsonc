@@ -1,0 +1,139 @@
+{
+  "drawer#header-mobile": {
+    "blocks": ["drawer-header#header-mobile"],
+    "children": [
+      "flex-layout.row#1-drawer-menu",
+      "flex-layout.row#2-drawer-menu"
+    ],
+    "props": {
+      "blockClass": "mz-drawer__menu--mobile",
+      "isFullWidth": false
+    }
+  },
+
+  "drawer-header#header-mobile": {
+    "children": ["flex-layout.row#1-drawer", "flex-layout.row#2-drawer"],
+    "props": {
+      "blockClass": "mz-drawer__menu--mobile"
+    }
+  },
+
+  // WELCOME MESSAGE
+  "flex-layout.row#1-drawer": {
+    "children": ["drawer-header#rich-text-welcome", "drawer-close-button"]
+  },
+  "drawer-header#rich-text-welcome": {
+    "children": ["rich-text#mz-welcome-message"],
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "middle",
+      "width": "100%"
+    }
+  },
+  "rich-text#mz-welcome-message": {
+    "props": {
+      "text": "**Bem vinda(o) à Mundo Infantil**",
+      "blockClass": "mz-welcome-message"
+    },
+    "title": "Texto de bem-vindo"
+  },
+
+  // BUSCA
+  "flex-layout.row#2-drawer": {
+    "children": ["search-bar"]
+  },
+  "search-bar": {
+    "props": {
+      "blockClass": "mz-search-bar",
+      "placeholder": "Busque aqui o que você procura",
+      "hasIconLeft": "true",
+      "iconProps": {
+        "id": "hpa-search",
+        "size": 24,
+        "viewBox": "0 0 24 24",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+
+  // MAIN MENU
+  "flex-layout.row#1-drawer-menu": {
+    "children": ["menu#main-links-drawer"],
+    "props": {
+      "blockClass": "mz-drawer__menu"
+    }
+  },
+  "menu#main-links-drawer": {
+    "children": [
+      "menu-item#todos-os-departamentos-mobile",
+      "menu-item#item-1-mobile",
+      "menu-item#item-2-mobile",
+      "menu-item#item-3-mobile",
+      "menu-item#item-4-mobile",
+      "menu-item#item-5-mobile",
+      "menu-item#item-6-mobile",
+      "menu-item#item-7-mobile"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-drawer__menu--mobile"
+    },
+    "title": "Links principais - Menu mobile"
+  },
+
+  // SECUNDARY MENU
+  "flex-layout.row#2-drawer-menu": {
+    "children": ["menu#links-drawer"],
+    "props": {
+      "blockClass": "mz-drawer__secundary-links"
+    }
+  },
+  "menu#links-drawer": {
+    "children": ["menu-item#my-orders", "menu-item#wish-list"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-drawer__secundary-links"
+    },
+    "title": "Links secundários - Menu mobile"
+  },
+  "menu-item#my-orders": {
+    "props": {
+      "id": "menu-item-icone",
+      "blockClass": "mz-drawer__secundary-links--item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "href": "/account/#/orders",
+        "noFollow": false,
+        "tagTitle": "Meus Pedidos",
+        "text": "Meus Pedidos"
+      },
+      "iconProps": {
+        "id": "hpa-listmenu-mob",
+        "size": 11,
+        "viewBox": "0 0 11 8",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#wish-list": {
+    "props": {
+      "id": "menu-item-icone",
+      "blockClass": "mz-drawer__secundary-links--item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Favoritos",
+        "text": "Favoritos"
+      },
+      "iconProps": {
+        "id": "hpa-wishlist",
+        "size": 11,
+        "viewBox": "0 0 10 9",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  }
+}

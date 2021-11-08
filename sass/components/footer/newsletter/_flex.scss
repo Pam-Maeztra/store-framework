@@ -1,0 +1,28 @@
+.flex {
+  &Row {
+    &--mz-footer-newsletter {
+      background: url('assets/images/bg-newsletter-desk.jpg') no-repeat center
+        center;
+      background-size: cover;
+      padding: 48px 0;
+
+      @include mobile {
+        padding: 29px 0;
+        background-image: url('assets/images/bg-newsletter-mob.jpg');
+      }
+    }
+
+    &Content {
+      &--mz-footer-newsletter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}

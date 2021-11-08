@@ -1,0 +1,19 @@
+.socialNetworkLink {
+  &--instagram {
+    @include social('assets/svg/mpa-instagram.svg');
+  }
+
+  &--facebook {
+    @include social('assets/svg/mpa-facebook.svg');
+  }
+}
+
+.socialNetworkImage {
+  display: none;
+}
+
+@include mobile {
+  .socialNetworkWrapper {
+    padding-left: 0.3rem;
+  }
+}

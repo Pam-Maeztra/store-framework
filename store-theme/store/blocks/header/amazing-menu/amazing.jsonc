@@ -1,0 +1,19 @@
+{
+  "vtex.menu@2.x:menu#amazing-menu": {
+    "title": "Amazing Menu",
+    "props": {
+      "blockClass": ["amazing-menu-wrapper"],
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#todos-os-departamentos",
+      "menu-item#dep1",
+      "menu-item#dep2",
+      "menu-item#dep3",
+      "menu-item#dep4",
+      "menu-item#dep5",
+      "menu-item#dep6",
+      "rich-text#amazing-menu-offer"
+    ]
+  }
+}

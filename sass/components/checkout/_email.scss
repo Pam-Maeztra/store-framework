@@ -1,0 +1,103 @@
+#orderform-to-cart {
+  color: $text-color-1;
+
+  @include mobile {
+    padding-right: 1rem;
+  }
+}
+
+.client-pre-email,
+.client-profile-data {
+  border: none;
+}
+
+.pre-email {
+  .client-pre-email-h {
+    label {
+      span {
+        color: $text-color-1;
+        font-size: 30px;
+        font-weight: $bold;
+      }
+
+      small {
+        color: $text-color-1;
+      }
+    }
+
+    @include mobile {
+      padding: 0 1rem;
+
+      label {
+        span {
+          font-size: 20px;
+          line-height: 26px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .client-email {
+    @include mobile {
+      padding: 0 1rem;
+    }
+
+    #client-pre-email {
+      background: transparent;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $text-color-1;
+      box-shadow: none;
+      border-radius: 0;
+      font-size: 14px;
+      font-weight: $regular;
+      color: $text-color-1;
+      font-family: $main-font;
+
+      &:placeholder {
+        color: $text-color-1;
+      }
+    }
+
+    #btn-client-pre-email {
+      background: transparent;
+      border-color: $color-1;
+      border-radius: 30px;
+      color: $color-1;
+      font-family: $main-font;
+      font-size: 14px;
+      font-weight: $bold;
+      text-transform: none;
+      text-shadow: none;
+      height: 40px;
+
+      &:hover {
+        background: $color-1;
+        color: white;
+      }
+
+      @include mobile {
+        position: absolute;
+        right: 1rem;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.emailInfo {
+  h3,
+  .icon-ok {
+    color: $color-1 !important;
+  }
+
+  li {
+    color: $text-color-1;
+  }
+
+  .icon-lock {
+    color: $color-1 !important;
+    opacity: 0.2;
+  }
+}

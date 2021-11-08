@@ -1,0 +1,77 @@
+.newsletterForm {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  max-width: 397px;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .emailInputContainer {
+    width: 100%;
+
+    :global(.vtex-input-prefix__group) {
+      border: none;
+      background: transparent;
+
+      @include mobile {
+        margin-bottom: 8px;
+      }
+
+      :global(.vtex-styleguide-9-x-input) {
+        background: $color-white;
+        background-image: url('assets/svg/mpa-mail-news.svg');
+        background-repeat: no-repeat;
+        background-size: 8%;
+        background-position: center left 12px;
+        width: 397px;
+        border: 1px solid $color-1;
+        border-radius: 50px;
+        font-size: 14px;
+        padding-left: 55px;
+
+        @include mobile {
+          margin-right: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .formSubmitContainer {
+    @include desktop {
+      position: absolute;
+      right: 0;
+    }
+
+    :global(.vtex-button) {
+      background: $color-1;
+      border-color: $color-1;
+      border-radius: 50px;
+      color: $color-white;
+      font-size: 14px;
+      font-weight: $bold;
+      text-transform: none;
+      width: 107px;
+
+      @include mobile {
+        border-width: 1px;
+        width: 100%;
+      }
+
+      &:hover {
+        background: $color-3;
+        border-color: $color-3;
+        color: white;
+      }
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}

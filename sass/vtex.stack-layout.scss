@@ -1,0 +1,10 @@
+@import 'variables/_all';
+
+// COMMON
+@import 'mixins/responsive';
+
+// PRODUCT
+@import 'components/product/slider-image';
+
+// SHELF - PRODUCT
+@import 'components/common/shelf/shelf-stackItem';

@@ -1,0 +1,38 @@
+@mixin mainButton($fontSize, $width, $height) {
+  background: transparent;
+  border-radius: 500px;
+  border: 1px solid $color-1;
+  color: $color-1;
+  font-weight: $semi-bold;
+  font-size: $fontSize;
+  max-width: $width;
+  min-width: $width;
+  height: $height;
+  text-transform: none;
+  text-decoration: none;
+
+  &:hover {
+    background: $color-1;
+    color: white;
+    opacity: 0.8;
+  }
+}
+
+@mixin secundaryButton($fontSize, $width, $height, $color, $color2) {
+  background: $color;
+  border-radius: 500px;
+  border: none;
+  color: white;
+  font-weight: $bold;
+  font-size: $fontSize;
+  max-width: $width;
+  min-width: $width;
+  height: $height;
+  text-transform: none;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    background: $color2;
+  }
+}

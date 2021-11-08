@@ -1,0 +1,55 @@
+{
+  "flex-layout.col#3-footer-developed": {
+    "children": [
+      "flex-layout.col#1-footer-powered",
+      "flex-layout.col#2-footer-developed"
+    ],
+    "props": {
+      "blockClass": "mz-footer-developed"
+    }
+  },
+
+  "flex-layout.col#1-footer-powered": {
+    "children": ["rich-text#title-powered", "image#powered"],
+    "props": {
+      "blockClass": "mz-footer-developed--block"
+    }
+  },
+  "rich-text#title-powered": {
+    "props": {
+      "blockClass": "mz-footer-developed__title",
+      "text": "Powered by"
+    },
+    "title": "Título powered by"
+  },
+  "image#powered": {
+    "props": {
+      "src": "assets/svg/hpa-logo-vtex.svg",
+      "maxWidth": "52px",
+      "maxHeight": "19px",
+      "blockClass": "mz-footer-developed__image"
+    }
+  },
+
+  "flex-layout.col#2-footer-developed": {
+    "children": ["rich-text#title-developed", "image#developed"],
+    "props": {
+      "blockClass": "mz-footer-developed--block"
+    }
+  },
+  "rich-text#title-developed": {
+    "props": {
+      "blockClass": "mz-footer-developed__title",
+      "text": "Developed by"
+    },
+    "title": "Título developed by"
+  },
+  "image#developed": {
+    "props": {
+      "src": "assets/svg/hpa-logo-mz.svg",
+      "maxWidth": "86px",
+      "maxHeight": "21px",
+      "blockClass": "mz-footer-developed__image"
+    }
+  }
+}

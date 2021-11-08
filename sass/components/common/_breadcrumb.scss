@@ -1,0 +1,51 @@
+.container {
+  @extend %container;
+  padding: 10px 0;
+
+  @include mobile {
+    padding: 10px 1rem !important;
+  }
+
+  .homeLink {
+    align-items: center;
+    display: inline-flex;
+    padding-right: 0.25rem !important;
+
+    &::after {
+      content: 'Home';
+    }
+
+    .homeIcon {
+      position: relative;
+      top: 5px;
+    }
+  }
+
+  .homeLink,
+  .arrow,
+  .term {
+    font-size: 10px;
+    font-weight: $bold;
+    padding: 0;
+  }
+
+  .arrow {
+    color: $text-color-1;
+  }
+
+  .link {
+    &:hover {
+      color: $color-gray-800;
+      text-decoration: underline;
+    }
+  }
+
+  .term {
+    color: $text-color-1;
+    padding-left: 0.25rem;
+  }
+
+  .caretIcon {
+    height: 10px;
+  }
+}

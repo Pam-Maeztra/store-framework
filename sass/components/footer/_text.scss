@@ -1,0 +1,32 @@
+.paragraph {
+  &--mz-footer-logos {
+    &__title {
+      color: $color-white;
+      font-size: 14px;
+      font-weight: $bold;
+    }
+  }
+
+  &--mz-footer-developed {
+    &__title {
+      color: $color-white;
+      font-size: 10px;
+      font-weight: $regular;
+      margin-bottom: 0;
+    }
+  }
+
+  &--mz-footer-credits {
+    &__text {
+      color: $color-gray-907;
+      font-size: 10px;
+      font-weight: $regular;
+      margin: 0;
+
+      @include mobile {
+        line-height: 14px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.link {
+  &--mz-orderplaced {
+    &__buttons {
+      &--meus-pedidos {
+        @include mainButton(16px, 313px, 44px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $main-font;
+        margin-right: 13px;
+
+        @include mobile {
+          margin-right: 0;
+          margin-bottom: 16px;
+          min-width: 100%;
+          max-width: 100%;
+        }
+      }
+
+      &--nova-compra {
+        @include secundaryButton(16px, 252px, 44px, $color-1, $color-3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $main-font;
+
+        @include mobile {
+          min-width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

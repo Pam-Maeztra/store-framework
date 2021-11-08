@@ -1,0 +1,136 @@
+{
+  "vtex.menu@2.x:menu#all": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-flex__menu--title"
+    },
+    "children": [
+      "menu-item#item-all-item0",
+      "menu-item#item-all-item1",
+      "menu-item#item-all-item2",
+      "menu-item#item-all-item3",
+      "menu-item#item-all-item4",
+      "menu-item#item-all-item5",
+      "menu-item#item-all-item6"
+    ]
+  },
+
+  "menu-item#item-all-item0": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Ver Todos",
+        "text": "Ver Todos"
+      }
+    }
+  },
+
+  "menu-item#item-all-item1": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cadeiras-de-bebes",
+        "noFollow": false,
+        "tagTitle": "Cadeiras de bebês",
+        "text": "Cadeiras de bebês"
+      }
+    }
+  },
+
+  "menu-item#item-all-item2": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/utensilios",
+        "noFollow": false,
+        "tagTitle": "Utensílios",
+        "text": "Utensílios"
+      }
+    }
+  },
+
+  "menu-item#item-all-item3": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roupas",
+        "noFollow": false,
+        "tagTitle": "Roupas",
+        "text": "Roupas"
+      }
+    }
+  },
+
+  "menu-item#item-all-item4": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios",
+        "noFollow": false,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
+      }
+    }
+  },
+
+  "menu-item#item-all-item5": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/brinquedos",
+        "noFollow": false,
+        "tagTitle": "Brinquedos",
+        "text": "Brinquedos"
+      }
+    }
+  },
+
+  "menu-item#item-all-item6": {
+    "props": {
+      "id": "menu-item-categoria",
+      "type": "custom",
+      "blockClass": "mz-main__menu--item",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cadeira-de-alimentacao",
+        "noFollow": false,
+        "tagTitle": "Cadeira de alimentação",
+        "text": "Cadeira de alimentação"
+      }
+    }
+  }
+}

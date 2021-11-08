@@ -1,0 +1,125 @@
+{
+  "flex-layout.row#mz-main-categories": {
+    "props": {
+      "blockClass": "mz-main-categories"
+    },
+    "children": [
+      "rich-text#categories-title",
+      "flex-layout.row#mz-main-categories-banners"
+    ],
+    "title": "Categorias principais"
+  },
+
+  "rich-text#categories-title": {
+    "props": {
+      "blockClass": "mz-main-categories__text",
+      "text": "## Principais Categorias"
+    },
+    "title": "Título Seção Categorias"
+  },
+
+  "flex-layout.row#mz-main-categories-banners": {
+    "props": {
+      "blockClass": ["mz-main-categories__banners"]
+    },
+    "children": [
+      "info-card#home-category-banner-1",
+      "info-card#home-category-banner-2",
+      "info-card#home-category-banner-3",
+      "info-card#home-category-banner-4",
+      "info-card#home-category-banner-5",
+      "info-card#home-category-banner-6"
+    ],
+    "title": "Cards de Categorias"
+  },
+  "info-card#home-category-banner-1": {
+    "props": {
+      "id": "mz-category__banner",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://mundoinfantil.vteximg.com.br/arquivos/home-categoria-carrinhos.jpg",
+      "callToActionText": "Carrinhos de bebê",
+      "callToActionUrl": "/carrinhos-de-bebe",
+      "callToActionMode": "link",
+      "imageActionUrl": "/carrinhos-de-bebe",
+      "blockClass": "category",
+      "textAlignment": "center"
+    },
+    "title": "Categoria 1"
+  },
+  "info-card#home-category-banner-2": {
+    "props": {
+      "id": "mz-category__banner",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://mundoinfantil.vteximg.com.br/arquivos/home-categoria-utensilios.jpg",
+      "callToActionText": "Utensílios",
+      "callToActionUrl": "/utensilios",
+      "callToActionMode": "link",
+      "imageActionUrl": "/utensilios",
+      "blockClass": "category",
+      "textAlignment": "center"
+    },
+    "title": "Categoria 2"
+  },
+  "info-card#home-category-banner-3": {
+    "props": {
+      "id": "mz-category__banner",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://mundoinfantil.vteximg.com.br/arquivos/home-categoria-roupas.jpg",
+      "callToActionText": "Roupas",
+      "callToActionUrl": "/roupas",
+      "callToActionMode": "link",
+      "imageActionUrl": "/roupas",
+      "blockClass": "category",
+      "textAlignment": "center"
+    },
+    "title": "Categoria 3"
+  },
+  "info-card#home-category-banner-4": {
+    "props": {
+      "id": "mz-category__banner",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://mundoinfantil.vteximg.com.br/arquivos/home-categoria-acessorios.jpg",
+      "callToActionText": "Acessórios",
+      "callToActionUrl": "/acessorios",
+      "callToActionMode": "link",
+      "imageActionUrl": "/acessorios",
+      "blockClass": "category",
+      "textAlignment": "center"
+    },
+    "title": "Categoria 4"
+  },
+  "info-card#home-category-banner-5": {
+    "props": {
+      "id": "mz-category__banner",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://mundoinfantil.vteximg.com.br/arquivos/home-categoria-brinquedos.jpg",
+      "callToActionText": "Brinquedos",
+      "callToActionUrl": "/brinquedos",
+      "callToActionMode": "link",
+      "imageActionUrl": "/brinquedos",
+      "blockClass": "category",
+      "textAlignment": "center"
+    },
+    "title": "Categoria 5"
+  },
+  "info-card#home-category-banner-6": {
+    "props": {
+      "id": "mz-category__banner",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://mundoinfantil.vteximg.com.br/arquivos/home-categoria-cadeira-alimentacao.jpg",
+      "callToActionText": "Cadeira de alimentação",
+      "callToActionUrl": "/cadeira-de-alimentacao",
+      "callToActionMode": "link",
+      "imageActionUrl": "/cadeira-de-alimentacao",
+      "blockClass": "category",
+      "textAlignment": "center"
+    },
+    "title": "Categoria 6"
+  }
+}

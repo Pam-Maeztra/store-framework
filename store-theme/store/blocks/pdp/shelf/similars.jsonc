@@ -1,0 +1,22 @@
+{
+  "flex-layout.row#product-main-shelf-3": {
+    "props": {
+      "blockClass": "mz-main-shelf"
+    },
+    "children": ["flex-layout.row#mz-product-shelf-3-products"]
+  },
+  "flex-layout.row#mz-product-shelf-3-products": {
+    "children": ["shelf.relatedProducts#similars"]
+  },
+  "shelf.relatedProducts#similars": {
+    "props": {
+      "recommendation": "similars",
+      "productList": {
+        "titleText": "Produtos Similares",
+        "minItemsPerPage": 2,
+        "itemsPerPage": 4
+      }
+    },
+    "blocks": ["product-summary.shelf"]
+  }
+}

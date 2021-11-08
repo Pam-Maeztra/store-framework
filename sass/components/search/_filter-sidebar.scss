@@ -1,0 +1,63 @@
+.filter {
+  &__container {
+    border: 1px solid $color-gray-903;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 23px 30px;
+
+    &--title {
+      border: none;
+      padding: 0;
+      margin-bottom: 17px;
+
+      .filterMessage {
+        font-size: 0;
+        font-weight: $bold;
+        color: $color-1;
+        margin: 0;
+
+        &::before {
+          content: 'Filtre os Resultados';
+          font-size: 26px;
+        }
+      }
+    }
+
+    &--selectedFilters {
+      display: none;
+    }
+
+    .filterAvailable,
+    .filterTemplateOverflow {
+      padding: 0;
+    }
+
+    .filterTitle {
+      font-size: 16px;
+      font-weight: $bold;
+      color: $text-color-2;
+    }
+
+    .filterIcon {
+      padding: 0;
+      color: $text-color-2;
+    }
+
+    .filterContent {
+      margin-top: 17px;
+
+      .filterItem {
+        :global(.vtex-checkbox__line-container) {
+          align-items: center;
+
+          :global(.vtex-checkbox__label) {
+            font-size: 14px;
+            line-height: 31px;
+            font-weight: $regular;
+            color: $text-color-1;
+          }
+        }
+      }
+    }
+  }
+}

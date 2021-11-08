@@ -1,0 +1,70 @@
+{
+  // RESPONSIVE CONTENT
+  "responsive-layout.desktop#info-compra": {
+    "children": ["flex-layout.row#diferenciais"]
+  },
+
+  "responsive-layout.tablet#info-compra": {
+    "children": ["flex-layout.row#diferenciais"]
+  },
+  "responsive-layout.phone#info-compra": {
+    "children": ["flex-layout.row#diferenciais"]
+  },
+
+  // CONTENT
+  "flex-layout.row#diferenciais": {
+    "children": [
+      "flex-layout.col#info-compra-1",
+      "flex-layout.col#info-compra-2"
+    ],
+    "props": {
+      "blockClass": "mz-product__info"
+    }
+  },
+
+  // DIFERENCIAL 1
+  "flex-layout.col#info-compra-1": {
+    "children": [
+      "rich-text#info-compra-1-title",
+      "rich-text#info-compra-1-text"
+    ],
+    "props": {
+      "blockClass": "mz-product__info"
+    }
+  },
+  "rich-text#info-compra-1-title": {
+    "props": {
+      "blockClass": "mz-product__info--title",
+      "text": "**Parcele em até 10x sem juros**"
+    }
+  },
+  "rich-text#info-compra-1-text": {
+    "props": {
+      "blockClass": "mz-product__info--text",
+      "text": "*Você podera pagar no cartçao de crédito e parcelar em até 10x sem juros"
+    }
+  },
+
+  // DIFERENCIAL 2
+  "flex-layout.col#info-compra-2": {
+    "children": [
+      "rich-text#info-compra-2-title",
+      "rich-text#info-compra-2-text"
+    ],
+    "props": {
+      "blockClass": "mz-product__info"
+    }
+  },
+  "rich-text#info-compra-2-title": {
+    "props": {
+      "blockClass": "mz-product__info--title",
+      "text": "**Compre no site e retire na loja**"
+    }
+  },
+  "rich-text#info-compra-2-text": {
+    "props": {
+      "blockClass": "mz-product__info--text",
+      "text": "*Você podera escolher em qual loja deseja retirar o produto na pagina de finalizar pedido"
+    }
+  }
+}

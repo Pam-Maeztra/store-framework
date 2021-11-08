@@ -1,0 +1,86 @@
+.skuSelector {
+  &Container {
+    margin-top: 25px;
+
+    @include mobile {
+      margin-top: 16px;
+    }
+  }
+
+  &Subcontainer {
+    margin-bottom: 20px;
+  }
+
+  &NameContainer {
+    margin: 0;
+  }
+
+  &TextContainer {
+    margin-bottom: 9px;
+  }
+
+  &Name,
+  &NameSeparator,
+  &SelectorImageValue {
+    color: $text-color-2;
+    font-size: 12px;
+    font-weight: $bold;
+  }
+
+  &OptionsList {
+    margin: 0;
+  }
+
+  &Item {
+    margin: 0 8px 8px 0;
+    width: 119px;
+    height: 28px;
+
+    @include mobile {
+      width: 91px;
+    }
+
+    :global(.vtex-store-components-3-x-skuSelectorInternalBox) {
+      border-radius: 50px;
+      border-color: $color-1;
+      margin: 0;
+    }
+
+    :global(.vtex-store-components-3-x-frameAround--mz-product__sku) {
+      border-radius: 50px;
+      border: none;
+    }
+
+    &--selected {
+      border: 1px solid $color-1 !important;
+      background-color: $color-1;
+      border-radius: 50px;
+
+      :global(.vtex-store-components-3-x-valueWrapper--mz-product__sku) {
+        color: white;
+      }
+    }
+
+    &Image {
+      border-radius: 50%;
+      border: 1px solid $color-gray-912;
+
+      &Value {
+        background: white;
+      }
+
+      :global(.vtex-store-components-3-x-skuSelectorInternalBox) {
+        border: none;
+        border-radius: 50%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+:global(.vtex-store-components-3-x-valueWrapper--mz-product__sku) {
+  padding: 0;
+  font-size: 14px;
+  font-weight: $regular;
+  color: $text-color-2;
+}

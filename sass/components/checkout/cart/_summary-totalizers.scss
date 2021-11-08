@@ -1,0 +1,227 @@
+.cart-template {
+  .summary-template-holder {
+    .summary-totalizers {
+      @include mobile {
+        margin: 0;
+        padding: 0 1rem;
+      }
+
+      .coupon-column {
+        .summary-coupon {
+          margin: 0;
+
+          .coupon-data {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 12px;
+
+            .link-coupon-add {
+              @include mainButton(12px, 318px, 36px);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-weight: $bold;
+
+              span {
+                &:last-child {
+                  margin-left: 2px;
+                }
+              }
+
+              @include mobile {
+                max-width: 80%;
+                min-width: 80%;
+                margin-right: auto;
+              }
+            }
+          }
+
+          .coupon-fieldset {
+            .coupon-label {
+              label {
+                font-size: 16px;
+                font-weight: $bold;
+                color: $color-1;
+              }
+            }
+
+            .coupon-fields {
+              > span {
+                width: 100%;
+                display: flex;
+              }
+
+              @include mobile {
+                span {
+                  &:first-child {
+                    display: flex;
+                    justify-content: space-between;
+                  }
+                }
+              }
+
+              #cart-coupon {
+                background: transparent;
+                width: 65%;
+                border: none;
+                border-bottom: 1px solid $text-color-1;
+                box-shadow: none;
+                border-radius: 0;
+                margin-right: 16px;
+                font-size: 14px;
+                font-weight: $regular;
+                color: $text-color-1;
+                font-family: $main-font;
+
+                @include mobile {
+                  width: 100%;
+                  margin-right: 0;
+                }
+
+                &:placeholder {
+                  color: $text-color-1;
+                }
+              }
+
+              #cart-coupon-add {
+                background: transparent;
+                border-color: $color-1;
+                border-radius: 30px;
+                color: $color-1;
+                font-family: $main-font;
+                font-size: 14px;
+                font-weight: $bold;
+                text-transform: none;
+                text-shadow: none;
+
+                @include mobile {
+                  height: 30px;
+                }
+
+                &:hover {
+                  background: $color-1;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .accordion-body {
+        .totalizers-list {
+          .Items,
+          tr {
+            border-bottom: none;
+
+            .info,
+            .monetary {
+              font-size: 14px;
+              font-weight: $bold;
+              color: $text-color-1;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              @include mobile {
+                justify-content: flex-start;
+                width: 50%;
+              }
+            }
+
+            .empty {
+              width: 0;
+            }
+          }
+        }
+
+        tfoot {
+          tr {
+            .info,
+            .monetary {
+              font-size: 18px;
+              font-weight: $bold;
+              color: $text-color-2;
+              text-align: center;
+              vertical-align: middle;
+
+              @include mobile {
+                text-align: left;
+                width: 50%;
+              }
+            }
+
+            .empty {
+              width: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cart-links-bottom {
+    @include mobile {
+      position: relative;
+      padding: 0 1rem 3rem;
+      margin: 0;
+    }
+
+    .link-choose-more-products-wrapper {
+      #cart-choose-more-products {
+        @include mainButton(0, 236px, 36px);
+        font-weight: $bold;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: none;
+        position: relative;
+        top: 2px;
+
+        &:before {
+          font-size: 12px;
+          content: 'Continuar comprando';
+        }
+      }
+
+      @include mobile {
+        display: flex;
+        width: 90%;
+        bottom: 0;
+        position: absolute;
+
+        #cart-choose-more-products {
+          margin-top: 10px;
+          min-width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .btn-place-order-wrapper {
+      #cart-to-orderform {
+        @include secundaryButton(0, 322px, 38px, $color-1, $color-3);
+        padding: 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: none;
+
+        &:before {
+          font-size: 14px;
+          content: 'Finalizar compra';
+        }
+      }
+
+      @include mobile {
+        display: block;
+        width: 100%;
+
+        #cart-to-orderform {
+          max-width: 100%;
+          min-width: 100%;
+        }
+      }
+    }
+  }
+}

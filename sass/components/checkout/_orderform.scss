@@ -1,0 +1,152 @@
+#client-profile-data,
+#shipping-data,
+#payment-data {
+  .client-profile-data,
+  .shipping-data,
+  .store-country-BRA {
+    border: 1px solid $color-gray-600 !important;
+    border-radius: 4px;
+    background: white;
+
+    @include mobile {
+      padding: 20px;
+      margin: 0 1rem 1rem;
+    }
+
+    &.active {
+      border-color: $color-gray-600 !important;
+    }
+
+    .accordion-toggle-active {
+      font-size: 18px;
+      font-weight: $medium;
+      color: $text-color-1;
+    }
+
+    a {
+      color: $text-color-1;
+    }
+
+    .link-change-shipping {
+      border-color: $color-1;
+    }
+
+    .submit,
+    .btn-submit-wrapper {
+      .btn-success {
+        @include mainButton(14px, 100%, 38px);
+        font-family: $main-font;
+        font-weight: $bold;
+        line-height: 10px;
+        text-shadow: none;
+      }
+    }
+  }
+}
+
+.orderform-template {
+  @include mobile {
+    margin: 0;
+  }
+
+  .mini-cart {
+    @include mobile {
+      padding: 0 1rem;
+    }
+
+    h2 {
+      background: none;
+      text-align: left;
+      color: $text-color-1;
+      border: none;
+      padding: 0;
+      margin-bottom: 15px;
+      font-weight: $bold;
+    }
+
+    .summary-cart-template-holder {
+      .cart {
+        border: none;
+
+        @include mobile {
+          margin: 0;
+        }
+
+        .item {
+          border: none;
+          border-bottom: 1px solid $color-gray-600;
+          margin: 0;
+          color: $text-color-1;
+
+          .quantity {
+            color: white;
+            background: $color-1;
+            border-color: $color-1;
+            box-shadow: none;
+          }
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  #orderform-minicart-to-cart {
+    color: $text-color-1;
+  }
+
+  .summary-template-holder {
+    background: none;
+    border-top: 1px solid $color-gray-600 !important;
+
+    @include mobile {
+      .summary-totalizers {
+        padding: 0;
+      }
+    }
+
+    .totalizers-list {
+      .Items,
+      tr {
+        .info,
+        .monetary {
+          display: revert !important;
+
+          @include mobile {
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    tfoot {
+      tr {
+        .info,
+        .monetary {
+          text-align: right !important;
+        }
+      }
+    }
+  }
+}
+
+.vtex-omnishipping-1-x-svg {
+  path {
+    fill: $color-1;
+  }
+}
+
+.payment-confirmation-wrap {
+  @include mobile {
+    border: none;
+  }
+}
+
+#payment-data-submit {
+  @include secundaryButton(16, 100%, 38px, $color-1, $color-3);
+  font-family: $main-font;
+  line-height: 10px;
+  text-shadow: none;
+}

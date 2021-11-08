@@ -1,0 +1,29 @@
+.container {
+  :global(.vtex-store-components-3-x-productNameContainer) {
+    font-size: 21px;
+    line-height: 27px;
+    font-weight: $bold;
+    color: $text-color-2;
+    margin: 0;
+    text-transform: uppercase;
+
+    @include mobile {
+      margin-top: 30px;
+    }
+  }
+
+  :global(.vtex-product-identifier-0-x-product-identifier) {
+    font-size: 10px;
+    font-weight: $regular;
+    color: $text-color-1;
+
+    :global(.vtex-product-identifier-0-x-product-identifier__label) {
+      font-size: 0;
+
+      &::before {
+        content: 'Ref';
+        font-size: 10px;
+      }
+    }
+  }
+}

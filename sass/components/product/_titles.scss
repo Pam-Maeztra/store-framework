@@ -1,0 +1,41 @@
+.container {
+  &--mz-product {
+    &__description {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+.wrapper {
+  &--mz-product {
+    &__description {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.headingLevel4 {
+  &--mz-product {
+    &__description {
+      font-size: 42px;
+      font-weight: $bold;
+      color: $color-2;
+      margin: 29px 0;
+      text-align: left;
+
+      @include mobile {
+        font-size: 26px;
+        margin: 35px 0;
+      }
+
+      &--title {
+        margin: 0;
+        font-size: 18px;
+        font-weight: $bold;
+        color: $text-color-2;
+      }
+    }
+  }
+}

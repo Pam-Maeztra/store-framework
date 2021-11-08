@@ -1,0 +1,67 @@
+.menuIcon {
+  &--mz-drawer {
+    &__menu {
+      &--mobile {
+        width: 50px;
+      }
+    }
+  }
+}
+
+.openIconContainer {
+  &--mz-drawer {
+    &__menu {
+      &--mobile {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.drawerHeader {
+  &--mz-drawer {
+    &__menu {
+      &--mobile {
+        background: $color-1;
+        padding: 0 1rem;
+        flex-direction: column;
+
+        .closeIconButton {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+:global(.vtex-store-drawer-0-x-opened--mz-drawer__menu--mobile) {
+  .closeIconButton {
+    width: 19px;
+    height: 19px;
+    padding: 0;
+    position: absolute;
+    right: -12%;
+    top: 15%;
+    background-image: url('assets/svg/hpa-white-close-button.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    .closeIcon {
+      display: none;
+    }
+  }
+}
+
+.childrenContainer {
+  &--mz-drawer {
+    &__menu {
+      &--mobile {
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.mz-checkout-header {
+  background: white;
+  height: 98px;
+  border-bottom: 1px solid $color-1;
+
+  @include mobile {
+    height: 78px;
+  }
+
+  &__container {
+    @extend %container;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    img {
+      max-height: 73px;
+
+      @include mobile {
+        max-height: 49px;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.flex {
+  &Row {
+    &--mz-shelf {
+      &__summary {
+        &--button {
+          padding: 0 25px;
+
+          @include mobile {
+            padding: 0 10px;
+          }
+
+          :global(.vtex-button) {
+            @include mainButton(16px, 100%, 44px);
+            margin: 12px auto;
+
+            @include mobile {
+              @include mainButton(12px, 100%, 36px);
+            }
+          }
+        }
+
+        &--unavailable {
+          margin-top: -35px;
+        }
+      }
+    }
+
+    &Content {
+      &--mz-shelf {
+        &__summary {
+          align-items: flex-start;
+          justify-content: center;
+          height: 42px;
+          position: relative;
+          flex-direction: column;
+          padding: 0 25px;
+
+          @include mobile {
+            height: 35px;
+            display: flex;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.wrapper {
+  &--mz-not-found-page {
+    &__title {
+      :global(.vtex-rich-text-0-x-paragraph) {
+        font-size: 42px;
+        font-weight: $bold;
+        color: $color-1;
+        margin: 0 0 30px;
+
+        @include mobile {
+         font-size: 26px;
+        }
+      }
+    }
+
+    &__subtitle {
+      :global(.vtex-rich-text-0-x-paragraph) {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: $regular;
+        color: $text-color-2;
+        margin: 0 0 60px;
+
+        @include desktop {
+          min-width: 400px;
+        }
+
+        @include mobile {
+          margin-bottom: 30px;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    &__text {
+      :global(.vtex-rich-text-0-x-paragraph) {
+        color: $text-color-2;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: $regular;
+        margin: 0;
+
+        @include desktop {
+          min-width: 600px;
+        }
+
+        @include mobile {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    &__button {
+      :global(.vtex-rich-text-0-x-link) {
+        @include mainButton(16px, 359px, 50px);
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile {
+          margin-top: 40px;
+          min-width: 280px;
+          max-width: 280px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.heading {
+  &--mz-orderplaced {
+    &__title {
+      font-size: 32px;
+      font-weight: $bold;
+      color: $color-1;
+      margin: 58px 0 26px;
+
+      @include mobile {
+        font-size: 26px;
+        margin: 38px 0 18px;
+      }
+    }
+  }
+}
+
+.paragraph {
+  &--mz-orderplaced {
+    &__order-summary {
+      margin: 0;
+      font-size: 18px;
+      font-weight: $bold;
+      color: $text-color-2;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.flex {
+  &Row {
+    &--mz-main {
+      background-color: $color-white;
+      height: 99px;
+
+      @include mobile {
+        height: 65px;
+        border-bottom: 1px solid $color-gray-700;
+      }
+    }
+
+    &--mz-sticky-footer {
+      position: fixed;
+      bottom: 2%;
+      width: 94%;
+      background: $color-white;
+      height: 50px;
+      left: 45%;
+      transform: translate(-45%, 0);
+      border-radius: 50px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    &Content {
+      &--mz-main {
+        @extend %container;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile {
+          justify-content: center;
+        }
+      }
+
+      &--mz-sticky-footer {
+        :global(.vtex-login-2-x-buttonLink) {
+          :global(.vtex-button) {
+            background-image: url('assets/svg/hpa-profile.svg');
+            background-repeat: no-repeat;
+            background-size: 32%;
+            background-position: center center;
+            width: 85px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.list {
+  &--mz-wishlist {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+
+      @include mobile {
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+
+.item {
+  &--mz-wishlist {
+    &__list {
+      list-style: none;
+      flex: 0 0 33%;
+      margin: 0 0 50px;
+
+      @include mobile {
+        flex: 0 0 46%;
+        margin: 0 1rem 20px 0;
+
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+      }
+
+      :global(.vtex-flex-layout-0-x-flexRowContent--mz-shelf__summary--button) {
+        :global(.vtex-button) {
+          @include mainButton(16px, 208px, 44px);
+          margin: 12px auto;
+        }
+      }
+    }
+  }
+}

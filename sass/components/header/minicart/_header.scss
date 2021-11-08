@@ -1,0 +1,39 @@
+.minicart {
+  &Container {
+    &--mz-cart {
+      padding: 0;
+
+      .openIconContainer {
+        padding: 0;
+
+        :global(.vtex-button) {
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: transparent !important;
+          }
+        }
+      }
+    }
+  }
+
+  &IconContainer {
+    width: 35px;
+    height: 35px;
+    background-image: url('assets/svg/hpa-cart.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+
+    .cartIcon {
+      display: none;
+    }
+  }
+
+  &QuantityBadge {
+    background: $color-1;
+    color: white;
+    font-size: 12px;
+    font-weight: $bold;
+  }
+}

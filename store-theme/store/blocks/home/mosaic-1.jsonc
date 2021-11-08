@@ -1,0 +1,59 @@
+{
+  "flex-layout.row#mz-mosaic-1": {
+    "props": {
+      "blockClass": ["mz-main-mosaic__banners"]
+    },
+    "children": [
+      "info-card#home-mosaic-1-banner-1",
+      "info-card#home-mosaic-1-banner-2",
+      "info-card#home-mosaic-1-banner-3"
+    ],
+    "title": "Mosaico Categorias 1"
+  },
+
+  "info-card#home-mosaic-1-banner-1": {
+    "props": {
+      "id": "mz-mosaic__banner",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://mundoinfantil.vteximg.com.br/arquivos/home-banner-meninas.jpg",
+      "callToActionText": "Produtos para meninas",
+      "callToActionUrl": "/#",
+      "callToActionMode": "link",
+      "imageActionUrl": "/#",
+      "blockClass": "mosaic",
+      "textAlignment": "center"
+    },
+    "title": "Categoria 1"
+  },
+  "info-card#home-mosaic-1-banner-2": {
+    "props": {
+      "id": "mz-mosaic__banner",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://mundoinfantil.vteximg.com.br/arquivos/home-banner-meninos.jpg",
+      "callToActionText": "Produtos para meninos",
+      "callToActionUrl": "/#",
+      "callToActionMode": "link",
+      "imageActionUrl": "/#",
+      "blockClass": "mosaic",
+      "textAlignment": "center"
+    },
+    "title": "Categoria 2"
+  },
+  "info-card#home-mosaic-1-banner-3": {
+    "props": {
+      "id": "mz-mosaic__banner",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://mundoinfantil.vteximg.com.br/arquivos/home-banner-bebes.jpg",
+      "callToActionText": "Produtos para bebês",
+      "callToActionUrl": "/#",
+      "callToActionMode": "link",
+      "imageActionUrl": "/#",
+      "blockClass": "mosaic",
+      "textAlignment": "center"
+    },
+    "title": "Categoria 3"
+  }
+}

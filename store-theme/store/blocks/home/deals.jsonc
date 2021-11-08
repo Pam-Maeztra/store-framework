@@ -1,0 +1,127 @@
+{
+  "flex-layout.row#mz-deals": {
+    "children": [
+      "flex-layout.col#mz-deals1",
+      "flex-layout.col#mz-deals2",
+      "flex-layout.col#mz-deals3",
+      "flex-layout.col#mz-deals4"
+    ],
+    "props": {
+      "blockClass": "mz-main-deals"
+    },
+    "title": "Informações adicionais"
+  },
+
+  "flex-layout.col#mz-deals1": {
+    "children": ["flex-layout.row#mz-image-deals-1", "rich-text#mz-deal1"],
+    "props": {
+      "blockClass": "mz-main-deals__block"
+    },
+    "title": "Item 1"
+  },
+  "flex-layout.row#mz-image-deals-1": {
+    "children": ["image#mz-deal1"],
+    "props": {
+      "blockClass": "mz-main-deals__image"
+    },
+    "title": "Imagem - Item 1"
+  },
+  "image#mz-deal1": {
+    "props": {
+      "src": "assets/svg/mpa-shield.svg",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#mz-deal1": {
+    "props": {
+      "text": "Site 100% seguro",
+      "blockClass": "mz-main-deals__text"
+    },
+    "title": "Texto - Item 1"
+  },
+
+  "flex-layout.col#mz-deals2": {
+    "children": ["flex-layout.row#mz-image-deals-2", "rich-text#mz-deal2"],
+    "props": {
+      "blockClass": "mz-main-deals__block"
+    },
+    "title": "Item 2"
+  },
+  "flex-layout.row#mz-image-deals-2": {
+    "children": ["image#mz-deal2"],
+    "props": {
+      "blockClass": "mz-main-deals__image"
+    },
+    "title": "Imagem - Item 2"
+  },
+  "image#mz-deal2": {
+    "props": {
+      "src": "assets/svg/mpa-refresh.svg",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#mz-deal2": {
+    "props": {
+      "text": "Trocas e devolução em até 30 dias",
+      "blockClass": "mz-main-deals__text"
+    },
+    "title": "Texto - Item 2"
+  },
+
+  "flex-layout.col#mz-deals3": {
+    "children": ["flex-layout.row#mz-image-deals-3", "rich-text#mz-deal3"],
+    "props": {
+      "blockClass": "mz-main-deals__block"
+    },
+    "title": "Item 3"
+  },
+  "flex-layout.row#mz-image-deals-3": {
+    "children": ["image#mz-deal3"],
+    "props": {
+      "blockClass": "mz-main-deals__image"
+    },
+    "title": "Imagem - Item 3"
+  },
+  "image#mz-deal3": {
+    "props": {
+      "src": "assets/svg/mpa-truck.svg",
+      "maxHeight": "24px"
+    }
+  },
+  "rich-text#mz-deal3": {
+    "props": {
+      "text": "Enviamos para todo o Brasil",
+      "blockClass": "mz-main-deals__text"
+    },
+    "title": "Texto - Item 3"
+  },
+
+  "flex-layout.col#mz-deals4": {
+    "children": ["flex-layout.row#mz-image-deals-4", "rich-text#mz-deal4"],
+    "props": {
+      "blockClass": "mz-main-deals__block"
+    },
+    "title": "Item 4"
+  },
+  "flex-layout.row#mz-image-deals-4": {
+    "children": ["image#mz-deal4"],
+    "props": {
+      "blockClass": "mz-main-deals__image"
+    },
+    "title": "Imagem - Item 4"
+  },
+  "image#mz-deal4": {
+    "props": {
+      "src": "assets/svg/mpa-credit-card.svg",
+      "maxHeight": "24px",
+      "blockClass": "mz-main-deals__image"
+    }
+  },
+  "rich-text#mz-deal4": {
+    "props": {
+      "text": "Parcele em até 3x sem juros [saiba mais](#)",
+      "blockClass": "mz-main-deals__text"
+    },
+    "title": "Texto - Item 4"
+  }
+}
