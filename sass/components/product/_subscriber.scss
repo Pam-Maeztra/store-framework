@@ -1,0 +1,30 @@
+@import "extends/inputs";
+@import "extends/buttons";
+
+.subscriber {
+  &Container {
+    margin-top: 20px;
+
+    .content {
+      flex-direction: column;
+    }
+
+    :global(.vtex-input-prefix__group) {
+      border: none;
+      height: auto;
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+      @extend %input-text;
+      height: 48px;
+    }
+
+    :global(.vtex-input__suffix) {
+      padding: 0;
+    }
+
+    :global(.vtex-button) {
+      @extend %primary-button;
+    }
+  }
+}

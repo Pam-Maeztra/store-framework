@@ -1,0 +1,81 @@
+{
+  "flex-layout.row#categories-banner-search": {
+    "children": ["flex-layout.col#categories-banner-search"],
+    "props": {
+      "blockClass": ["home__categories-banner", "home__slider"]
+    }
+  },
+  "flex-layout.col#categories-banner-search": {
+    "children": [
+      "rich-text#categories-banner-search",
+      "flex-layout.row#categories-banner-search-inner"
+    ],
+    "props": {
+      "blockClass": "home__categories-banner--col"
+    }
+  },
+
+  "rich-text#categories-banner-search": {
+    "props": {
+      "text": "## Principais Categorias \n Texto SEO da categoria, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida neque convallis a cras sem per auctor neque. Egestas integer eget aliquet nibh praesent. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. \n [Saiba mais](https://stackedit.io/app#)",
+      "blockClass": "search__categories-banner"
+    }
+  },
+
+  "flex-layout.row#categories-banner-search-inner": {
+    "children": [
+      "image#categories-banner-search-1",
+      "image#categories-banner-search-2",
+      "image#categories-banner-search-3",
+      "image#categories-banner-search-4",
+      "image#categories-banner-search-5",
+      "image#categories-banner-search-6"
+    ],
+    "props": {
+      "blockClass": "home__categories-banner--col"
+    }
+  },
+
+  "image#categories-banner-search-1": {
+    "props": {
+      "src": "assets/img/banner-06.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "image#categories-banner-search-2": {
+    "props": {
+      "src": "assets/img/banner-07.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "image#categories-banner-search-3": {
+    "props": {
+      "src": "assets/img/banner-08.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "image#categories-banner-search-4": {
+    "props": {
+      "src": "assets/img/banner-09.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "image#categories-banner-search-5": {
+    "props": {
+      "src": "assets/img/banner-10.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "image#categories-banner-search-6": {
+    "props": {
+      "src": "assets/img/banner-11.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  }
+}

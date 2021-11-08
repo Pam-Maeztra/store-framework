@@ -1,0 +1,39 @@
+@import "extends/container";
+
+.suggestion {
+  &ListWrapper {
+    margin-bottom: 40px;
+  }
+
+  &s {
+    &List {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: end;
+
+      &Prefix {
+        font-weight: $bold;
+      }
+
+      &Link {
+        border: 1px solid $color-3-500;
+        padding: 2px 5px;
+        color: $color-3-500;
+        margin: 2.5px;
+
+        &::before {
+          display: none;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          border: 1px solid $color-3-700;
+          color: $color-3-700;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

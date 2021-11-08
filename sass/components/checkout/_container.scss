@@ -1,0 +1,128 @@
+.checkout-container {
+  .cart-template {
+    &-holder {
+      border: 1px solid $color-6-500;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+  }
+
+  .empty-cart-content {
+    padding: 16px;
+  }
+
+  .cart-more-options {
+    margin: 0 !important;
+  }
+
+  td.product-name a {
+    font-size: $font-size-base;
+    font-weight: 700;
+    color: $text-color-1-500;
+    transition: 0.2s;
+  }
+
+  i.icon.icon-plus-sign,
+  i.icon.icon-minus-sign,
+  i.icon.icon-remove.item-remove-ico {
+    color: $color-2;
+  }
+
+  i.icon.icon-plus-sign {
+    &::before {
+      content: url("https://devnewbalance.vteximg.com.br/arquivos/icon-plus-sign.svg");
+    }
+  }
+
+  i.icon.icon-minus-sign {
+    &::before {
+      content: url("https://devnewbalance.vteximg.com.br/arquivos/icon-minus-sign.svg");
+    }
+  }
+
+  i.icon.icon-remove.item-remove-ico {
+    &::before {
+      content: url("https://devnewbalance.vteximg.com.br/arquivos/icon-delete.svg");
+    }
+  }
+
+  th.product,
+  th.shipping-date,
+  th.product-price,
+  th.quantity,
+  th.quantity-price {
+    font-size: $font-size-sm;
+    font-weight: $semi-bold;
+    color: $black;
+  }
+
+  td.shipping-date {
+    font-size: $font-size-xs;
+    font-weight: $normal;
+    color: $text-color-1-500;
+    &.empty {
+      .shipping-estimate-date:first-of-type {
+        font-size: 0;
+        &::before {
+          content: "precisa ser calculado";
+          font-size: $font-size-xs;
+        }
+      }
+    }
+  }
+
+  td.product-price,
+  td.quantity-price {
+    font-weight: $semi-bold;
+    color: $text-color-1-500;
+    font-size: $font-size-xs;
+
+    .old-product-price-label,
+    .old-product-price {
+      color: $text-color-2-400;
+      font-weight: $normal;
+    }
+  }
+
+  td.quantity {
+    input {
+      font-weight: $normal;
+      color: $text-color-1-500;
+      font-size: $font-size-sm;
+      box-shadow: none;
+      transition: 0.1s;
+    }
+  }
+
+  .full-cart .cart table tbody tr td.quantity {
+    @media screen and (max-width: 490px) {
+      width: auto;
+    }
+  }
+
+  td.total-selling-price,
+  td.total-price {
+    font-weight: $bold;
+    color: $text-color-1-500;
+    font-size: $font-size-sm;
+  }
+
+  .totalizers-list {
+    tr {
+      border: 0;
+    }
+  }
+
+  .coupon.summary-coupon {
+    margin: 0;
+  }
+
+  .pre-email {
+    .client-pre-email-h label {
+      margin-top: 10px;
+    }
+    .btn-success {
+      position: relative;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "mixins/text";
+@import "mixins/links";
+
+.container {
+  &--product__description {
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .heading {
+      @extend %big-title-section;
+    }
+  }
+
+  &--product__unavaible {
+    &::before {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .strong {
+      @include text($font-size-sm, $text-color-1-400, $bold);
+    }
+
+    .link {
+      @include link($font-size-xs, $color-2-500, $normal, underline);
+    }
+  }
+
+  &--home__deals--product {
+    .strong {
+      @include text($font-size-xs, $color-2-500, $bold);
+    }
+
+    .paragraph {
+      @include text($font-size-xs, $text-color-1-400, $normal);
+    }
+  }
+}

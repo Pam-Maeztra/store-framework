@@ -1,0 +1,34 @@
+{
+  "flex-layout.row#sales-banner-main": {
+    "children": [
+      "image#sales-banner-1",
+      "image#sales-banner-2",
+      "image#sales-banner-3"
+    ],
+    "props": {
+      "blockClass": "home__sales-banner"
+    }
+  },
+
+  "image#sales-banner-1": {
+    "props": {
+      "src": "assets/img/banner-04.png",
+      "link": "/",
+      "blockClass": "home__sales-banner"
+    }
+  },
+  "image#sales-banner-2": {
+    "props": {
+      "src": "assets/img/banner-12.png",
+      "link": "/",
+      "blockClass": "home__sales-banner"
+    }
+  },
+  "image#sales-banner-3": {
+    "props": {
+      "src": "assets/img/banner-03.png",
+      "link": "/",
+      "blockClass": "home__sales-banner"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "mixins/text";
+
+.list {
+  &Price {
+    @include text($font-size-sm, $text-color-1-400, $normal);
+    margin-right: 10px;
+
+    @media (max-width: $l) {
+      font-size: $font-size-xs;
+    }
+  }
+}
+
+.selling {
+  &Price {
+    @include text($font-size-h5, $color-3-500, $bold);
+
+    @media (max-width: $l) {
+      font-size: $font-size-lg;
+    }
+  }
+}
+
+.installment {
+  &s {
+    @include text($font-size-sm, $text-color-1-400, $normal);
+    margin-bottom: 15px;
+
+    &Number {
+      @include text($font-size-sm, $text-color-1-500, $bold);
+    }
+  }
+
+  &Value {
+    @include text($font-size-sm, $text-color-1-500, $bold);
+
+    &::before {
+      content: "de";
+      margin: 0 2px;
+      display: inline-block;
+      @include text($font-size-sm, $text-color-1-400, $normal);
+    }
+  }
+}

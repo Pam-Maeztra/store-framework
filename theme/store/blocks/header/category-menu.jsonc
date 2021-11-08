@@ -1,0 +1,13 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "header__menu"
+    },
+    "children": [
+      "menu-item#all-categories",
+      "menu-item#categories-with-banner",
+      "menu-item#categories-with-banner-big"
+    ]
+  }
+}

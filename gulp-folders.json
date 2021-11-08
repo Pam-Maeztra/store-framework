@@ -1,0 +1,17 @@
+{
+  "paths": {
+    "sass": {
+      "src": "sass/**/*.scss",
+      "dest": {
+        "theme": "theme/styles/css",
+        "checkout": "checkout-ui-settings/checkout-ui-custom"
+      }
+    }
+  },
+  "options": {
+    "sass": {
+      "includePaths": ["sass"],
+      "outputStyle": "compressed"
+    }
+  }
+}

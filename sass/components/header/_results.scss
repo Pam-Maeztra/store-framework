@@ -1,0 +1,21 @@
+.results {
+  &List {
+    &--header__search {
+      @include text($font-size-sm);
+      max-height: 360px;
+      max-width: 500px;
+      margin: 5px auto;
+      right: 0;
+      width: auto !important;
+      left: -9%;
+      position: fixed;
+
+      @media (max-width: $l) {
+        left: 0;
+        padding: 0 10px;
+        margin: 0 auto;
+        top: 60px;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "extends/inputs";
+@import "extends/buttons";
+
+.shipping {
+  &Table {
+    margin: 20px 0;
+  }
+
+  &Container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    :global(.vtex-input__label) {
+      display: none;
+    }
+
+    :global(.vtex-address-form__postalCode) {
+      padding-bottom: 0;
+    }
+
+    :global(.vtex-input-prefix__group) {
+      border: none;
+      height: auto;
+    }
+
+    :global(.vtex-address-form-4-x-input) {
+      @extend %input-text;
+      height: 48px;
+      margin-right: 10px;
+    }
+
+    :global(.vtex-input__suffix) {
+      padding: 0;
+    }
+
+    :global(.vtex-button) {
+      @extend %secondary-button;
+      width: 40%;
+    }
+
+    :global(.vtex-button__label) {
+      width: 63px;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 0;
+      margin: 0 auto;
+      justify-content: end;
+    }
+
+    :global(.vtex-address-form__postalCode) {
+      width: 60%;
+    }
+  }
+}

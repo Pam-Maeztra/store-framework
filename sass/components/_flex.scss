@@ -1,0 +1,22 @@
+@import "extends/container";
+
+.flex {
+  &Row {
+    &Content {
+      &--shelf__price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        .stretchChildrenWidth {
+          width: auto !important;
+        }
+      }
+
+      &--institucional {
+        @extend %container;
+      }
+    }
+  }
+}

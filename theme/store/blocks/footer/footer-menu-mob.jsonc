@@ -1,0 +1,85 @@
+{
+  "menu-item#footer-menu-1": {
+    "props": {
+      "blockClass": "footer__menu--mob",
+      "id": "menu-item-all-categories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#institucional"]
+  },
+  "vtex.menu@2.x:submenu.accordion#institucional": {
+    "children": ["vtex.menu@2.x:menu#footer-all-categories"]
+  },
+  "menu-item#footer-menu-2": {
+    "props": {
+      "blockClass": "footer__menu--mob",
+      "id": "menu-item-all-categories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#help"]
+  },
+  "vtex.menu@2.x:submenu.accordion#help": {
+    "children": ["vtex.menu@2.x:menu#footer-all-categories-2"]
+  },
+  "menu-item#footer-menu-3": {
+    "props": {
+      "blockClass": "footer__menu--mob",
+      "id": "menu-item-all-categories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Institucional",
+        "text": "Institucional"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#more"]
+  },
+  "vtex.menu@2.x:submenu.accordion#more": {
+    "children": ["vtex.menu@2.x:menu#footer-all-categories-3"]
+  },
+  "menu-item#footer-menu-4": {
+    "props": {
+      "blockClass": "footer__menu--mob",
+      "id": "menu-item-all-categories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#contact"]
+  },
+  "vtex.menu@2.x:submenu.accordion#contact": {
+    "props": {
+      "isOpen": true
+    },
+    "children": ["flex-layout.row#footer-contact"]
+  }
+}

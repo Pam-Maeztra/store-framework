@@ -1,0 +1,28 @@
+.product {
+  &Images {
+    &Container {
+      background-color: $white;
+      margin: 5px;
+      padding: 15px;
+
+      @media (min-width: $l) {
+        margin: 5px 50px 5px 5px;
+      }
+    }
+
+    &Thumb {
+      border-left: 2px solid transparent;
+
+      &Active {
+        border-left: 2px solid $color-2-500;
+      }
+    }
+  }
+}
+
+.swiperCaret,
+.productImagesThumbCaret {
+  .caretIcon {
+    color: $text-color-1-500;
+  }
+}

@@ -1,0 +1,43 @@
+@import "mixins/text";
+@import "extends/titles";
+@import "mixins/links";
+
+.container {
+  &--home__deals {
+    .paragraph {
+      @include text($font-size-sm, $text-color-1-500, $bold);
+      margin: 0;
+    }
+  }
+
+  &--mz__title {
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .heading {
+      @extend %big-title-section;
+    }
+  }
+
+  &--search__categories-banner {
+    .wrapper {
+      width: 100%;
+      text-align: left;
+    }
+
+    .heading {
+      @extend %big-title-section;
+      margin: 0 !important;
+    }
+
+    .paragraph {
+      @include text($font-size-sm, $text-color-1-400, $normal);
+    }
+
+    .link {
+      @include link($font-size-xs, $color-2-500, $bold, underline);
+    }
+  }
+}

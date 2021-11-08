@@ -1,0 +1,64 @@
+{
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-all-categories",
+      "vtex.menu@2.x:menu#footer-all-categories-2",
+      "vtex.menu@2.x:menu#footer-all-categories-3",
+      "flex-layout.col#footer-contact"
+    ],
+    "props": {
+      "blockClass": "footer__menu",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+
+  "flex-layout.col#footer-contact": {
+    "children": [
+      "rich-text#footer-contact-title",
+      "vtex.menu@2.x:menu#footer-contact-tooltip",
+      "rich-text#footer-social-networks",
+      "social-networks#footer"
+    ]
+  },
+  "flex-layout.row#footer-contact": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-contact-tooltip",
+      "rich-text#footer-social-networks",
+      "social-networks#footer"
+    ],
+    "props": {
+      "blockClass": "footer__menu"
+    }
+  },
+
+  "rich-text#footer-social-networks": {
+    "props": {
+      "text": "### Redes Sociais",
+      "blockClass": "footer__title"
+    }
+  },
+  "social-networks#footer": {
+    "props": {
+      "blockClass": "footer__menu",
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  }
+}

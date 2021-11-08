@@ -1,0 +1,32 @@
+@import "extends/container";
+
+.slider {
+  &Track {
+    &Container {
+      &--shelf {
+        padding-top: 0;
+        padding-bottom: 130px;
+      }
+    }
+  }
+
+  &Layout {
+    &Container {
+      &--home__slider {
+        .imageElement {
+          width: auto !important;
+          max-width: 100% !important;
+          margin: 0 auto !important;
+        }
+
+        .paginationDotsContainer {
+          margin-bottom: 22px !important;
+        }
+      }
+
+      .paginationDotsContainer {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

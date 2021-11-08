@@ -1,0 +1,81 @@
+{
+  "flex-layout.row#categories-banner-main": {
+    "children": ["flex-layout.col#categories-banner-main"],
+    "props": {
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "flex-layout.col#categories-banner-main": {
+    "children": [
+      "rich-text#categories-banner",
+      "flex-layout.row#categories-banner"
+    ],
+    "props": {
+      "blockClass": "home__categories-banner--col"
+    }
+  },
+
+  "rich-text#categories-banner": {
+    "props": {
+      "text": "## Principais Categorias",
+      "blockClass": "mz__title"
+    }
+  },
+
+  "flex-layout.row#categories-banner": {
+    "children": [
+      "image#categories-banner-1",
+      "image#categories-banner-2",
+      "image#categories-banner-3",
+      "image#categories-banner-4",
+      "image#categories-banner-5",
+      "image#categories-banner-6"
+    ],
+    "props": {
+      "blockClass": "home__categories-banner--col"
+    }
+  },
+
+  "image#categories-banner-1": {
+    "props": {
+      "src": "assets/img/banner-06.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "image#categories-banner-2": {
+    "props": {
+      "src": "assets/img/banner-07.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "image#categories-banner-3": {
+    "props": {
+      "src": "assets/img/banner-08.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "image#categories-banner-4": {
+    "props": {
+      "src": "assets/img/banner-09.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "image#categories-banner-5": {
+    "props": {
+      "src": "assets/img/banner-10.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  },
+  "image#categories-banner-6": {
+    "props": {
+      "src": "assets/img/banner-11.png",
+      "link": "/",
+      "blockClass": "home__categories-banner"
+    }
+  }
+}

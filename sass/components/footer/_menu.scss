@@ -1,0 +1,108 @@
+@import "mixins/links";
+
+.menu {
+  &Container {
+    &Nav {
+      &--footer__menu {
+        @media (max-width: $l) {
+          padding-top: 30px;
+          padding-left: 30px;
+          width: 100%;
+        }
+
+        .styled {
+          &Link {
+            @include link($font-size-sm, $white, $normal, none);
+            margin-bottom: 10px;
+            display: block;
+
+            &--highlight {
+              @include link($font-size-sm, $white, $bold, none);
+              margin-bottom: 20px;
+            }
+
+            &Container {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      &--footer__tooltip--text {
+        margin-bottom: 20px;
+
+        .styled {
+          &Link {
+            @include link($font-size-md, $white, $normal, none);
+            margin-bottom: 10px;
+            display: block;
+
+            &--highlight {
+              @include link($font-size-md, $white, $bold, none);
+              margin-bottom: 20px;
+            }
+
+            &Container {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &Item {
+    &--footer__menu--mob {
+      width: 100%;
+      padding: 15px 0;
+      background-color: $color-2-500;
+
+      .accordion {
+        &Icon {
+          &--isClosed {
+            font-size: 0;
+
+            &::before {
+              content: "";
+              width: 24px;
+              height: 24px;
+              display: block;
+              background-image: url($arrow-b);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              background-position: center center;
+              filter: brightness(10);
+            }
+          }
+
+          &--isOpen {
+            font-size: 0;
+
+            &::before {
+              content: "";
+              width: 24px;
+              height: 24px;
+              display: block;
+              background-image: url($arrow-b);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              background-position: center center;
+              transform: rotate(180deg);
+              filter: brightness(10);
+            }
+          }
+        }
+      }
+
+      .styled {
+        &Link {
+          @include link($font-size-sm, $white, $normal, none);
+
+          &--highlight {
+            @include link($font-size-md, $white, $bold, none);
+          }
+        }
+      }
+    }
+  }
+}

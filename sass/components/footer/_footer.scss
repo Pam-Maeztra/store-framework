@@ -1,0 +1,21 @@
+.footer {
+  &Layout {
+    background-color: $color-5-400;
+
+    .socialNetworkImage {
+      &--footer__menu {
+        filter: brightness(3);
+      }
+    }
+
+    .paymentMethodIconImage {
+      filter: brightness(3);
+    }
+
+    .acceptedPaymentMethodContainer {
+      @media (max-width: $l) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "flex-layout.row#more-categories-banner-main": {
+    "children": ["flex-layout.row#more-categories-banner"],
+    "props": {
+      "blockClass": "home__more-categories-banner"
+    }
+  },
+
+  "flex-layout.row#more-categories-banner": {
+    "children": [
+      "image#more-categories-banner-1",
+      "image#more-categories-banner-2",
+      "image#more-categories-banner-3",
+      "image#more-categories-banner-4"
+    ],
+    "props": {
+      "blockClass": "home__more-categories-banner--col"
+    }
+  },
+
+  "image#more-categories-banner-1": {
+    "props": {
+      "src": "assets/img/banner-13.png",
+      "link": "/",
+      "blockClass": "home__more-categories-banner"
+    }
+  },
+  "image#more-categories-banner-2": {
+    "props": {
+      "src": "assets/img/banner-14.png",
+      "link": "/",
+      "blockClass": "home__more-categories-banner"
+    }
+  },
+  "image#more-categories-banner-3": {
+    "props": {
+      "src": "assets/img/banner-15.png",
+      "link": "/",
+      "blockClass": "home__more-categories-banner"
+    }
+  },
+  "image#more-categories-banner-4": {
+    "props": {
+      "src": "assets/img/banner-16.png",
+      "link": "/",
+      "blockClass": "home__more-categories-banner"
+    }
+  }
+}

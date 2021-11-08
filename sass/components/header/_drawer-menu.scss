@@ -1,0 +1,21 @@
+.drawer {
+  &Content {
+    .childrenContainer {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &Header {
+    &--mz-drawer__menu--mobile {
+      align-items: center;
+      justify-content: space-between;
+      background-color: $color-1-500;
+      padding-left: 15px;
+
+      .closeIcon {
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.step {
+  border: 1px solid $color-5-700;
+  border-radius: 0;
+
+  @media (max-width: $l) {
+    padding: 10px;
+  }
+
+  @media (max-width: 490px) {
+    padding: 10px;
+  }
+
+  &.active {
+    border: 1px solid $color-1-200;
+  }
+
+  &.shipping-data {
+    .vtex-omnishipping-1-x-addressSummaryActive {
+      .address-summary {
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='24' height='24'><path fill='%23cf0a2c' d='M15.998,5.951L4,16.237V30c0,0.552,0.448,1,1,1h8v-8h6v8h8c0.552,0,1-0.448,1-1V16.238L15.998,5.951z M19,19 h-6v-5h6V19z'></path> <polygon fill='%23cf0a2c' points='15.998,0.683 9,6.682 9,3 5,3 5,10.111 0.59,13.892 1.892,15.41 15.998,3.317 30.108,15.41 31.41,13.892'></polygon></svg>")
+          no-repeat;
+        background-position: 12px 16px;
+      }
+    }
+  }
+}
+
+.accordion-toggle .link-box-edit {
+  right: -5px !important;
+  top: -5px !important;
+  border-radius: 0 !important;
+}
+
+.payment-group-item {
+  margin: 0 0 10px;
+}
+
+.box-step,
+.accordion-inner {
+  input[type="text"],
+  input[type="email"] {
+    font-weight: $normal;
+    color: $text-color-1-500 !important;
+    font-size: $font-size-sm;
+    box-shadow: none;
+    transition: 0.1s;
+
+    &:hover {
+      border-color: $color-1-500;
+    }
+
+    &:focus,
+    &:active {
+      border-color: $color-3-500;
+      box-shadow: none;
+    }
+  }
+
+  input.success {
+    background-image: url("https://devnewbalance.vteximg.com.br/arquivos/icon-check.svg");
+    background-size: 10px;
+    background-position: right 2px top 2px;
+  }
+
+  select {
+  }
+
+  label,
+  span,
+  p {
+    color: $text-color-1-500 !important;
+    &.error {
+      color: #dd4b39 !important;
+    }
+    &.custom-terms {
+      &__text {
+        color: $color-3-500 !important;
+        font-weight: $semi-bold;
+      }
+    }
+  }
+
+  a {
+    color: $text-color-1-500 !important;
+
+    &:hover,
+    &:visited {
+      color: $text-color-1-400 !important;
+    }
+
+    &.custom-terms {
+      &__link {
+        color: #08c !important;
+        font-weight: $semi-bold;
+        &:hover,
+        &:focus {
+          color: #005580 !important;
+        }
+      }
+    }
+  }
+
+  .shp-option-icon {
+    svg path {
+      fill: $color-4-500;
+    }
+  }
+}
+
+p.notification {
+}
+
+.vtex-omnishipping-1-x-deliveryChannelsToggle {
+  background: $color-3-500 !important;
+  border: solid 1px $color-3-800 !important;
+
+  &:hover {
+    background: $color-3-800 !important;
+  }
+}
+
+.vtex-omnishipping-1-x-shippingDataDev {
+  background-color: $white !important;
+}
+
+span.accordion-toggle {
+  font-size: $font-size-lg;
+  font-weight: $bold;
+  color: #111;
+
+  &.accordion-toggle-active {
+    color: $text-color-1-500;
+  }
+}
+
+.product-image img,
+.cart-items img {
+  background: #f0f0f0;
+}
+.box-client-info-pj {
+  display: none;
+}
+
+.iframe-credit-card-payment-group {
+  a,
+  span,
+  p {
+    color: $text-color-1-500;
+  }
+}
+
+.box-payment-paypal {
+  .payment-paypal-subtitle {
+    border-color: $text-color-1-500;
+  }
+}

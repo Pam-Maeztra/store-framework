@@ -1,0 +1,43 @@
+{
+  "rich-text#tooltip-01": {
+    "props": {
+      "text": "Frete Gratis a partir de **R$ 99,00**",
+      "blockClass": "header__tooltip--text"
+    }
+  },
+  "vtex.menu@2.x:menu#tooltip": {
+    "children": ["menu-item#contact", "menu-item#atend"]
+  },
+  "menu-item#contact": {
+    "props": {
+      "id": "menu-item-contact",
+      "blockClass": "header__tooltip--link",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "tel:+5599999999999",
+        "noFollow": false,
+        "tagTitle": "Contato: (99) 9.9999-9999",
+        "text": "Contato: (99) 9.9999-9999"
+      }
+    }
+  },
+  "menu-item#atend": {
+    "props": {
+      "id": "menu-item-atend",
+      "blockClass": "header__tooltip--link",
+      "type": "custom",
+      "iconId": "hpa-chat",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/atendimento",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    }
+  }
+}

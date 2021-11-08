@@ -1,0 +1,54 @@
+@import "extends/buttons";
+@import "mixins/text";
+
+.container {
+  background: $white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 7.5px;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid $color-5-500;
+
+  &:hover {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease-in-out;
+
+    :global(.vtex-button) {
+      bottom: 0px !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      transition: all 0.5s ease-in-out !important;
+    }
+  }
+
+  .brandName {
+    @include text($font-size-sm, $text-color-1-500, $bold);
+    height: 49px;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+  }
+
+  .clearLink {
+    position: relative;
+  }
+
+  .element {
+    padding: 0 0 30px;
+  }
+
+  :global(.vtex-button) {
+    @extend %primary-button;
+    width: 100%;
+
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: -50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+}

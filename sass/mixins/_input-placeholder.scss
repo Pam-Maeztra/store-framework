@@ -1,0 +1,10 @@
+@mixin input-placeholder($color: $cinza-6) {
+  &::-webkit-input-placeholder {
+    /* Edge */
+    color: $color;
+  }
+
+  &::placeholder {
+    color: $color;
+  }
+}

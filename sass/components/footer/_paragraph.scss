@@ -1,0 +1,64 @@
+@import "mixins/text";
+@import "extends/titles";
+
+.container {
+  &--footer__newsletter {
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .paragraph {
+      @include text($font-size-lg, $color-2-500, $bold);
+    }
+  }
+
+  &--footer__about {
+    .wrapper {
+      @media (min-width: $l) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .heading {
+      @include text($font-size-sm, $white, $bold);
+
+      @media (min-width: $l) {
+        width: 40%;
+      }
+    }
+
+    .paragraph {
+      @include text($font-size-xxs, $white, $normal);
+    }
+  }
+
+  &--footer__tooltip--text,
+  &--footer__title,
+  &--footer_methods--title {
+    // .wrapper {
+    //   @media (min-width: $l) {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //   }
+    // }
+
+    .heading {
+      @include text($font-size-sm, $white, $bold);
+      margin: 0 0 20px;
+    }
+
+    .paragraph {
+      @include text($font-size-md, $white, $normal);
+    }
+  }
+
+  &--footer__legal-information {
+    .paragraph {
+      @include text($font-size-xxs, $text-color-1-400, $normal);
+    }
+  }
+}

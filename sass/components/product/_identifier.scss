@@ -1,0 +1,7 @@
+@import "mixins/text";
+
+.product-identifier {
+  @include text($font-size-xs, $text-color-1-400, $normal);
+  display: block;
+  margin-bottom: 5px;
+}

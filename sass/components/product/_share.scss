@@ -1,0 +1,20 @@
+@import "mixins/text";
+
+.share {
+  &Container {
+    display: flex;
+    align-items: center;
+  }
+
+  &Label {
+    @include text($font-size-xs, $text-color-1-500, $bold);
+    margin: 0 10px 0 0;
+  }
+
+  &Social {
+    &Icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

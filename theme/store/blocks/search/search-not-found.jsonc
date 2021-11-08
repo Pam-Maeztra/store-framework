@@ -1,0 +1,13 @@
+{
+  "search-not-found-layout": {
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
+  },
+
+  "flex-layout.row#notfound": {
+    "children": ["not-found"],
+    "props": {
+      "blockClass": "mz-search__not-found",
+      "fullWidth": true
+    }
+  }
+}

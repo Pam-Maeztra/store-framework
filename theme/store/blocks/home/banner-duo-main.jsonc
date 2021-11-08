@@ -1,0 +1,23 @@
+{
+  "flex-layout.row#banner-duo-main": {
+    "children": ["image#banner-duo-main-1", "image#banner-duo-main-2"],
+    "props": {
+      "blockClass": "home__banner-duo-main"
+    }
+  },
+
+  "image#banner-duo-main-1": {
+    "props": {
+      "src": "assets/img/banner-02.png",
+      "link": "/",
+      "blockClass": "home__banner-duo-main"
+    }
+  },
+  "image#banner-duo-main-2": {
+    "props": {
+      "src": "assets/img/banner-01.png",
+      "link": "/",
+      "blockClass": "home__banner-duo-main"
+    }
+  }
+}

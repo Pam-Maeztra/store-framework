@@ -1,0 +1,10 @@
+.image {
+  &Element {
+    &Link {
+      &--home__more-categories-banner,
+      &--home__banner-duo-main {
+        padding: 5px;
+      }
+    }
+  }
+}

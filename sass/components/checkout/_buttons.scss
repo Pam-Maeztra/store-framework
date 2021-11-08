@@ -1,0 +1,146 @@
+// BUTTONS
+
+.vtex-shipping-preview-0-x-pc .ship-postalCode {
+  width: 180px !important;
+}
+
+.btn-success {
+  @extend %primary-button;
+  text-shadow: none;
+  background-image: none;
+  display: block;
+  width: 100%;
+
+  &[disabled] {
+    border-color: #111;
+    background-color: #111;
+  }
+}
+
+.full-cart .cart-links-bottom .btn-success {
+  width: 345px;
+  height: 48px;
+  font-size: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:before {
+    content: "Finalizar compra";
+    font-size: $font-size-sm;
+  }
+  @media screen and (max-width: 490px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+a#cart-choose-more-products,
+a#cart-print {
+  padding: 0.8rem;
+  margin: 0;
+  background: transparent;
+  @extend %tertiary-button;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: $l) {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+
+a#cart-choose-more-products {
+  width: 222px;
+  height: 48px;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 490px) {
+    width: auto;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+a#cart-link-coupon-add {
+  @extend %tertiary-button;
+  margin: 24px 0 0;
+  width: 100%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  font-size: 0;
+  &::before {
+    content: "Adicionar código de cupom";
+    font-size: $font-size-xs;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button#shipping-calculate-link,
+a.link-change-shipping,
+a#orderform-minicart-to-cart {
+  @extend %tertiary-button;
+}
+
+button#shipping-calculate-link {
+  font-size: 0;
+
+  &::before {
+    content: "Calcular frete";
+    font-size: $font-size-xs;
+    display: block;
+  }
+}
+
+button#cart-coupon-add,
+button#cart-shipping-calculate {
+  @extend %primary-button;
+  display: inline-block !important;
+  padding: 5px !important;
+  font-size: $font-size-xs !important;
+}
+
+button#cart-coupon-add {
+  margin-top: 5px;
+  width: 74%;
+}
+
+button#find-pickup-link {
+  @extend %primary-button;
+  padding: 5px !important;
+  margin-top: 10px !important;
+}
+
+.btn.btn-link {
+  border-color: $text-color-1-500;
+  color: $text-color-1-500;
+  i {
+    &::before {
+      color: $text-color-1-500;
+    }
+  }
+
+  &:hover {
+    color: #111;
+    border-color: #111;
+    i {
+      &::before {
+        color: #111;
+      }
+    }
+  }
+}

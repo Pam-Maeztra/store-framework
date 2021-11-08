@@ -1,0 +1,110 @@
+.product {
+  &List {
+    &UnavailableItemsMessage,
+    &AvailableItemsMessage {
+      letter-spacing: 1px;
+      font-weight: $bold;
+      font-size: $font-size-md;
+      color: $text-color-1-400;
+      padding: 16px;
+    }
+  }
+
+  &Name {
+    &--mz-cart {
+      letter-spacing: 1px;
+      font-size: $font-size-xs;
+      color: $text-color-1-500;
+    }
+  }
+
+  &Price {
+    &Currency {
+      &--mz-cart {
+        display: none;
+      }
+    }
+
+    &Container {
+      &--mz-cart {
+        .price {
+          letter-spacing: 1px;
+          font-weight: $bold;
+          font-size: $font-size-xs;
+          color: $text-color-1-500;
+        }
+      }
+    }
+  }
+
+  &Variations {
+    &Item {
+      &--mz-cart {
+        font-style: normal;
+        font-weight: $normal;
+        text-shadow: 0 0 $black;
+        font-size: $font-size-xs;
+        color: $black;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.removeButton {
+  &Container {
+    &--mz-cart {
+      height: 15px;
+    }
+  }
+
+  &--mz-cart {
+    padding: 0;
+
+    .deleteIcon {
+      width: 20px !important;
+      height: 20px !important;
+      color: $text-color-1-500;
+      margin-top: -3px;
+    }
+  }
+}
+
+.quantity {
+  &Selector {
+    &Container {
+      &--mz-cart {
+        max-width: 90px;
+        :global(.vtex-dropdown__container) {
+          border: 1px solid $color-5-500;
+          border-radius: 30px;
+        }
+
+        :global(.vtex-dropdown__caption) {
+          font-style: normal;
+          font-weight: $normal;
+          font-size: $font-size-xs;
+          color: $black;
+          display: flex;
+          justify-content: center;
+        }
+
+        :global(.vtex-dropdown__arrow) {
+          color: $color-2-500 !important;
+        }
+      }
+    }
+  }
+
+  &DropdownContainer {
+    color: red;
+    :global(.vtex-dropdown__container) {
+      // :global(.t-body) {
+      //   font-size: $font-size-xs;
+      //   color: #111;
+      //   font-weight: 300;
+      //   text-shadow: 0 0 #000;
+      // }
+    }
+  }
+}

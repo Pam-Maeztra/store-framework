@@ -1,0 +1,135 @@
+{
+  "store.search": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12
+      }
+    }
+  },
+
+  "store.search#brand": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "store.search#department": {
+    "blocks": ["search-result-layout", "rich-text#departament"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12
+      }
+    }
+  },
+
+  //categoria
+  "store.search#category": {
+    "blocks": ["search-result-layout", "rich-text#category"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12
+      }
+    }
+  },
+
+  "store.search#subcategory": {
+    "blocks": ["search-result-layout", "rich-text#subcategory"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12
+      }
+    }
+  },
+
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  // COMMON - FETCH BTNS
+  "rich-text#departament": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "### PRODUTOS MASCULINOS \n Feitos para se destacar, os itens femininos da New Balance foram pensados para você que gosta de estar sempre em dia com a moda - não importa aonde for! São dezenas as estampas e detalhes presentes em nossos produtos da linha feminina de vestuário, desde o preto liso mais básico até formas mais ousadas e coloridas. Além de visualmente marcantes, as peças também se destacam na qualidade superior de seus materiais. São tênis, agasalhos, shorts e muitas outras roupas e acessórios para tornar sua rotina mais confortável e agradável.",
+      "blockClass": "mz-search__seo"
+    }
+  },
+  "rich-text#category": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "### PRODUTOS MASCULINOS \n Feitos para se destacar, os itens femininos da New Balance foram pensados para você que gosta de estar sempre em dia com a moda - não importa aonde for! São dezenas as estampas e detalhes presentes em nossos produtos da linha feminina de vestuário, desde o preto liso mais básico até formas mais ousadas e coloridas. Além de visualmente marcantes, as peças também se destacam na qualidade superior de seus materiais. São tênis, agasalhos, shorts e muitas outras roupas e acessórios para tornar sua rotina mais confortável e agradável.",
+      "blockClass": "mz-search__seo"
+    }
+  },
+  "rich-text#subcategory": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "### PRODUTOS MASCULINOS \n Feitos para se destacar, os itens femininos da New Balance foram pensados para você que gosta de estar sempre em dia com a moda - não importa aonde for! São dezenas as estampas e detalhes presentes em nossos produtos da linha feminina de vestuário, desde o preto liso mais básico até formas mais ousadas e coloridas. Além de visualmente marcantes, as peças também se destacam na qualidade superior de seus materiais. São tênis, agasalhos, shorts e muitas outras roupas e acessórios para tornar sua rotina mais confortável e agradável.",
+      "blockClass": "mz-search__seo"
+    }
+  },
+
+  "flex-layout.row#fetchprevious": {
+    "props": {
+      "blockClass": "mz-search__fetch--previous"
+    },
+    "children": ["search-fetch-previous"]
+  },
+  "flex-layout.row#fetchmore": {
+    "props": {
+      "blockClass": "mz-search__fetch--more"
+    },
+    "children": ["search-fetch-more"]
+  },
+
+  // COMMON - GALLERY
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+
+  // COMMON - TITLE
+  "flex-layout.row#searchtitle": {
+    "children": ["search-title.v2"],
+    "props": {
+      "blockClass": "mz-search__main-title"
+    }
+  },
+
+  // SEARCH BANNER
+  "flex-layout.row#banner-one": {
+    "children": ["search-banner#one"]
+  },
+  "search-banner#one": {
+    "props": {
+      "area": "one",
+      "blockClass": "mz-search__banner",
+      "horizontalAlignment": "center"
+    }
+  }
+}

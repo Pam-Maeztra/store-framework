@@ -1,0 +1,82 @@
+@import "mixins/links";
+
+.menu {
+  &Container {
+    &Nav {
+      &--mz-product__wishlist {
+        align-items: center;
+        justify-content: flex-end;
+        display: flex;
+
+        .styledLink {
+          font-size: $font-size-sm;
+          color: $white;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: $text-color-1-200;
+          }
+
+          &Container {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &Item {
+    &--product__menu {
+      width: 100%;
+      padding: 15px 0;
+      background-color: $color-5-500;
+      border-radius: 3px;
+
+      .accordion {
+        &Icon {
+          &--isClosed {
+            font-size: 0;
+
+            &::before {
+              content: "";
+              width: 18px;
+              height: 18px;
+              display: block;
+              background-image: url($arrow-b);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              background-position: center center;
+            }
+          }
+
+          &--isOpen {
+            font-size: 0;
+
+            &::before {
+              content: "";
+              width: 18px;
+              height: 18px;
+              display: block;
+              background-image: url($arrow-b);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              background-position: center center;
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+
+      .styled {
+        &Link {
+          @include link($font-size-sm, $color-2-500, $bold, none);
+
+          &--highlight {
+            @include link($font-size-md, $color-2-500, $bold, none);
+          }
+        }
+      }
+    }
+  }
+}

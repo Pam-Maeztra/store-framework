@@ -1,0 +1,53 @@
+tbody.totalizers-list {
+  td.info {
+    vertical-align: middle;
+
+    font-size: $font-size-xs;
+    font-weight: $bold;
+    color: $text-color-1-500;
+  }
+
+  td.monetary {
+    font-size: $font-size-xs;
+    font-weight: $bold;
+    color: $text-color-1-500;
+  }
+
+  body.body-order-form & {
+    > .Shipping {
+      display: table-row !important;
+    }
+  }
+}
+
+.mini-cart tfoot,
+tfoot {
+  td.info,
+  td.monetary {
+    vertical-align: middle;
+    font-size: $font-size-md;
+    font-weight: $bold;
+    color: $text-color-1-500;
+  }
+}
+
+.cart-links-bottom {
+  .link-choose-more-products-wrapper,
+  .btn-place-order-wrapper {
+    display: block;
+
+    @media (min-width: $l) {
+      display: inline-block;
+    }
+  }
+
+  a#cart-choose-more-products {
+    @media (min-width: $l) {
+      margin-right: 10px !important;
+    }
+
+    @media (max-width: $l) {
+      margin-bottom: 10px !important;
+    }
+  }
+}

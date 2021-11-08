@@ -1,0 +1,50 @@
+{
+  "flex-layout.row#shelf-home-2": {
+    "children": ["flex-layout.col#shelf-home-2"],
+    "props": {
+      "blockClass": "shelf"
+    }
+  },
+
+  "flex-layout.col#shelf-home-2": {
+    "children": ["rich-text#shelf-home", "flex-layout.row#shelf-home-slider"],
+    "props": {
+      "blockClass": "shelf--col"
+    }
+  },
+
+  "rich-text#shelf-home-2": {
+    "props": {
+      "text": "## Acabou de Chegar",
+      "blockClass": "mz__title"
+    }
+  },
+
+  "flex-layout.row#shelf-home-2-slider": {
+    "children": ["list-context.product-list#shelf-home-2-slider"],
+    "props": {
+      "blockClass": "shelf--col"
+    }
+  },
+
+  "list-context.product-list#shelf-home-2-slider": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-home-2-slider"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC"
+    }
+  },
+  "slider-layout#shelf-home-2-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showPaginationDots": "always",
+      "blockClass": "shelf"
+    }
+  }
+}

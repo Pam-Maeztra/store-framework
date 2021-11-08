@@ -1,0 +1,63 @@
+@import "extends/container";
+@import "extends/buttons";
+@import "mixins/text";
+@import "extends/inputs";
+
+.defaultSuccessMessage {
+  @extend %container;
+  padding: 60px 0;
+  text-align: center;
+  @include text($font-size-lg, $color-2-500, $bold);
+}
+
+.newsletter {
+  &Form {
+    &--footer__newsletter {
+      @extend %container;
+      padding: 60px 0;
+
+      :global(.vtex-button) {
+        @extend %secondary-button;
+        width: 100% !important;
+      }
+
+      :global(.vtex-input-prefix__group) {
+        border: none;
+        height: auto;
+        margin-bottom: 10px;
+        position: relative;
+
+        &:hover,
+        &:focus,
+        &:active {
+          border: none;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 35px;
+          height: 30px;
+          background: url("assets/svg/fi_mail.svg");
+          background-repeat: no-repeat;
+          background-position: top center;
+          background-size: 28px;
+          bottom: 8px;
+        }
+      }
+
+      :global(.vtex-styleguide-9-x-input) {
+        @extend %input-text-news;
+        padding: 5px 10px 5px 39px;
+      }
+
+      :global(.vtex-checkbox__label) {
+        @include text($font-size-xs, $text-color-1-400, $normal);
+
+        @media (max-width: $l) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

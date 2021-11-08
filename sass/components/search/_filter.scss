@@ -1,0 +1,255 @@
+@import "extends/titles";
+@import "extends/buttons";
+@import "mixins/text";
+
+.filter,
+.accordionFilter {
+  &Message {
+    @include text($font-size-h5, $color-1-500, $bold);
+    text-transform: uppercase;
+    margin: 0 0 20px !important;
+  }
+
+  &Accordion {
+    &Breadcrumbs {
+      border-bottom: 1px solid $color-6-500;
+    }
+
+    &ItemBox {
+      border-bottom: 1px solid $color-6-500;
+      padding: 20px 0;
+      border-radius: 0;
+      min-height: auto;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .accordion {
+    &Filter {
+      &Container {
+        padding: 0 16px;
+      }
+
+      &Content {
+        padding: 0;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        :global(.vtex-tag) {
+          background-color: $color-1-500;
+          border-radius: 0;
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &Open {
+        padding: 20px 16px 4.4rem;
+
+        .filterAccordionItemBox {
+          padding: 0;
+          border: none;
+          margin: 20px 0;
+
+          :global(.vtex-checkbox__label) {
+            font-size: $font-size-xs;
+            color: $text-color-1-500;
+            line-height: 1;
+          }
+
+          :global(.vtex-checkbox__line-container) {
+            align-items: center !important;
+          }
+
+          :global(.vtex-checkbox__container) {
+            display: block;
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  &Breadcrumbs {
+    &Text {
+      @include text($font-size-h5, $color-1-500, $bold);
+      margin: 0 !important;
+    }
+
+    &Content,
+    &Item {
+      padding: 0 !important;
+    }
+
+    &Item {
+      .caretIcon {
+        padding: 0 5px;
+        margin-top: 5px;
+      }
+
+      &Name {
+        padding: 0;
+        margin: 0 !important;
+        @include text($font-size-h5, $text-color-1-400, $normal);
+      }
+    }
+  }
+
+  &Buttons {
+    &Box {
+      border-top: 1px solid $color-6-500;
+      padding: 12px 16px;
+      height: auto;
+
+      .filter {
+        &ClearButtonWrapper {
+          padding-left: 0;
+
+          :global(.vtex-button) {
+            @extend %secondary-button;
+          }
+        }
+
+        &ApplyButtonWrapper {
+          padding-right: 0;
+
+          :global(.vtex-button) {
+            @extend %primary-button;
+          }
+        }
+      }
+    }
+  }
+
+  &Title,
+  .accordionFilterItemTitle {
+    font-weight: $bold;
+    font-size: $font-size-sm;
+    line-height: normal;
+    color: $color-2-500;
+    text-transform: capitalize;
+  }
+
+  &Template {
+    &Overflow {
+      margin-bottom: 10px;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+        margin: 10px;
+        border-radius: 30px;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 30px;
+        background-color: $color-6-500;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $color-6-800;
+        border-radius: 30px;
+      }
+
+      :global(.vtex-slider__selector),
+      :global(.vtex-slider__base-internal) {
+        background-color: $color-2-500 !important;
+      }
+
+      :global(.vtex-slider__left-value),
+      :global(.vtex-slider__right-value) {
+        color: $color-2-500 !important;
+      }
+    }
+  }
+
+  &Icon,
+  .accordionFilterItemIcon {
+    color: $color-2-500;
+    padding: 0;
+  }
+
+  &Item {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    :global(.vtex-checkbox__inner-container) {
+      border-color: $color-5-700 !important;
+    }
+
+    :global(.vtex-checkbox__line-container) {
+      align-items: center !important;
+    }
+
+    :global(.vtex-checkbox__label) {
+      font-size: $font-size-xs;
+      color: $text-color-1-500;
+    }
+
+    &--selected {
+      :global(.vtex-checkbox__inner-container) {
+        border-color: $color-3-500 !important;
+        background-color: $color-3-500 !important;
+      }
+
+      :global(.vtex-checkbox__box) {
+        color: $white !important;
+      }
+    }
+  }
+
+  &__container {
+    // TAMANHO
+    border: 1px solid $color-6-500;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    min-height: auto;
+    margin-bottom: 0 !important;
+
+    &:first-child {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &Popup {
+    &Button {
+      padding: 0;
+      height: 40px;
+      width: 100%;
+      border: 1px solid $color-5-500;
+      border-radius: 30px;
+      flex-direction: row-reverse;
+
+      .filterIcon {
+        background: none;
+      }
+    }
+
+    &Title {
+      font-weight: $bold;
+      font-size: $font-size-md;
+      text-transform: capitalize;
+      color: $text-color-1-500;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &Arrow {
+      &Icon {
+        margin: 0 5px 0 0;
+        padding: 0;
+        height: 13px;
+      }
+    }
+  }
+}

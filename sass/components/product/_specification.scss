@@ -1,0 +1,15 @@
+@import "mixins/text";
+
+.specification {
+  &Name {
+    @include text($font-size-sm, $text-color-1-400, $bold);
+  }
+
+  &Value {
+    @include text($font-size-sm, $text-color-1-400, $normal);
+  }
+}
+
+.groupName {
+  @include text($font-size-md, $text-color-1-500, $bold);
+}

@@ -1,0 +1,91 @@
+{
+  "modal-trigger#mz-newsletter": {
+    "props": {
+      "trigger": "load-session"
+    },
+    "children": ["modal-layout#mz-newsletter-content"]
+  },
+
+  "modal-layout#mz-newsletter-content": {
+    "children": ["flex-layout.row#mz-newsletter-header", "flex-layout.row#mz-newsletter-content"],
+    "props": {
+      "blockClass": "mz-modal-news"
+    }
+  },
+
+  "flex-layout.row#mz-newsletter-header": {
+    "children": ["modal-header#mz-modal-newsletter"]
+  },
+  "modal-header#mz-modal-newsletter": {
+    "props": {
+      "blockClass": "mz-modal-news__header",
+      "iconCloseSize": 20
+    }
+  },
+
+  "flex-layout.row#mz-newsletter-content": {
+    "props": {
+      "blockClass": "mz-modal-news__content"
+    },
+    "children": [
+      "flex-layout.col#mz-newsletter-content-1",
+      "flex-layout.col#mz-newsletter-content-2"
+    ]
+  },
+  "flex-layout.col#mz-newsletter-content-1": {
+    "children": ["image#mz-modal-newsletter"],
+    "props": {
+      "blockClass": "mz-modal-news__content--image"
+    }
+  },
+  "flex-layout.col#mz-newsletter-content-2": {
+    "children": [
+      "rich-text#mz-modal-content",
+      "rich-text#mz-modal-newsletter-text",
+      "newsletter-form#mz-modal-newsletter"
+    ],
+    "props": {
+      "blockClass": "mz-modal-news__content--form"
+    }
+  },
+
+  "image#mz-modal-newsletter": {
+    "props": {
+      "src": "https://via.placeholder.com/423x528.png",
+      "maxWidth": "423px",
+      "maxHeight": "528px",
+      "blockClass": "mz-modal-news__banner"
+    }
+  },
+
+  "rich-text#mz-modal-content": {
+    "props": {
+      "blockClass": "mz-modal-news__title",
+      "text": "Bem vindo à MZ Store!"
+    },
+    "title": "Smart Newsletter - Título"
+  },
+  "rich-text#mz-modal-newsletter-text": {
+    "props": {
+      "blockClass": "mz-modal-news__subtitle",
+      "text": "**Receba em primeira mão desconto e ofertas exclusivas**"
+    },
+    "title": "Smart Newsletter - Subtítulo"
+  },
+  "newsletter-form#mz-modal-newsletter": {
+    "props": {
+      "blockClass": "mz-modal-news__input"
+    },
+    "children": ["newsletter-input-email#modal", "newsletter-submit#modal"]
+  },
+  "newsletter-input-email#modal": {
+    "props": {
+      "placeholderText": "Digite aqui seu email"
+    }
+  },
+  "newsletter-submit#modal": {
+    "props": {
+      "submitButtonLabel": "Enviar"
+    }
+  }
+}

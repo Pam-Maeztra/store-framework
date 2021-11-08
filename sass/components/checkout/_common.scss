@@ -1,0 +1,134 @@
+.body-cart,
+body {
+  padding: 0;
+}
+
+.container {
+  @media (max-width: $l) {
+    margin: 0 16px;
+  }
+
+  @media (max-width: 490px) {
+    margin: 0 16px;
+  }
+}
+
+// TITLES
+h1#cart-title,
+#orderform-title {
+  font-size: 24px;
+  font-weight: $semi-bold;
+  color: $text-color-1-500;
+}
+
+h1#cart-title {
+  font-size: 0;
+  &::before {
+    content: "Minha Sacola";
+    font-size: 24px;
+  }
+}
+
+.cart-items {
+  color: $text-color-1-400 !important;
+}
+
+.mini-cart h2,
+.mini-cart .summary-template-holder {
+  color: $black;
+  background-color: $white !important;
+  padding: 0 0 10px !important;
+  border: none !important;
+}
+
+h2.empty-cart-title,
+.empty-cart-message {
+  color: $black;
+}
+
+.srp-main-title {
+  font-size: 24px !important;
+  font-weight: $semi-bold !important;
+  color: $text-color-1-500 !important;
+  margin-top: 24px !important;
+}
+
+// INPUT
+input#cart-coupon,
+input#ship-postalCode {
+  box-shadow: none;
+  border: none;
+  @extend %input-text;
+  display: inline-block;
+  width: auto;
+}
+
+input#cart-coupon {
+  width: 75%;
+}
+
+// LABEL
+.coupon-label label,
+.ship-postalCode label {
+  font-size: $font-size-sm;
+  font-weight: $bold;
+  color: $black;
+}
+
+// SHIPPING
+.onda-v1 .shadow-4 {
+  box-shadow: none !important;
+}
+
+.vtex-shipping-preview-0-x-pc .ship-postalCode,
+.srp-postal-code__form {
+  @media (max-width: $l) {
+    width: 100% !important;
+  }
+}
+
+.cart {
+  border: 1px solid $color-5-200;
+  border-radius: 0;
+}
+
+.srp-description {
+  font-size: 0;
+  font-weight: $normal;
+  color: #555;
+  max-width: 14rem !important;
+
+  &::before {
+    display: block;
+    content: "Veja todas as opções de entrega para os seus produtos, inclusive preços de prazos de entrega.";
+    font-size: $font-size-sm;
+    line-height: 21px;
+  }
+}
+
+.badge {
+  background-color: $color-1-500 !important;
+  color: $white !important;
+  border-color: $color-1-500 !important;
+  box-shadow: none !important;
+}
+
+.icon-edit {
+  &::before {
+    color: $color-3;
+  }
+}
+
+.srp-delivery-header {
+  font-size: $font-size-sm !important;
+  color: #555 !important;
+  a,
+  .srp-items {
+    font-size: $font-size-sm !important;
+    color: #555 !important;
+  }
+
+  a {
+    text-decoration: underline !important;
+  }
+}

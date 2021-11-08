@@ -1,0 +1,6 @@
+.toggleBusinessButtonWrapper {
+  :global(.vtex-button) {
+    border-width: 1px;
+    color: $text-color-1;
+  }
+}

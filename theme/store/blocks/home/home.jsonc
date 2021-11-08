@@ -1,0 +1,79 @@
+{
+  "store.home": {
+    "blocks": ["disposition-layout#home"],
+    "children": [
+      "modal-trigger#mz-newsletter"
+    ]
+  },
+
+  "disposition-layout#home": {
+    "children": [
+      "list-context.image-list#slider-full-home",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#deals",
+      "flex-layout.row#categories-banner-main",
+      "flex-layout.row#shelf-home",
+      "info-card#home",
+      "flex-layout.row#sales-banner-main",
+      "flex-layout.row#shelf-home-2",
+      "flex-layout.row#more-categories-banner-main",
+      "flex-layout.row#banner-duo-main",
+      "flex-layout.row#slider-brand-home"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        },
+        {
+          "order": 11
+        }
+      ]
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "home__infoCard",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/banner-05.png",
+      "mobileImageUrl": "assets/img/banner-05.png",
+      "headline": "CASUAL",
+      "callToActionText": "Saiba mais",
+      "subhead": "Dirija com confiança com dispositivos de navegação pessoal projetados para carros e motos. Veja o trânsito em tempo real e navegue com segurança pelas melhores rotas. Os GPSs mais precisos você encontra aqui.",
+      "callToActionUrl": "/about",
+      "blockClass": "home__info-card",
+      "textAlignment": "left"
+    }
+  }
+}

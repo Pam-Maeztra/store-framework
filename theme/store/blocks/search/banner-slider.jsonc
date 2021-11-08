@@ -1,0 +1,30 @@
+{
+  // FULL
+  "list-context.image-list#slider-full-search": {
+    "children": ["slider-layout#slider-full-search"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/img/fullbanner-01.png",
+          "mobileImage": "assets/img/fullbanner-mob-01.jpg"
+        },
+        {
+          "image": "assets/img/fullbanner-01.png",
+          "mobileImage": "assets/img/fullbanner-mob-01.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-full-search": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "home__slider"
+    }
+  }
+}

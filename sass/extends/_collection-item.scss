@@ -1,0 +1,9 @@
+%collection-item {
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    font-size: $font-size-xs;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

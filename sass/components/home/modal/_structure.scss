@@ -1,0 +1,50 @@
+.paper {
+  &--mz-modal-news {
+    margin: 0;
+    padding: 0;
+    max-width: 848px;
+    border-radius: 0;
+    background: transparent;
+
+    @include desktop {
+      max-height: 558px;
+      overflow: hidden;
+    }
+
+    @include mobile {
+      margin: 0 1rem;
+    }
+  }
+}
+
+.headerContainer {
+  &--mz-modal-news {
+    &__header {
+      border: none;
+    }
+  }
+}
+
+.closeButton {
+  &--mz-modal-news {
+    &__header {
+      display: flex;
+
+      .closeIcon {
+        &--mz-modal-news {
+          &__header {
+            display: none;
+          }
+        }
+      }
+
+      &::before {
+        content: 'fechar';
+        font-family: $main-font;
+        font-size: $font-size-xs;
+        font-weight: $regular;
+        color: $white;
+      }
+    }
+  }
+}

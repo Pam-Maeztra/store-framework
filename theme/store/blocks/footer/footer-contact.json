@@ -1,0 +1,67 @@
+{
+  "rich-text#footer-contact-title": {
+    "props": {
+      "text": "### Atendimento",
+      "blockClass": "footer__tooltip--text"
+    }
+  },
+  "vtex.menu@2.x:menu#footer-contact-tooltip": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__tooltip--text"
+    },
+    "children": [
+      "menu-item#contact-footer",
+      "menu-item#contact-time",
+      "menu-item#atend-footer"
+    ]
+  },
+  "menu-item#contact-footer": {
+    "props": {
+      "id": "menu-item-contact",
+      "blockClass": "footer__tooltip--link",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "tel:+5599999999999",
+        "noFollow": false,
+        "tagTitle": "Contato: (99) 9.9999-9999",
+        "text": "Contato: (99) 9.9999-9999"
+      }
+    }
+  },
+  "menu-item#contact-time": {
+    "props": {
+      "id": "menu-item-contact",
+      "blockClass": "footer__tooltip--link",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "seg a sex das 9h as 10h",
+        "text": "seg a sex das 9h as 10h"
+      }
+    }
+  },
+  "menu-item#atend-footer": {
+    "props": {
+      "id": "menu-item-atend",
+      "blockClass": "footer__tooltip--link",
+      "type": "custom",
+      "iconId": "hpa-envelope",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "mailto:contato@mz.com.br",
+        "noFollow": false,
+        "tagTitle": "contato@mz.com.br",
+        "text": "contato@mz.com.br"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "extends/buttons";
+
+.button {
+  &Show {
+    &More {
+      &--layout {
+        :global(.vtex-button) {
+          @extend %secondary-button;
+          font-size: $font-size-md !important;
+          font-weight: $bold !important;
+          margin: 30px 0;
+          height: 55px;
+        }
+
+        :global(.vtex-button__label) {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}

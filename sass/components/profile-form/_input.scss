@@ -1,0 +1,8 @@
+.styleguideInput {
+  :global(.vtex-input__label),
+  :global(.vtex-dropdown__label) {
+    color: $text-color-1;
+    line-height: 150%;
+    font-weight: $semi-bold;
+  }
+}

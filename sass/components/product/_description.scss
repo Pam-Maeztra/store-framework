@@ -1,0 +1,17 @@
+@import "mixins/text";
+
+.product {
+  &Description {
+    &Container {
+      padding: 15px 30px;
+    }
+
+    &Title {
+      display: none;
+    }
+
+    &Text {
+      @include text($font-size-sm, $text-color-1-400, inherit);
+    }
+  }
+}

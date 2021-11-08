@@ -1,0 +1,20 @@
+{
+  "flex-layout.row#product-image": {
+    "children": ["flex-layout.col#product-image"]
+  },
+  "flex-layout.col#product-image": {
+    "children": ["product-images", "flex-layout.row#deals-product"]
+  },
+
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "displayThumbnailsArrows": true,
+      "showNavigationArrows": true,
+      "showPaginationDots": false
+    }
+  }
+}

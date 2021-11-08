@@ -1,0 +1,22 @@
+{
+  "flex-layout.row#deals-product": {
+    "children": ["rich-text#deal-product1", "rich-text#deal-product2"],
+    "props": {
+      "blockClass": "home__deals--product"
+    }
+  },
+
+  "rich-text#deal-product1": {
+    "props": {
+      "text": "**Diferencial de compra tip bar 1** \n *Você podera escolher em qual loja deseja retirar o produto na pagina de finalizar pedido",
+      "blockClass": "home__deals--product"
+    }
+  },
+
+  "rich-text#deal-product2": {
+    "props": {
+      "text": "**Diferencial de compra tip bar 2** \n *Você podera escolher em qual loja deseja retirar o produto na pagina de finalizar pedido",
+      "blockClass": "home__deals--product"
+    }
+  }
+}

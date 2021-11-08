@@ -1,0 +1,21 @@
+.totalProducts {
+  &--layout {
+    text-align: left;
+
+    font-weight: $bold;
+    font-size: $font-size-sm;
+    line-height: normal;
+    color: $text-color-1-500;
+    text-transform: lowercase;
+    padding: 0;
+
+    @media (max-width: $l) {
+      padding: 16px 10px;
+    }
+  }
+}
+
+.totalProductsMessage {
+  font-weight: $normal;
+  color: $text-color-1-400;
+}

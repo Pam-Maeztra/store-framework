@@ -1,0 +1,84 @@
+.orderBy {
+  &Button {
+    padding-right: 0;
+    padding-top: 0;
+    margin: 0;
+    border: none;
+
+    @media (max-width: $l) {
+      padding: 0;
+      height: 40px;
+    }
+
+    .filterPopup {
+      &Title {
+        font-weight: $bold;
+        text-transform: capitalize;
+        color: $color-2-500;
+        position: relative;
+
+        @media (max-width: $l) {
+          width: 100%;
+          text-align: left;
+          height: 40px;
+          line-height: 36px;
+        }
+      }
+
+      &Button {
+        @media (max-width: $l) {
+          width: 100%;
+          padding: 0;
+          border: none;
+        }
+      }
+
+      &ArrowIcon {
+        padding: 0 0 0 5px;
+      }
+    }
+  }
+
+  &Dropdown {
+    padding: 0;
+    margin: 0;
+  }
+
+  &Text {
+    font-weight: $normal;
+    font-size: $font-size-xs;
+    line-height: normal;
+    color: $text-color-1-400;
+    text-transform: capitalize;
+
+    &::after {
+      content: ":";
+    }
+  }
+
+  &Option {
+    &Item {
+      font-weight: $normal;
+      text-transform: capitalize;
+      color: $text-color-1-500;
+      font-size: $font-size-sm;
+      min-width: auto;
+    }
+  }
+
+  &Options {
+    &Container {
+      border: 1px solid $color-5-500;
+      box-shadow: none;
+      border-radius: 4px;
+      top: 23px;
+      width: 50%;
+      min-width: auto;
+
+      @media (max-width: $l) {
+        width: 100%;
+        top: 39px;
+      }
+    }
+  }
+}

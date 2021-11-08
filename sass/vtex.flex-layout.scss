@@ -1,0 +1,19 @@
+@import "variables/_all";
+
+// COMMON
+@import 'mixins/responsive';
+
+@import "components/header/flex";
+
+// HOME
+@import "components/home/flex";
+@import "components/home/modal/flex";
+
+@import "components/footer/flex";
+
+@import "components/flex";
+
+@import "components/product/flex";
+
+// SEARCH
+@import "./components/search/flex";

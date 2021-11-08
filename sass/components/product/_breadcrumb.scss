@@ -1,0 +1,17 @@
+@import "mixins/text";
+@import "mixins/links";
+
+.container {
+  .homeIcon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .link {
+    @include link($font-size-xxs, $text-color-1-400, $bold, none);
+  }
+
+  .term {
+    @include text($font-size-xxs, $text-color-1-500, $bold);
+  }
+}

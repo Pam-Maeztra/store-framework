@@ -1,0 +1,125 @@
+@import "extends/container";
+
+.flex {
+  &Row {
+    &--home__deals {
+      padding: 40px 0;
+      border-bottom: 1px solid $color-5-700;
+
+      @media (max-width: $l) {
+        padding: 10px 0;
+      }
+    }
+
+    &--bg__gray {
+      background-color: $color-5-400;
+      margin-top: 60px;
+    }
+
+    &--home__slider {
+      background-color: $color-5-400;
+      padding: 60px 0;
+      margin-bottom: 60px;
+    }
+
+    &Content {
+      &--home__footer--high {
+        .stretchChildrenWidth {
+          width: auto !important;
+          padding: 5px;
+        }
+      }
+
+      &--home__slider {
+        @extend %container;
+      }
+
+      &--home__deals {
+        @extend %container;
+
+        @media (max-width: $l) {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+        }
+
+        .stretchChildrenWidth {
+          @media (max-width: $l) {
+            flex: 0 0.1 auto;
+          }
+        }
+
+        .flexCol {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          height: auto;
+          align-items: center;
+          justify-content: end;
+
+          &Child {
+            height: auto !important;
+
+            &:last-child {
+              margin-left: 15px;
+
+              @media (max-width: $l) {
+                margin: 0 15px;
+              }
+            }
+          }
+        }
+      }
+
+      &--shelf,
+      &--home__sales-banner {
+        @extend %container;
+
+        .stretchChildrenWidth {
+          @media (min-width: $l) {
+            margin-right: 10px;
+          }
+
+          @media (max-width: $l) {
+            margin-bottom: 10px;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      &--home__banner-duo-main {
+        margin: 60px auto !important;
+        gap: 16px;
+      }
+
+      &--home__categories-banner {
+        &--col {
+          .stretchChildrenWidth {
+            &:hover {
+              box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            }
+          }
+        }
+      }
+
+      &--home__categories-banner,
+      &--home__more-categories-banner {
+        @extend %container;
+
+        &--col {
+          display: flex;
+          flex-wrap: nowrap;
+          gap: 12px;
+        }
+
+        .stretchChildrenWidth {
+          flex-grow: 1;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

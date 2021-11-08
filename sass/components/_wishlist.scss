@@ -1,0 +1,42 @@
+.wishlist {
+  &Icon {
+    &.outline {
+      background: url("assets/svg/hpa-heart.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      width: 15px;
+      height: 15px;
+    }
+
+    &.fill {
+      background: url("assets/svg/hpa-heart-full.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      width: 15px;
+      height: 15px;
+    }
+
+    &Container {
+      :global(.vtex-button) {
+        border: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: transparent;
+          outline: transparent;
+        }
+      }
+
+      :global(.vtex-button__label) {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.wishlistIconContainer {
+  display: inline-block;
+}

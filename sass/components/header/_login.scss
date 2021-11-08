@@ -1,0 +1,59 @@
+@import "mixins/text";
+
+.container {
+  @media (max-width: $l) {
+    padding: 15px 20px;
+    border-top: 1px solid $color-5-500;
+    margin: 0 15px;
+  }
+
+  :global(.vtex-button) {
+    padding: 0;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  }
+
+  :global(.vtex-button__label) {
+    padding: 0;
+  }
+
+  .profileIcon {
+    color: $white;
+
+    @media (max-width: $l) {
+      color: $text-color-1-500;
+    }
+  }
+  .label {
+    @include text($font-size-sm, $white);
+
+    @media (max-width: $l) {
+      @include text($font-size-md, $text-color-1-500, $bold);
+      display: block !important;
+      text-transform: capitalize;
+    }
+  }
+
+  .profile {
+    // LOGADO
+    letter-spacing: 1px;
+    font-weight: $normal;
+    font-size: $font-size-sm;
+    color: $text-color-1-500;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+    text-transform: none;
+
+    @media (max-width: $l) {
+      display: block !important;
+      max-width: 220px;
+    }
+  }
+}

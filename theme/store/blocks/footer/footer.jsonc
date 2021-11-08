@@ -1,0 +1,28 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "newsletter-form#footer",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-4-desktop"
+    ]
+  },
+
+  // FOOTER MOBILE
+  "footer-layout.mobile": {
+    "children": [
+      "newsletter-form#footer",
+      "flex-layout.row#footer-1-desktop",
+      "menu-item#footer-menu-1",
+      "menu-item#footer-menu-2",
+      "menu-item#footer-menu-3",
+      "menu-item#footer-menu-4",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-4-desktop"
+    ]
+  }
+}

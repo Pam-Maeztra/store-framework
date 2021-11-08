@@ -1,0 +1,50 @@
+@import "../mixins/input-placeholder";
+
+%input-text {
+  @include input-placeholder($text-color-1-400);
+  font-family: $main-font !important;
+  font-size: $font-size-sm;
+  border: 1px solid $color-5-700;
+  border-radius: 50px;
+  padding: 5px 10px;
+  height: 35px;
+  display: block;
+  width: 100%;
+
+  @media screen and (max-width: $l) {
+    // Medida para não acontecer o zoom da tela no iPhone, devido a acessibilidade
+    font-size: $font-size-md;
+  }
+
+  &:hover {
+    border-color: darken($color-5-700, 15%);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-1-500;
+  }
+}
+
+%input-text-news {
+  @include input-placeholder($text-color-1-400);
+  font-family: $main-font !important;
+  font-size: $font-size-sm;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid $color-2-500;
+  border-radius: 0;
+  padding: 5px 10px;
+  height: 46px;
+  display: block;
+  width: 100%;
+
+  &:hover {
+    border-color: $color-2-600;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-2-700;
+  }
+}

@@ -1,0 +1,30 @@
+@import "extends/links";
+
+.infoCard {
+  &Container {
+    &--mz-search__slider--banner {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+
+      .infoCard {
+        &ImageContainer {
+          width: 100%;
+        }
+
+        &CallAction {
+          &Container {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+          }
+
+          &Text {
+            @extend %link;
+            text-decoration: none !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "extends/titles";
+
+.gallery {
+  padding: 0;
+
+  &Title {
+    &--layout {
+      @extend %big-title-section;
+      margin: 0 0 17px !important;
+    }
+  }
+
+  &Item {
+    padding: 5px;
+
+    :global(.vtex-product-summary-2-x-container) {
+      margin: 0 !important;
+    }
+
+    :global(.vtex-product-summary-2-x-element) {
+      padding: 0 0 50px !important;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "flex-layout.row#shelf-view": {
+    "children": ["shelf.relatedProducts#option-1"],
+    "props": {
+      "blockClass": "shelf__product"
+    }
+  },
+  "shelf.relatedProducts#option-1": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "recommendation": "view",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 4,
+        "titleText": "Quem viu, viu também"
+      }
+    }
+  },
+  "flex-layout.row#shelf-buy": {
+    "children": ["shelf.relatedProducts#option-2"],
+    "props": {
+      "blockClass": "shelf__product"
+    }
+  },
+  "shelf.relatedProducts#option-2": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "recommendation": "buy",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 4,
+        "titleText": "Quem comprou, comprou também"
+      }
+    }
+  },
+  "flex-layout.row#shelf-similars": {
+    "children": ["shelf.relatedProducts#option-3"],
+    "props": {
+      "blockClass": ["shelf__product", "bg__white"]
+    }
+  },
+  "shelf.relatedProducts#option-3": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "recommendation": "similars",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 4,
+        "titleText": "Produtos Similares"
+      }
+    }
+  }
+}

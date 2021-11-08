@@ -1,0 +1,38 @@
+.stack {
+  &Container {
+    &--shelf__price {
+      .stackItem {
+        &:last-child {
+          z-index: 2;
+          position: absolute;
+          right: 0;
+          left: 0;
+          width: 100%;
+          bottom: 0;
+          top: inherit;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        &--mz-shelf {
+          &__wishlist {
+            right: 0;
+
+            :global(.vtex-button) {
+              opacity: 1;
+              visibility: visible;
+              position: inherit;
+              background: transparent;
+            }
+
+            :global(.vtex-button__label) {
+              justify-content: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
+}

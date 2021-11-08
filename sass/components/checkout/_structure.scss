@@ -1,0 +1,90 @@
+body {
+  padding-bottom: 0 !important;
+}
+
+.mz-checkout {
+  &__container {
+    @extend %container;
+  }
+
+  // HEADER
+  &__header {
+    border-bottom: 1px solid $color-1-500;
+    background-color: $color-1-500;
+    padding: 30px 0;
+    margin-bottom: 30px;
+
+    @media (max-width: $l) {
+      padding: 30px 16px;
+    }
+  }
+
+  // FOOTER
+  &__footer {
+    margin-top: 30px;
+    background-color: $color-2-500;
+    border-top: 1px solid $color-2-500;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin: 0 5px;
+      }
+    }
+
+    &--payments {
+      padding: 30px 0;
+
+      @media (max-width: $l) {
+        padding: 30px 16px;
+      }
+
+      h4 {
+        font-weight: $bold;
+        font-size: $font-size-sm;
+        color: $white;
+        margin: 0 0 15px;
+      }
+
+      img {
+        max-height: 30px;
+      }
+    }
+
+    &--legal {
+      padding: 15px 0;
+      background-color: $color-2-600;
+
+      font-weight: $normal;
+      font-size: $font-size-xs;
+      color: $white;
+
+      @media (max-width: $l) {
+        padding: 15px 16px 90px;
+      }
+
+      .mz-checkout__container {
+        @media (min-width: $l) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      ul {
+        @media (max-width: $l) {
+          padding: 30px 0;
+        }
+      }
+
+      img {
+        max-height: 45px;
+      }
+    }
+  }
+}

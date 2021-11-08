@@ -1,0 +1,28 @@
+:global(.vtex-account__page) {
+  :global(.vtex-pageHeader__container) {
+    :global(.vtex-pageHeader__title) {
+      font-size: 24px;
+      line-height: 150%;
+      color: $text-color-1-500;
+    }
+
+    :global(.c-action-primary) {
+      color: $text-color-1-500;
+      font-size: $font-size-lg;
+      line-height: 150%;
+      font-weight: $semi-bold;
+      text-transform: initial;
+
+      :global(.t-action--small) {
+        font-weight: $semi-bold;
+        text-transform: initial;
+      }
+    }
+  }
+
+  :global(.vtex-account__order-details) {
+    :global(.no-underline) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "flex-layout.row#deals": {
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4"
+    ],
+    "props": {
+      "blockClass": "home__deals"
+    }
+  },
+
+  "flex-layout.col#deals1": {
+    "children": ["image#deal1", "rich-text#deal1"]
+  },
+  "image#deal1": {
+    "props": {
+      "src": "assets/img/deals-icon-01.png"
+    }
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "Diferencial de compra tip bar 1",
+      "blockClass": "home__deals"
+    }
+  },
+
+  "flex-layout.col#deals2": {
+    "children": ["image#deal2", "rich-text#deal2"]
+  },
+  "image#deal2": {
+    "props": {
+      "src": "assets/img/deals-icon-01.png"
+    }
+  },
+  "rich-text#deal2": {
+    "props": {
+      "text": "Diferencial de compra tip bar 2",
+      "blockClass": "home__deals"
+    }
+  },
+
+  "flex-layout.col#deals3": {
+    "children": ["image#deal3", "rich-text#deal3"]
+  },
+  "image#deal3": {
+    "props": {
+      "src": "assets/img/deals-icon-01.png"
+    }
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "Diferencial de compra tip bar 3",
+      "blockClass": "home__deals"
+    }
+  },
+
+  "flex-layout.col#deals4": {
+    "children": ["image#deal4", "rich-text#deal4"]
+  },
+  "image#deal4": {
+    "props": {
+      "src": "assets/img/deals-icon-01.png"
+    }
+  },
+  "rich-text#deal4": {
+    "props": {
+      "text": "Diferencial de compra [saiba mais](https://stackedit.io/app#)",
+      "blockClass": "home__deals"
+    }
+  }
+}

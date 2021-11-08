@@ -1,0 +1,108 @@
+// Mixins para auxiliar o posicionamento
+
+// POSIÇÃO ABSOLUTA
+@mixin absolute($left: 0, $top: 0, $zindex: false, $full: false) {
+    position: absolute;
+    top: $top;
+	left: $left;
+	
+	@if ($zindex) {
+		z-index: $zindex; 
+	}
+
+	@if ($full == true) {
+		bottom: 0;
+    	right: 0;
+	}
+}
+
+@mixin absolute-b($left: 0, $bottom: 0, $zindex: false) {
+	position: absolute;
+	left: $left;
+	bottom: $bottom;
+
+	@if ($zindex) {
+		z-index: $zindex; 
+	}
+}
+
+@mixin absolute-r($right: 0, $top: 0, $zindex: false) {
+	position: absolute;
+    left: auto;
+    top: $top;
+    right: $right;
+
+	@if ($zindex) {
+		z-index: $zindex; 
+	}
+}
+
+@mixin absolute-r-b($right: 0, $bottom: 0, $z-index: false) {
+	position: absolute;
+    left: auto;
+    bottom: $bottom;
+	right: $right;
+	
+	@if ($zindex) {
+		z-index: $zindex; 
+	}
+}
+
+// POSIÇÃO FIXA
+// /*
+// Modo de usar:
+// 1 - Para obter um posicionamento apenas com top e left use:
+// 	@include fixed(); // Por padrão será definido 0 para "top" e "left"
+// 2 - Para obter um posicionamento já setando "z-index" use:
+// 	@include fixed(0, 0, 1);
+// 3 - Para obter um posicionamento com "width" use:
+// 	@include fixed(0, 0, 1, 100%);
+// 4 - para definir tudo para os valores padrões ("left:0", "top:0", "width:100%", "z-index:10") use:
+// 	.@include fixed(auto);
+// */
+
+@mixin fixed($top: 0, $left: 0, $zindex: false, $width: false) {
+	position: fixed;
+    top: $top;
+	left: $left;
+	
+	@if ($zindex) {
+		z-index: $zindex;
+	}
+	
+	@if ($width) {
+		width: $width;
+	}
+}
+
+@mixin fixed-b($bottom: 0, $left: 0, $zindex: false) {
+	position: fixed;
+    bottom: $bottom;
+	left: $left;
+	
+	@if ($zindex) {
+		z-index: $zindex;
+	}
+}
+
+@mixin fixed-r($right: 0, $top: 0, $zindex: false) {
+	position: fixed;
+    top: $top;
+	right: $right;
+	left: auto;
+
+	@if ($zindex) {
+		z-index: $zindex;
+	}
+}
+
+@mixin fixed-r-b($right: 0, $bottom: 0, $zindex: false) {
+	position: fixed;
+    bottom: $bottom;
+	right: $right;
+	left: auto;
+
+	@if ($zindex) {
+		z-index: $zindex;
+	}
+}

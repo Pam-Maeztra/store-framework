@@ -1,0 +1,14 @@
+.list {
+  &--mz-wishlist__list {
+    padding: 0 16px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+      margin-bottom: 20px;
+    }
+  }
+}

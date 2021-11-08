@@ -1,0 +1,94 @@
+{
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "flex-layout.col#footer-col-1",
+      "flex-layout.col#footer-col-2",
+      "flex-layout.col#footer-col-3"
+    ],
+    "props": {
+      "blockClass": "footer_methods"
+    }
+  },
+
+  "flex-layout.col#footer-col-1": {
+    "children": ["rich-text#footer-payment-title", "accepted-payment-methods"]
+  },
+  "rich-text#footer-payment-title": {
+    "props": {
+      "text": "### Formas de Pagamentos",
+      "blockClass": "footer_methods--title"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+    }
+  },
+
+  "flex-layout.col#footer-col-2": {
+    "children": [
+      "rich-text#footer-lights-title",
+      "flex-layout.row#footer-highlights"
+    ]
+  },
+  "rich-text#footer-lights-title": {
+    "props": {
+      "text": "### Selos de Segurança",
+      "blockClass": "footer_methods--title"
+    }
+  },
+
+  "flex-layout.row#footer-highlights": {
+    "children": ["image#banner-high-1", "image#banner-high-2"],
+    "props": {
+      "blockClass": "home__footer--high"
+    }
+  },
+  "image#banner-high-1": {
+    "props": {
+      "src": "assets/img/footer-02.png",
+      "link": "/",
+      "blockClass": "home__footer"
+    }
+  },
+  "image#banner-high-2": {
+    "props": {
+      "src": "assets/img/footer-01.png",
+      "link": "/",
+      "blockClass": "home__footer"
+    }
+  },
+
+  "flex-layout.col#footer-col-3": {
+    "children": ["rich-text#footer-powered", "flex-layout.row#footer-powered"],
+    "props": {
+      "blockClass": "home__footer--high"
+    }
+  },
+  "rich-text#footer-powered": {
+    "props": {
+      "text": "### Desenvolvido",
+      "blockClass": "footer_methods--title"
+    }
+  },
+  "flex-layout.row#footer-powered": {
+    "children": ["image#powered-1", "image#powered-2"],
+    "props": {
+      "blockClass": "home__footer--high"
+    }
+  },
+  "image#powered-1": {
+    "props": {
+      "src": "assets/img/footer-02.png",
+      "link": "/",
+      "blockClass": "home__footer"
+    }
+  },
+  "image#powered-2": {
+    "props": {
+      "src": "assets/img/footer-01.png",
+      "link": "/",
+      "blockClass": "home__footer"
+    }
+  }
+}

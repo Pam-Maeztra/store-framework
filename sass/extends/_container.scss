@@ -1,0 +1,9 @@
+%container {
+  margin: 0 auto !important;
+
+  @media (min-width: $l) {
+    width: 90%;
+    max-width: 1250px;
+    min-width: $l - 30;
+  }
+}

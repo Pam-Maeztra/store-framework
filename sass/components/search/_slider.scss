@@ -1,0 +1,25 @@
+@import "extends/container";
+@import "extends/arrow";
+
+.slider {
+  &Layout {
+    &Container {
+      &--mz-search__slider {
+        @extend %container;
+        padding: 0 !important;
+        margin-bottom: 40px;
+
+        @media (max-width: $l) {
+          padding: 0 16px !important;
+          margin: 40px 0;
+        }
+
+        .sliderTrack {
+          @media (max-width: $l) {
+            width: 700% !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../store-theme/styles/configs/font-faces.css';
+@import 'variables/all';
+@import 'extends/container';
+@import 'extends/buttons';
+@import 'extends/inputs';
+
+// STRUCTURE
+@import 'components/checkout/buttons';
+@import 'components/checkout/common';
+@import 'components/checkout/container';
+@import 'components/checkout/step';
+@import 'components/checkout/structure';
+@import 'components/checkout/totalizers';

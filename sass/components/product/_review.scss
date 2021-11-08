@@ -1,0 +1,116 @@
+@import "extends/container";
+@import "extends/titles";
+@import "mixins/text";
+@import "extends/inputs";
+@import "extends/buttons";
+
+.container {
+  @extend %container;
+
+  :global(.vtex-dropdown__container) {
+    border-radius: 30px;
+    border: 1px solid $color-5-500;
+    margin-top: 30px;
+  }
+
+  .writeReview {
+    &Container {
+      :global(.vtex__icon-caret-down),
+      :global(.vtex__icon-caret-up) {
+        color: $color-2-500;
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &Button {
+      @include text($font-size-xs, $color-2-500, $bold);
+    }
+  }
+
+  .formSection {
+    :global(.vtex-input-prefix__group) {
+      border: none;
+      height: auto;
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+      @extend %input-text;
+      height: 48px;
+    }
+
+    :global(.vtex-input__suffix) {
+      padding: 0;
+    }
+
+    :global(.vtex-button) {
+      @extend %primary-button;
+    }
+  }
+
+  .reviews {
+    &Paging {
+      :global(.vtex-button) {
+        background-color: transparent;
+        border: none;
+      }
+
+      :global(.vtex__icon-caret-left) {
+        color: $text-color-1-500;
+      }
+
+      :global(.vtex__icon-caret-right) {
+        color: $text-color-1-500;
+      }
+    }
+
+    &Heading {
+      @include text($font-size-lg, $text-color-1-500, $bold);
+      border: none;
+    }
+
+    &Rating {
+      &Average {
+        @include text($font-size-h5, $color-1-500, $bold);
+      }
+
+      &Count {
+        @include text($font-size-sm, $text-color-1-400, $normal);
+      }
+    }
+  }
+
+  .review {
+    &Comment {
+      background: $color-6-100;
+      border-radius: 3px;
+      padding: 30px 15px;
+      margin-bottom: 30px;
+      border: none;
+      position: relative;
+      color: $text-color-1-400;
+
+      &User {
+        @include text($font-size-lg, $text-color-1-500, $normal);
+      }
+
+      &Rating {
+        margin-left: -10px;
+      }
+
+      :global(.vtex__icon-caret-down),
+      :global(.vtex__icon-caret-up) {
+        color: $text-color-2-500;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 15px;
+        top: 40px;
+      }
+    }
+  }
+}
+
+.star {
+  color: #ffe04a;
+}

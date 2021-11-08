@@ -1,0 +1,115 @@
+$color-1: #2d17af; // Cor principal da marca
+$color-2: #160b55; // Cor secundária da marca
+$color-3: #fc5252; // Cor do callToAction Principal (ex.: botão comprar)
+$color-4: #fc5252; // CallToAction Secundário (ex.: botão de newsletter)
+$color-5: #efefef; // Cor livre
+$color-6: #cccccc; // Cor Neutra (ex.: cinza)
+$text-color-1: #353535; // Cor para textos
+$text-color-2: #666666; // Cor secundária para textos
+
+// Gradientes
+$grad-1: linear-gradient(
+  to right,
+  rgba(255, 255, 255, 1) 50%,
+  rgba(45, 23, 175, 1) 0%
+);
+
+// Gradientes
+$grad-2: linear-gradient(90deg, #fc5252 0%, #f26f25 100%);
+
+// Cor 1
+$color-1-50: lighten($color-1, 20%);
+$color-1-100: lighten($color-1, 16%);
+$color-1-200: lighten($color-1, 12%);
+$color-1-300: lighten($color-1, 8%);
+$color-1-400: lighten($color-1, 4%);
+$color-1-500: $color-1;
+$color-1-600: darken($color-1, 5%);
+$color-1-700: darken($color-1, 10%);
+$color-1-800: darken($color-1, 15%);
+$color-1-900: darken($color-1, 20%);
+
+// Cor 2
+$color-2-50: lighten($color-2, 20%);
+$color-2-100: lighten($color-2, 16%);
+$color-2-200: lighten($color-2, 12%);
+$color-2-300: lighten($color-2, 8%);
+$color-2-400: lighten($color-2, 4%);
+$color-2-500: $color-2;
+$color-2-600: darken($color-2, 5%);
+$color-2-700: darken($color-2, 10%);
+$color-2-800: darken($color-2, 15%);
+$color-2-900: darken($color-2, 20%);
+
+// Cor 3
+$color-3-50: lighten($color-3, 20%);
+$color-3-100: lighten($color-3, 16%);
+$color-3-200: lighten($color-3, 12%);
+$color-3-300: lighten($color-3, 8%);
+$color-3-400: lighten($color-3, 4%);
+$color-3-500: $color-3;
+$color-3-600: darken($color-3, 5%);
+$color-3-700: darken($color-3, 10%);
+$color-3-800: darken($color-3, 15%);
+$color-3-900: darken($color-3, 20%);
+
+// Cor 4
+$color-4-50: lighten($color-4, 20%);
+$color-4-100: lighten($color-4, 16%);
+$color-4-200: lighten($color-4, 12%);
+$color-4-300: lighten($color-4, 8%);
+$color-4-400: lighten($color-4, 4%);
+$color-4-500: $color-4;
+$color-4-600: darken($color-4, 5%);
+$color-4-700: darken($color-4, 10%);
+$color-4-800: darken($color-4, 15%);
+$color-4-900: darken($color-4, 20%);
+
+// Cor 5
+$color-5-50: lighten($color-5, 20%);
+$color-5-100: lighten($color-5, 16%);
+$color-5-200: lighten($color-5, 12%);
+$color-5-300: lighten($color-5, 8%);
+$color-5-400: lighten($color-5, 4%);
+$color-5-500: $color-5;
+$color-5-600: darken($color-5, 5%);
+$color-5-700: darken($color-5, 10%);
+$color-5-800: darken($color-5, 15%);
+$color-5-900: darken($color-5, 20%);
+
+// Cor 6
+$color-6-50: lighten($color-6, 20%);
+$color-6-100: lighten($color-6, 16%);
+$color-6-200: lighten($color-6, 12%);
+$color-6-300: lighten($color-6, 8%);
+$color-6-400: lighten($color-6, 4%);
+$color-6-500: $color-6;
+$color-6-600: darken($color-6, 5%);
+$color-6-700: darken($color-6, 10%);
+$color-6-800: darken($color-6, 15%);
+$color-6-900: darken($color-6, 20%);
+
+// Textos - alpha
+$text-color-1-500: $text-color-1;
+$text-color-1-400: lighten($text-color-1, 26%);
+$text-color-1-300: lighten($text-color-1, 54%);
+$text-color-1-200: lighten($text-color-1, 68%);
+$text-color-1-100: lighten($text-color-1, 82%);
+
+// Textos 2 - alpha
+$text-color-2-500: $text-color-2;
+$text-color-2-400: lighten($text-color-2, 26%);
+$text-color-2-300: lighten($text-color-2, 54%);
+$text-color-2-200: lighten($text-color-2, 68%);
+$text-color-2-100: lighten($text-color-2, 82%);
+
+// Apoios
+$white: #ffffff;
+$black: #000000;
+$text-shadow-1-500: 0px 0px $text-color-1-500;
+$text-shadow-2-500: 0px 0px $text-color-2-500;
+$text-shadow-white: 0px 0px $white;
+
+// Custom
+$color-c-1: #6fcf97;
+$color-c-2: darken($color-c-1, 20%);

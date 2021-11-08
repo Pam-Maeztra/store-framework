@@ -1,0 +1,74 @@
+%primary-button {
+  font-family: $main-font;
+  letter-spacing: 1px !important;
+  margin: 0;
+  background: $grad-2;
+  background-size: 350%;
+  transition: all 0.5s ease-in-out;
+  color: $white;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  font-size: $font-size-md;
+  font-weight: $normal;
+  padding: 10px;
+  display: block;
+  text-transform: none;
+  border: none;
+  box-shadow: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transition: all 0.5s ease-in-out;
+    background-position: 75%;
+    color: $white;
+    border: none;
+  }
+}
+
+%secondary-button {
+  font-family: $main-font;
+  font-weight: $bold;
+  letter-spacing: 1px !important;
+  margin: 0;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid $color-1-500;
+  color: $color-1-500;
+  font-size: $font-size-sm;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.2s ease-in;
+  -webkit-appearance: none;
+  background: transparent !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid $color-1-700;
+    color: $color-1-700;
+    background: transparent !important;
+  }
+}
+
+%tertiary-button {
+  font-family: $main-font;
+  letter-spacing: 0px !important;
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid $color-5-500;
+  font-size: $font-size-sm;
+  text-decoration: none;
+  background-color: $white;
+  color: $color-5-500;
+  transition: all 0.5s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid $color-5-500;
+    background-color: transparent;
+  }
+}

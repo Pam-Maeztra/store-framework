@@ -1,0 +1,121 @@
+@import "mixins/links";
+.menu {
+  &Container {
+    &Nav {
+      &--header__menu {
+        .menu {
+          &Item {
+            &:first-child {
+              .styled {
+                &Link {
+                  &Container {
+                    margin-left: 0;
+                  }
+                }
+              }
+            }
+
+            &:last-child {
+              .styled {
+                &Link {
+                  &Container {
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .styled {
+          &Link {
+            @include link($font-size-sm, $text-color-1-400, $bold, none);
+
+            &--highlight {
+              @include link($font-size-sm, $color-2-500, $bold, none);
+            }
+          }
+        }
+      }
+
+      &--header_menu--mob {
+        width: 100%;
+        padding: 15px 0;
+
+        .menu {
+          &Item {
+            padding: 15px 0;
+          }
+        }
+
+        .accordion {
+          &Icon {
+            &--isClosed {
+              font-size: 0;
+
+              &::before {
+                content: "";
+                width: 24px;
+                height: 24px;
+                display: block;
+                background-image: url($arrow-b);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center center;
+              }
+            }
+
+            &--isOpen {
+              font-size: 0;
+
+              &::before {
+                content: "";
+                width: 24px;
+                height: 24px;
+                display: block;
+                background-image: url($arrow-b);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center center;
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+
+        .styled {
+          &Link {
+            @include link($font-size-sm, $text-color-1-400, $normal, none);
+
+            &--highlight {
+              @include link($font-size-md, $text-color-1-500, $bold, none);
+            }
+          }
+        }
+      }
+
+      .styled {
+        &Link {
+          &--header__tooltip {
+            &--link {
+              @include link();
+            }
+          }
+
+          &Container {
+            &--header__tooltip {
+              &--link {
+                margin: 0;
+                padding: 0 30px;
+
+                &:last-child {
+                  padding-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

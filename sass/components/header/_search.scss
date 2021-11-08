@@ -1,0 +1,49 @@
+@import "mixins/text";
+
+.search {
+  &Bar {
+    &Icon {
+      &--header {
+        &__search {
+          padding: 0 5px;
+          color: $white;
+        }
+      }
+    }
+
+    &Container {
+      padding: 0;
+    }
+
+    &Inner {
+      &Container {
+        &--header__search {
+          :global(.vtex-input-prefix__group) {
+            border: none;
+            border-radius: 30px;
+          }
+
+          :global(.vtex-styleguide-9-x-input) {
+            border: none;
+            @include text($font-size-sm, $color-1-50);
+            background-color: $white;
+          }
+
+          :global(.vtex-input__suffix) {
+            border-radius: 0 30px 30px 0;
+            color: $white;
+            background: $grad-2;
+            background-size: 250%;
+            transition: all 0.5s ease-in-out;
+
+            &:hover,
+            &:focus {
+              transition: all 0.5s ease-in-out;
+              background-position: 75%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

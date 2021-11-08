@@ -1,0 +1,21 @@
+:global(.vtex-account__page-body) {
+    // TITLE
+    :global(.t-heading-4) {
+        color: $text-color-1-500;
+        font-size: $font-size-xlg;
+        :global(.c-on-base) {
+            color: $text-color-1-500;
+            font-size: $font-size-xlg;
+        }
+    }
+
+   
+
+
+    // BUTTON
+    :global(.c-action-primary) {
+        font-size: $font-size-md;
+        font-weight: $semi-bold;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,275 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  // HEADER DESKTOP START
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#3-desktop",
+      "sticky-layout#4-desktop",
+      "flex-layout.row#5-desktop"
+    ]
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "header__tooltip",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "rich-text#tooltip-01",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#tooltip"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "header__sticky"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "header__main",
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true,
+      // "fullWidth": true
+    },
+    "children": ["disposition-layout#row-4"]
+  },
+  "disposition-layout#row-4": {
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#search-desktop",
+      "flex-layout.col#links-desktop"
+    ],
+    "props": {
+      "blockClass": "header__main--order",
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        }
+      ]
+    }
+  },
+  "flex-layout.col#search-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "40%"
+    },
+    "children": ["search-bar"]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "20%"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#links-desktop": {
+    "children": ["flex-layout.row#links-desktop"],
+    "props": {
+      "verticalAlign": "middle",
+      "width": "30%"
+    }
+  },
+  "flex-layout.row#links-desktop": {
+    "children": [
+      "locale-switcher",
+      "login#header",
+      "menu#wishlist",
+      "minicart.v2#main-header"
+    ]
+  },
+  // WISH LIST
+  "menu#wishlist": {
+    "children": ["menu-item#wishlist"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mz-product__wishlist"
+    },
+    "title": "Wishlist"
+  },
+  "menu-item#wishlist": {
+    "props": {
+      "id": "menu-item-icone",
+      "blockClass": "mz-product__wishlist--item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "href": "/account/#/wishlist",
+        "noFollow": false,
+        "tagTitle": "Favoritos",
+        "text": ""
+      },
+      "iconProps": {
+        "id": "hpa-heart-full",
+        "size": 18,
+        "viewBox": "0 0 24 24",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "search-bar": {
+    "props": {
+      "blockClass": "header__search"
+    }
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "horizontalAlign": "left",
+      "width": "100%"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo da MZ Store",
+      "href": "/",
+      "url": "assets/img/header-logo.png",
+      "width": "200",
+      "blockClass": "header__logo"
+    }
+  },
+  "login#header": {
+    "props": {
+      "showIconProfile": true,
+      "blockClass": "header__login"
+    }
+  },
+  "flex-layout.row#5-desktop": {
+    "props": {
+      "blockClass": "header__menu",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#category-menu"]
+  },
+  // HEADER DESKTOP END
+
+  // HEADER MOBILE START
+  "header-layout.mobile": {
+    "children": ["flex-layout.row#0-mobile", "sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#0-mobile": {
+    "props": {
+      "blockClass": "header__tooltip",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["rich-text#tooltip-01"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer#header-mobile",
+      "logo#mobile",
+      "flex-layout.row#mob-list"
+    ],
+    "props": {
+      "blockClass": "header__main",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#mob-list": {
+    "props": {
+      "blockClass": "header__main--mob"
+    },
+    "children": ["drawer#search-mobile", "minicart.v2#main-header"]
+  },
+
+  "drawer#search-mobile": {
+    "props": {
+      "isFullWidth": true,
+      "slideDirection": "horizontal",
+      "blockClass": "header__drawer--search"
+    },
+    "children": ["search-bar"]
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo da MZ Store",
+      "href": "/",
+      "url": "assets/img/header-logo.png",
+      "width": "150",
+      "blockClass": "header__logo"
+    }
+  },
+
+  "drawer#header-mobile": {
+    "props": {
+      "isFullWidth": true,
+      "backdropMode": "none",
+      "slideDirection": "horizontal"
+    },
+    "blocks": ["drawer-header#header-mobile"],
+    "children": ["menu#drawer", "login#header"]
+  },
+  "drawer-header#header-mobile": {
+    "children": ["logo#mobile", "drawer-close-button"],
+    "props": {
+      "blockClass": "mz-drawer__menu--mobile"
+    }
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#all-categories-mobile",
+      "menu-item#categories-with-banner-col-1"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "header_menu--mob"
+    }
+  },
+
+  "menu-item#all-categories-mobile": {
+    "props": {
+      "id": "menu-item-all-categories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/search",
+        "noFollow": false,
+        "tagTitle": "Todas as categorias",
+        "text": "Todas as categorias"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#all-categories-col-1"]
+  },
+  "vtex.menu@2.x:submenu.accordion#all-categories-col-1": {
+    "children": ["vtex.menu@2.x:menu#all-categories"]
+  }
+  // HEADER MOBILE END
+}

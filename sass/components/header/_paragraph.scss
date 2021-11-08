@@ -1,0 +1,14 @@
+@import "mixins/text";
+
+.container {
+  &--header {
+    &__tooltip {
+      &--text {
+        .paragraph {
+          @include text($font-size-xs);
+          margin: 0;
+        }
+      }
+    }
+  }
+}

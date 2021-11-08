@@ -1,0 +1,15 @@
+%bullet {
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2.5px;
+    opacity: .7;
+    transition: all .2s ease-in;
+    background-color: $white;
+
+    &:hover {
+        opacity: 1;
+    }
+}

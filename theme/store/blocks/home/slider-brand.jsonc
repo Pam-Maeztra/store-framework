@@ -1,0 +1,59 @@
+{
+  "flex-layout.row#slider-brand-home": {
+    "children": ["list-context.image-list#slider-brand-home"],
+    "props": {
+      "blockClass": "home__slider"
+    }
+  },
+
+  "list-context.image-list#slider-brand-home": {
+    "children": ["slider-layout#slider-brand-home"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/img/marcas-01.png"
+        },
+        {
+          "image": "assets/img/marcas-02.png"
+        },
+        {
+          "image": "assets/img/marcas-03.png"
+        },
+        {
+          "image": "assets/img/marcas-04.png"
+        },
+        {
+          "image": "assets/img/marcas-05.png"
+        },
+        {
+          "image": "assets/img/marcas-01.png"
+        },
+        {
+          "image": "assets/img/marcas-02.png"
+        },
+        {
+          "image": "assets/img/marcas-03.png"
+        },
+        {
+          "image": "assets/img/marcas-04.png"
+        },
+        {
+          "image": "assets/img/marcas-05.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-brand-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "home__slider",
+      "showPaginationDots": "never"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "flex-layout.row#product-main-availability": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.col#stack-availability",
+      "flex-layout.col#right-col-availability"
+    ]
+  },
+
+  // LEFT
+  "flex-layout.col#stack-availability": {
+    "children": ["stack-layout#availability"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "stack-layout#availability": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": ["flex-layout.row#product-image", "product-bookmark"]
+  },
+  "flex-layout.col#right-col-availability": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "product__main"
+    },
+    "children": [
+      "product-identifier.product",
+      "vtex.store-components:product-name",
+      "flex-layout.row#highlights",
+      "product-rating-summary",
+      "sku-selector",
+      "product-separator",
+      "flex-layout.row#list-price-savings",
+      "product-installments",
+      "flex-layout.row#availability",
+      "product-separator",
+      "share#default"
+    ]
+  },
+  "flex-layout.row#availability": {
+    "props": {
+      "blockClass": "availability"
+    },
+    "children": ["availability-subscriber"]
+  }
+}

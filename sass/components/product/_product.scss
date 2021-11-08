@@ -1,0 +1,7 @@
+@import "mixins/text";
+
+.product {
+  &Brand {
+    @include text($font-size-h5, $text-color-1-500, $bold);
+  }
+}

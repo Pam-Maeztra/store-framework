@@ -1,0 +1,22 @@
+@import "extends/container";
+@import "mixins/text";
+
+.container {
+  &--mz-search__seo {
+    @extend %container;
+    padding: 60px 0;
+
+    @media (max-width: $l) {
+      padding: 60px 16px;
+    }
+
+    .heading {
+      @include text($font-size-h5, $text-color-1-500, $bold);
+    }
+
+    .paragraph {
+      font-size: $font-size-sm;
+      color: $text-color-2-500;
+    }
+  }
+}

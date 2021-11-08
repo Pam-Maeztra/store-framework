@@ -1,0 +1,41 @@
+@import "extends/container";
+
+.flex {
+  &Row {
+    &--footer__about,
+    &--footer__menu {
+      background-color: $color-2-500;
+      padding: 20px 0;
+    }
+
+    &--footer_methods,
+    &--credits {
+      background-color: $color-2-600;
+      padding: 20px 0;
+    }
+
+    &Content {
+      &--footer__newsletter {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      &--footer__about,
+      &--footer__menu,
+      &--footer_methods,
+      &--credits {
+        @extend %container;
+      }
+
+      &--home__footer--high {
+        display: flex;
+        align-items: center;
+        justify-content: start !important;
+
+        @media (max-width: $l) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

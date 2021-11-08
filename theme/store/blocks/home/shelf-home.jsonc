@@ -1,0 +1,50 @@
+{
+  "flex-layout.row#shelf-home": {
+    "children": ["flex-layout.col#shelf-home"],
+    "props": {
+      "blockClass": ["shelf", "bg__gray"]
+    }
+  },
+
+  "flex-layout.col#shelf-home": {
+    "children": ["rich-text#shelf-home", "flex-layout.row#shelf-home-slider"],
+    "props": {
+      "blockClass": "shelf--col"
+    }
+  },
+
+  "rich-text#shelf-home": {
+    "props": {
+      "text": "## Mais Vendidos em Tênis",
+      "blockClass": "mz__title"
+    }
+  },
+
+  "flex-layout.row#shelf-home-slider": {
+    "children": ["list-context.product-list#shelf-home-slider"],
+    "props": {
+      "blockClass": "shelf--col"
+    }
+  },
+
+  "list-context.product-list#shelf-home-slider": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-home-slider"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelf-home-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showPaginationDots": "always",
+      "blockClass": "shelf"
+    }
+  }
+}

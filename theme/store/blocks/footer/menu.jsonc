@@ -1,0 +1,415 @@
+{
+  //  COL 1
+  "vtex.menu@2.x:menu#footer-all-categories": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__menu"
+    },
+    "children": [
+      "menu-item#footer-all-categories-col-1",
+      "menu-item#footer-categories-col-1",
+      "menu-item#footer-categories-col-2",
+      "menu-item#footer-categories-col-3",
+      "menu-item#footer-categories-col-4",
+      "menu-item#footer-categories-col-5",
+      "menu-item#footer-categories-col-6",
+      "menu-item#footer-categories-col-7"
+    ]
+  },
+  "menu-item#footer-all-categories-col-1": {
+    "props": {
+      "id": "menu-item-all-categories-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Categoria 1",
+        "text": "Categoria 1"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-1": {
+    "props": {
+      "id": "menu-item-categories-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-2": {
+    "props": {
+      "id": "menu-item-categories-col-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-3": {
+    "props": {
+      "id": "menu-item-categories-col-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-4": {
+    "props": {
+      "id": "menu-item-categories-col-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-5": {
+    "props": {
+      "id": "menu-item-categories-col-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-6": {
+    "props": {
+      "id": "menu-item-categories-col-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-col-7": {
+    "props": {
+      "id": "menu-item-categories-col-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+
+  //  COL 2
+  "vtex.menu@2.x:menu#footer-all-categories-2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__menu"
+    },
+    "children": [
+      "menu-item#footer-all-categories-2-col-1",
+      "menu-item#footer-categories-2-col-1",
+      "menu-item#footer-categories-2-col-2",
+      "menu-item#footer-categories-2-col-3",
+      "menu-item#footer-categories-2-col-4",
+      "menu-item#footer-categories-2-col-5",
+      "menu-item#footer-categories-2-col-6",
+      "menu-item#footer-categories-2-col-7"
+    ]
+  },
+  "menu-item#footer-all-categories-2-col-1": {
+    "props": {
+      "id": "menu-item-all-categories-2-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Categoria 2",
+        "text": "Categoria 2"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-1": {
+    "props": {
+      "id": "menu-item-categories-2-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-2": {
+    "props": {
+      "id": "menu-item-categories-2-col-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-3": {
+    "props": {
+      "id": "menu-item-categories-2-col-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-4": {
+    "props": {
+      "id": "menu-item-categories-2-col-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-5": {
+    "props": {
+      "id": "menu-item-categories-2-col-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-6": {
+    "props": {
+      "id": "menu-item-categories-2-col-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-2-col-7": {
+    "props": {
+      "id": "menu-item-categories-2-col-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+
+  //  COL 3
+  "vtex.menu@2.x:menu#footer-all-categories-3": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__menu"
+    },
+    "children": [
+      "menu-item#footer-all-categories-3-col-1",
+      "menu-item#footer-categories-3-col-1",
+      "menu-item#footer-categories-3-col-2",
+      "menu-item#footer-categories-3-col-3",
+      "menu-item#footer-categories-3-col-4",
+      "menu-item#footer-categories-3-col-5",
+      "menu-item#footer-categories-3-col-6",
+      "menu-item#footer-categories-3-col-7"
+    ]
+  },
+  "menu-item#footer-all-categories-3-col-1": {
+    "props": {
+      "id": "menu-item-all-categories-3-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Categoria 3",
+        "text": "Categoria 3"
+      }
+    }
+  },
+  "menu-item#footer-categories-3-col-1": {
+    "props": {
+      "id": "menu-item-categories-3-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-3-col-2": {
+    "props": {
+      "id": "menu-item-categories-3-col-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-3-col-3": {
+    "props": {
+      "id": "menu-item-categories-3-col-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-3-col-4": {
+    "props": {
+      "id": "menu-item-categories-3-col-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-3-col-5": {
+    "props": {
+      "id": "menu-item-categories-3-col-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-3-col-6": {
+    "props": {
+      "id": "menu-item-categories-3-col-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  },
+  "menu-item#footer-categories-3-col-7": {
+    "props": {
+      "id": "menu-item-categories-3-col-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sub Categoria",
+        "text": "Sub Categoria"
+      }
+    }
+  }
+}
